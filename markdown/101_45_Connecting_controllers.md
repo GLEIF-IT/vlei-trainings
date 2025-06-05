@@ -260,7 +260,7 @@ phrase_a = exec("kli challenge generate --out string")
 phrase_b = exec("kli challenge generate --out string")
 ```
 
-    extra oyster august rain camera brother fatal rural license decade near this
+    distance luxury pottery shrimp gravity winner warrior empty chef coach husband cactus
 
 
 Now, simulate the OOB exchange: `aid_b` sends `phrase_b` to `aid_a`, and `aid_a` sends `phrase_a` to `aid_b`. Each party then uses `kli challenge respond` to sign the phrase they received and `kli challenge verify` to check the response from the other party.
@@ -277,7 +277,7 @@ print(phrase_a)
     --recipient {aid_a}
 ```
 
-    material bomb upset laundry forward ability dignity push amount behave cost employ
+    slide ostrich gas flat flash town dust treat memory funny recipe lake
 
 
 
@@ -293,7 +293,7 @@ print(phrase_a)
 
     .
     
-    Signer aid_b successfully responded to challenge words: '['material', 'bomb', 'upset', 'laundry', 'forward', 'ability', 'dignity', 'push', 'amount', 'behave', 'cost', 'employ']'
+    Signer aid_b successfully responded to challenge words: '['slide', 'ostrich', 'gas', 'flat', 'flash', 'town', 'dust', 'treat', 'memory', 'funny', 'recipe', 'lake']'
     
 
 
@@ -308,7 +308,7 @@ print(phrase_b)
     --recipient {aid_b}
 ```
 
-    casual orange tone chunk venue behave cruel foam lamp silk wrist source
+    page game hamster leopard seat lounge pudding young party wing mother dust
 
 
 
@@ -324,7 +324,7 @@ print(phrase_b)
 
     .
     
-    Signer aid_a successfully responded to challenge words: '['casual', 'orange', 'tone', 'chunk', 'venue', 'behave', 'cruel', 'foam', 'lamp', 'silk', 'wrist', 'source']'
+    Signer aid_a successfully responded to challenge words: '['page', 'game', 'hamster', 'leopard', 'seat', 'lounge', 'pudding', 'young', 'party', 'wing', 'mother', 'dust']'
     
 
 

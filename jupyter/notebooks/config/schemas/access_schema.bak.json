@@ -1,0 +1,175 @@
+{
+    "$id": "",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "AccessCredential",
+    "description": "Credential granting access to a specific building or area, endorsed by a manager.",
+    "type": "object",
+    "credentialType": "AccessCredential",
+    "version": "1.0.0",
+    "properties": {
+        "v": {
+            "description": "Credential Version String",
+            "type": "string"
+        },
+        "d": {
+            "description": "Credential SAID",
+            "type": "string"
+        },
+        "u": {
+            "description": "One time use nonce",
+            "type": "string"
+        },
+        "i": {
+            "description": "Issuer AID (Employee's AID)",
+            "type": "string"
+        },
+        "ri": {
+            "description": "Registry SAID",
+            "type": "string"
+        },
+        "s": {
+            "description": "Schema SAID",
+            "type": "string"
+        },
+        "a": {
+            "oneOf": [
+                {
+                    "description": "Attributes block SAID",
+                    "type": "string"
+                },
+                {
+                    "$id": "",
+                    "description": "Attributes block",
+                    "type": "object",
+                    "properties": {
+                        "d": {
+                            "description": "Attributes data SAID",
+                            "type": "string"
+                        },
+                        "i": {
+                            "description": "Issuee AID (Sub-contractor's AID)",
+                            "type": "string"
+                        },
+                        "dt": {
+                            "description": "Issuance date time",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "buildingId": {
+                            "description": "Identifier for the building access is granted to.",
+                            "type": "string"
+                        },
+                        "accessLevel": {
+                            "description": "Level of access granted.",
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "d",
+                        "i",
+                        "dt",
+                        "buildingId",
+                        "accessLevel"
+                    ]
+                }
+            ]
+        },
+        "e": {
+            "oneOf": [
+                {
+                    "description": "Edges block SAID",
+                    "type": "string"
+                },
+                {
+                  "$id": "",
+                  "description": "Edges block",
+                  "type": "object",
+                  "properties": {
+                    "d": {
+                      "description": "Edges block SAID",
+                      "type": "string"
+                    },
+                    "manager_endorsement": {
+                      "description": "Link to the Manager Credential that endorses this access",
+                      "type": "object",
+                      "properties": {
+                        "n": {
+                          "description": "Issuer credential SAID",
+                          "type": "string"
+                        },
+                        "s": {
+                          "description": "SAID of required schema of the credential pointed to by this node",
+                          "type": "string",
+                          "const": "ENWatfUaeryBqvGnG7VdILVcqk84_eoxmiaJYguJXaRw"
+                        },
+                        "o": {
+                            "description": "Operator indicating this node is the issuer",
+                            "type": "string",
+                            "const": "I2I"
+                            }
+                      },
+                      "additionalProperties": false,
+                      "required": [
+                        "n",
+                        "s",
+                          "o"
+                      ]
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "d",
+                    "manager_endorsement"
+                  ]
+                }       
+            ]           
+        },
+        "r": {
+            "oneOf": [
+                {
+                    "description": "Rules block SAID",
+                    "type": "string"
+                },
+                {
+                    "$id": "",
+                    "description": "Rules governing the use of this access credential.",
+                    "type": "object",
+                    "properties": {
+                        "d": {
+                            "description": "Rules block SAID",
+                            "type": "string"
+                        },
+                        "usageDisclaimer": {
+                            "description": "Usage Disclaimer",
+                            "type": "object",
+                            "properties": {
+                                "l": {
+                                    "description": "Associated legal language",
+                                    "type": "string",
+                                    "const": "This mock credential grants no actual access. For illustrative use only."
+                                }
+                            }
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "d",
+                        "usageDisclaimer"
+                    ]
+                }
+            ]
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "v",
+        "d",
+        "i",
+        "ri",
+        "s",
+        "a",
+        "e",
+        "r"
+    ]
+}

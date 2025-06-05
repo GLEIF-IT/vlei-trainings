@@ -1,0 +1,88 @@
+{
+  "$id": "ENWatfUaeryBqvGnG7VdILVcqk84_eoxmiaJYguJXaRw",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RoleCredential",
+  "description": "Credential signifying a role within an organization.",
+  "type": "object",
+  "credentialType": "RoleCredential",
+  "version": "1.0.0",
+  "properties": {
+    "v": {
+      "description": "Credential Version String",
+      "type": "string"
+    },
+    "d": {
+      "description": "Credential SAID",
+      "type": "string"
+    },
+    "u": {
+      "description": "One time use nonce",
+      "type": "string"
+    },
+    "i": {
+      "description": "Issuer AID",
+      "type": "string"
+    },
+    "ri": {
+      "description": "Registry SAID",
+      "type": "string"
+    },
+    "s": {
+      "description": "Schema SAID",
+      "type": "string"
+    },
+    "a": {
+      "oneOf": [
+        {
+          "description": "Attributes block SAID",
+          "type": "string"
+        },
+        {
+          "$id": "EFmgKWjhXaH2MYUmlNy5-t8Y6SHZ0InHriOkyAnI4777",
+          "description": "Attributes block",
+          "type": "object",
+          "properties": {
+            "d": {
+              "description": "Attributes data SAID",
+              "type": "string"
+            },
+            "i": {
+              "description": "Issuee AID (Employee's AID)",
+              "type": "string"
+            },
+            "dt": {
+              "description": "Issuance date time",
+              "type": "string",
+              "format": "date-time"
+            },
+            "roleTitle": {
+              "description": "The title of the role.",
+              "type": "string"
+            },
+            "department": {
+              "description": "The department the employee belongs to.",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "d",
+            "i",
+            "dt",
+            "roleTitle",
+            "department"
+          ]
+        }
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "v",
+    "d",
+    "i",
+    "ri",
+    "s",
+    "a"
+  ]
+}

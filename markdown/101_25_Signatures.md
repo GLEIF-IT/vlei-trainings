@@ -16,18 +16,19 @@ The process generally involves three stages:
 
 1.  **Signing:**
     * The signer (e.g., an AID Controller) takes the information they want to sign.
-    * They create a condensed representation of the information, known as a hash.
-    * Using their unique private signing key, they apply a signing algorithm to this hash. The result is the digital signature.
-    * Only someone possessing the private key can generate a valid signature for that key.
+    * They create a condensed representation of the information, known as a digest, by using a hash function.
+      * A note on terminology: While "hash" is commonly used to refer to both the function and its output, for clarity in this text, we will use "hash function" to refer to the algorithm itself and "digest" to refer to its output.
+    * Using their unique private signing key, they apply a signing algorithm to the digest generated from the raw data. Signing means encrypting the digest of the raw data with the private key. The result is a digital signature of the digest.
+    * Only someone possessing the private key can generate a valid signature (digest) for that key.
 2.  **Attaching:**
-    * The generated signature is typically attached to the original information.
+    * The generated signature is typically attached to the original information. In the case of KERI this signature is encoded in the [Composable Event Streaming Representation](https://trustoverip.github.io/tswg-cesr-specification/) (CESR) encoding format.
 3.  **Verification:**
     * Anyone receiving the information and signature can verify its validity using the signer's corresponding public key.
-    * The verifier applies a verification algorithm using the original information, the signature, and the public key.
-    * This algorithm reverses the steps of the signing process. It uses the public key to mathematically check the signature against the information, resulting in the hash value. Then it applies the hash function to the information, and if both hash values match, then the signature is valid.
+    * The verifier applies a verification algorithm using the original information, the signature, and the corresponding public key from the correct point in history of a KEL.
+    * This algorithm is the complement of the signing process. It uses the public key to mathematically check the signature against the digest of the raw information. This means using the public key to decrypt the signature to get back to the original digest. Then the digest from the decrypted signature is compared to the digest of the raw data. If the digests match then the verification succeeds and fails otherwise.
     * **Outcome:**
-        * **Valid Signature:** If the algorithm accepts, the verifier has high confidence in the information's authenticity, integrity, and non-repudiability.
-        * **Invalid Signature:** If the algorithm rejects, the information may have been tampered with, the signature might be corrupt, or the legitimate holder of the private key didn't generate it.
+        * **Valid Signature:** If the signature verification succeeds, the verifier has high confidence in the information's authenticity, integrity, and non-repudiability and can trust the data and its originator.
+        * **Invalid Signature:** If the signature fails verification the information may have been tampered with, the signature might be corrupt, or the legitimate holder of the private key didn't generate it. Thus the verifier should not trust the data.
 
 Successful verification confirms:
 
@@ -44,8 +45,8 @@ While the verification algorithm is standard, the key challenge for a Verifier i
 The Verifier must perform these steps:
 
 1.  **Identify the Authoritative Public Key(s):**
-    * For an AID's inception event, the initial public key(s) are derived directly from the AID Prefix itself (leveraging KERI's self-certifying nature).
-    * For subsequent events (like rotations or interactions), the Verifier must consult the AID's Key Event Log. The KEL provides the history of key changes, allowing the Verifier to determine which public key(s) were valid at the specific point in time the event or message was signed.
+    * For an AID's inception event, the AID prefix is derived from the initial public key(s) (leveraging KERI's self-certifying nature).
+    * For subsequent events (like rotations or interactions), the Verifier must consult the AID's Key Event Log to get the most up to date controlling key pair(s). The KEL provides the history of key changes, allowing the Verifier to determine which public key(s) were valid at the specific point in time the event or message was signed.
 
 2.  **Perform Cryptographic Verification:**
     * Once the correct public key(s) are identified, the Verifier uses them, along with the received data and signature, in the standard cryptographic verification algorithm (as described earlier).
@@ -120,7 +121,7 @@ Now, sign a simple text message using the private key associated with the `aid-s
     1. AABjrlljacVpT8kDsvzv3qCVR1iiwJ-XPaAiKDURCH_vdrkgJgLK4i9h2Qv-xxmT2UxCSif0C-Ovvx-xp2vVDJUB
 
 
-The output is the digital signature generated for the text "hello world" using the private key of the AID  
+The output is the digital signature generated for the text "hello world" using the private key of the AID. This digital signature is encoded in text format with the CESR encoding protocol, the core cryptographic primitive, text, and binary encoding protocol used in the KERI and ACDC protocols.
 
 ### Verifying a Valid Signature
 
@@ -147,7 +148,9 @@ The command confirms the signature is valid. It used the public key associated w
 
 ### Impact of Tampering
 
-What happens if the signature is altered even slightly? The next command has the last character of the signature modified. Try to verify again.
+What happens if the signature is altered even slightly? The next command has the last character of the signature modified from "B" to "C" which will cause verification to fail.
+
+Try to verify again.
 
 
 
@@ -165,7 +168,4 @@ What happens if the signature is altered even slightly? The next command has the
 
 As expected, the verification fails. Even a tiny change invalidates the signature, demonstrating the integrity protection it provides.
 
-
-```python
-
-```
+[<- Prev (Working with Keystores and AIDs via KLI)](101_20_Working_with_Keystores_and_AIDs_via_KLI.ipynb) | [Next (Rotation) ->](101_30_Key_Rotation.ipynb)

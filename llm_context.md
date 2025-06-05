@@ -1,206 +1,3 @@
-<!-- Source: 000_Table_of_Contents.md -->
-# Table of Contents
-## vLEI 101
-1. [Welcome to vLEI Training - 101](101_05_Welcome_to_vLEI_Training_-_101.ipynb#Welcome-to-vLEI-Training---101)
-    1. [Prerequisites](101_05_Welcome_to_vLEI_Training_-_101.ipynb#Prerequisites)
-    1. [Understanding Your Learning Environment](101_05_Welcome_to_vLEI_Training_-_101.ipynb#Understanding-Your-Learning-Environment)
-        1. [Notebook Philosophy: Stand-Alone and Sequential](101_05_Welcome_to_vLEI_Training_-_101.ipynb#Notebook-Philosophy:-Stand-Alone-and-Sequential)
-        1. [Navigating Large Notebooks: The Table of Contents](101_05_Welcome_to_vLEI_Training_-_101.ipynb#Navigating-Large-Notebooks:-The-Table-of-Contents)
-        1. [Interacting with Notebook Cells](101_05_Welcome_to_vLEI_Training_-_101.ipynb#Interacting-with-Notebook-Cells)
-        1. [Managing the Notebook Kernel](101_05_Welcome_to_vLEI_Training_-_101.ipynb#Managing-the-Notebook-Kernel)
-        1. [Clearing Output](101_05_Welcome_to_vLEI_Training_-_101.ipynb#Clearing-Output)
-    1. [Software Versions](101_05_Welcome_to_vLEI_Training_-_101.ipynb#Software-Versions)
-1. [Foundations: KERI, ACDC, and the vLEI Ecosystem](101_07_Introduction_to-KERI_ACDC_and_vLEI.ipynb#Foundations:-KERI-ACDC-and-the-vLEI-Ecosystem)
-    1. [The KERI Protocol](101_07_Introduction_to-KERI_ACDC_and_vLEI.ipynb#The-KERI-Protocol)
-    1. [The ACDC Protocol](101_07_Introduction_to-KERI_ACDC_and_vLEI.ipynb#The-ACDC-Protocol)
-    1. [The GLEIF vLEI Ecosystem](101_07_Introduction_to-KERI_ACDC_and_vLEI.ipynb#The-GLEIF-vLEI-Ecosystem)
-1. [Understanding the KERI Command Line Interface (KLI)](101_10_KERI_Command_Line_Interface.ipynb#Understanding-the-KERI-Command-Line-Interface-KLI)
-    1. [Using KLI in Notebooks](101_10_KERI_Command_Line_Interface.ipynb#Using-KLI-in-Notebooks)
-    1. [Overview of Basic Utilities](101_10_KERI_Command_Line_Interface.ipynb#Overview-of-Basic-Utilities)
-1. [KERI Core: Controllers, Identifiers, and Key Event Logs](101_15_Controllers_and_Identifiers.ipynb#KERI-Core:-Controllers-Identifiers-and-Key-Event-Logs)
-    1. [Autonomic Identifiers (AIDs)](101_15_Controllers_and_Identifiers.ipynb#Autonomic-Identifiers-AIDs)
-    1. [The Controller Role](101_15_Controllers_and_Identifiers.ipynb#The-Controller-Role)
-    1. [Key Event Logs (KELs)](101_15_Controllers_and_Identifiers.ipynb#Key-Event-Logs-KELs)
-    1. [Advanced Control Mechanisms](101_15_Controllers_and_Identifiers.ipynb#Advanced-Control-Mechanisms)
-1. [KLI Operations: Managing Keystores and Identifiers](101_20_Working_with_Keystores_and_AIDs_via_KLI.ipynb#KLI-Operations:-Managing-Keystores-and-Identifiers)
-    1. [Initializing Keystores](101_20_Working_with_Keystores_and_AIDs_via_KLI.ipynb#Initializing-Keystores)
-    1. [Creating Identifiers (Inception)](101_20_Working_with_Keystores_and_AIDs_via_KLI.ipynb#Creating-Identifiers-Inception)
-    1. [Understanding Prefixes](101_20_Working_with_Keystores_and_AIDs_via_KLI.ipynb#Understanding-Prefixes)
-    1. [Displaying Identifier Status](101_20_Working_with_Keystores_and_AIDs_via_KLI.ipynb#Displaying-Identifier-Status)
-    1. [Displaying Key Event Logs (KELs)](101_20_Working_with_Keystores_and_AIDs_via_KLI.ipynb#Displaying-Key-Event-Logs-KELs)
-    1. [Listing Identifiers in a Keystore](101_20_Working_with_Keystores_and_AIDs_via_KLI.ipynb#Listing-Identifiers-in-a-Keystore)
-1. [Digital Signatures in KERI](101_25_Signatures.ipynb#Digital-Signatures-in-KERI)
-    1. [Fundamentals of Digital Signatures](101_25_Signatures.ipynb#Fundamentals-of-Digital-Signatures)
-    1. [Verification Process in KERI](101_25_Signatures.ipynb#Verification-Process-in-KERI)
-    1. [KLI Examples: Signing and Verifying](101_25_Signatures.ipynb#KLI-Examples:-Signing-and-Verifying)
-        1. [Initial Setup](101_25_Signatures.ipynb#Initial-Setup)
-        1. [Signing Data](101_25_Signatures.ipynb#Signing-Data)
-        1. [Verifying a Valid Signature](101_25_Signatures.ipynb#Verifying-a-Valid-Signature)
-        1. [Impact of Tampering](101_25_Signatures.ipynb#Impact-of-Tampering)
-1. [Key Rotation and Pre-rotation](101_30_Key_Rotation.ipynb#Key-Rotation-and-Pre-rotation)
-    1. [Importance of Key Rotation](101_30_Key_Rotation.ipynb#Importance-of-Key-Rotation)
-    1. [Understanding Establishment Events](101_30_Key_Rotation.ipynb#Understanding-Establishment-Events)
-    1. [The Pre-Rotation Mechanism](101_30_Key_Rotation.ipynb#The-Pre-Rotation-Mechanism)
-    1. [Performing Key Rotation with KLI](101_30_Key_Rotation.ipynb#Performing-Key-Rotation-with-KLI)
-        1. [Transferable vs. Non-Transferable AIDs](101_30_Key_Rotation.ipynb#Transferable-vs-Non-Transferable-AIDs)
-        1. [Incepting and Rotating a Transferable Identifier](101_30_Key_Rotation.ipynb#Incepting-and-Rotating-a-Transferable-Identifier)
-        1. [Performing the Rotation](101_30_Key_Rotation.ipynb#Performing-the-Rotation)
-        1. [Examining the Rotation (rot) Event](101_30_Key_Rotation.ipynb#Examining-the-Rotation-rot-Event)
-1. [KERI Infrastructure: Modes, OOBIs, and Witnesses](101_35_Modes_oobis_and_witnesses.ipynb#KERI-Infrastructure:-Modes-OOBIs-and-Witnesses)
-    1. [Operational Modes: Direct and Indirect](101_35_Modes_oobis_and_witnesses.ipynb#Operational-Modes:-Direct-and-Indirect)
-        1. [Direct Mode](101_35_Modes_oobis_and_witnesses.ipynb#Direct-Mode)
-        1. [Indirect Mode](101_35_Modes_oobis_and_witnesses.ipynb#Indirect-Mode)
-    1. [OOBIs: Discovery Mechanism](101_35_Modes_oobis_and_witnesses.ipynb#OOBIs:-Discovery-Mechanism)
-    1. [Role of Witnesses](101_35_Modes_oobis_and_witnesses.ipynb#Role-of-Witnesses)
-    1. [TOAD: Ensuring Accountability](101_35_Modes_oobis_and_witnesses.ipynb#TOAD:-Ensuring-Accountability)
-1. [KLI Operations: Configuring AID Witnesses](101_40_Witnesses.ipynb#KLI-Operations:-Configuring-AID-Witnesses)
-    1. [Verifying the Demo Witness Network](101_40_Witnesses.ipynb#Verifying-the-Demo-Witness-Network)
-    1. [Keystore Initialization with Witness Configuration](101_40_Witnesses.ipynb#Keystore-Initialization-with-Witness-Configuration)
-    1. [Listing keystore contacts](101_40_Witnesses.ipynb#Listing-keystore-contacts)
-    1. [Incepting an AID with Witness Configuration](101_40_Witnesses.ipynb#Incepting-an-AID-with-Witness-Configuration)
-1. [KLI Operations: Connecting Controllers](101_45_Connecting_controllers.ipynb#KLI-Operations:-Connecting-Controllers)
-    1. [Initial Controller Setup](101_45_Connecting_controllers.ipynb#Initial-Controller-Setup)
-        1. [Keystore Initialization](101_45_Connecting_controllers.ipynb#Keystore-Initialization)
-        1. [Identifier Inception](101_45_Connecting_controllers.ipynb#Identifier-Inception)
-    1. [OOBI Exchange for Discovery](101_45_Connecting_controllers.ipynb#OOBI-Exchange-for-Discovery)
-        1. [Generating OOBI URLs](101_45_Connecting_controllers.ipynb#Generating-OOBI-URLs)
-        1. [Resolving OOBI URLs](101_45_Connecting_controllers.ipynb#Resolving-OOBI-URLs)
-        1. [Listing contacts](101_45_Connecting_controllers.ipynb#Listing-contacts)
-    1. [Authenticating Control with Challenge-Response](101_45_Connecting_controllers.ipynb#Authenticating-Control-with-Challenge-Response)
-1. [KLI Operations: Creating and Managing Delegated AIDs](101_47_Delegated_AIDs.ipynb#KLI-Operations:-Creating-and-Managing-Delegated-AIDs)
-    1. [Introduction to Delegated AIDs](101_47_Delegated_AIDs.ipynb#Introduction-to-Delegated-AIDs)
-    1. [Initial Setup](101_47_Delegated_AIDs.ipynb#Initial-Setup)
-    1. [Creating Delegated Identifiers](101_47_Delegated_AIDs.ipynb#Creating-Delegated-Identifiers)
-        1. [Step 1: Delegate Incepts Proxy](101_47_Delegated_AIDs.ipynb#Step-1:-Delegate-Incepts-Proxy)
-        1. [Step 2: Delegate request delegated AID Inception](101_47_Delegated_AIDs.ipynb#Step-2:-Delegate-request-delegated-AID-Inception)
-        1. [Step 3: Delegator confirms delegation](101_47_Delegated_AIDs.ipynb#Step-3:-Delegator-confirms-delegation)
-    1. [Rotating Delegated Identifiers](101_47_Delegated_AIDs.ipynb#Rotating-Delegated-Identifiers)
-    1. [Understanding the Delegator's KEL](101_47_Delegated_AIDs.ipynb#Understanding-the-Delegators-KEL)
-1. [KERI Core: Multi-Signature Group Identifiers](101_48_Multisignatures.ipynb#KERI-Core:-Multi-Signature-Group-Identifiers)
-    1. [Introduction to Multi-Signatures](101_48_Multisignatures.ipynb#Introduction-to-Multi-Signatures)
-    1. [Initial Setup of Participant AIDs](101_48_Multisignatures.ipynb#Initial-Setup-of-Participant-AIDs)
-    1. [Creating the Multi-Signature Group AID](101_48_Multisignatures.ipynb#Creating-the-Multi-Signature-Group-AID)
-        1. [Adding Mailbox Role](101_48_Multisignatures.ipynb#Adding-Mailbox-Role)
-        1. [Resolving OOBIs](101_48_Multisignatures.ipynb#Resolving-OOBIs)
-        1. [Configuring the Multi-Signature Group](101_48_Multisignatures.ipynb#Configuring-the-Multi-Signature-Group)
-        1. [Incepting the Multi-Signature Group AID](101_48_Multisignatures.ipynb#Incepting-the-Multi-Signature-Group-AID)
-        1. [Verifying Multi-Signature AID Status](101_48_Multisignatures.ipynb#Verifying-Multi-Signature-AID-Status)
-    1. [Interaction Event with Multi-Signature Group AID](101_48_Multisignatures.ipynb#Interaction-Event-with-Multi-Signature-Group-AID)
-        1. [Verifying Interaction Event](101_48_Multisignatures.ipynb#Verifying-Interaction-Event)
-    1. [Rotation Event for Multi-Signature Group AID](101_48_Multisignatures.ipynb#Rotation-Event-for-Multi-Signature-Group-AID)
-        1. [Rotating Individual Participant Keys](101_48_Multisignatures.ipynb#Rotating-Individual-Participant-Keys)
-        1. [Rotating the Multi-Signature Group Keys](101_48_Multisignatures.ipynb#Rotating-the-Multi-Signature-Group-Keys)
-        1. [Verifiying rotation event](101_48_Multisignatures.ipynb#Verifiying-rotation-event)
-1. [Understanding ACDCs: Authentic Chained Data Containers](101_50_ACDC.ipynb#Understanding-ACDCs:-Authentic-Chained-Data-Containers)
-    1. [Defining ACDCs](101_50_ACDC.ipynb#Defining-ACDCs)
-    1. [SAIDs: Self-Addressing Identifiers](101_50_ACDC.ipynb#SAIDs:-Self-Addressing-Identifiers)
-    1. [ACDC Structure: Envelope and Payload](101_50_ACDC.ipynb#ACDC-Structure:-Envelope-and-Payload)
-    1. [ACDCs Security and Verifiability](101_50_ACDC.ipynb#ACDCs-Security-and-Verifiability)
-1. [ACDC Schemas: Defining Verifiable Structures](101_55_Schemas.ipynb#ACDC-Schemas:-Defining-Verifiable-Structures)
-    1. [Purpose of Schemas](101_55_Schemas.ipynb#Purpose-of-Schemas)
-    1. [Writing ACDC Schemas](101_55_Schemas.ipynb#Writing-ACDC-Schemas)
-1. [SAIDifying ACDC Schemas](101_60_Saidify_schema.ipynb#SAIDifying-ACDC-Schemas)
-    1. [Role of Schema SAIDs](101_60_Saidify_schema.ipynb#Role-of-Schema-SAIDs)
-    1. [The SAIDification Process](101_60_Saidify_schema.ipynb#The-SAIDification-Process)
-        1. [Step 1: Write Schema JSON](101_60_Saidify_schema.ipynb#Step-1:-Write-Schema-JSON)
-        1. [Step 2: Process and Embed SAIDs](101_60_Saidify_schema.ipynb#Step-2:-Process-and-Embed-SAIDs)
-    1. [Making Schemas Discoverable](101_60_Saidify_schema.ipynb#Making-Schemas-Discoverable)
-1. [ACDC Issuance with KLI: Using the IPEX Protocol](101_65_ACDC_Issuance.ipynb#ACDC-Issuance-with-KLI:-Using-the-IPEX-Protocol)
-    1. [Prerequisites: Issuer and Holder Setup](101_65_ACDC_Issuance.ipynb#Prerequisites:-Issuer-and-Holder-Setup)
-        1. [Holder AID Setup](101_65_ACDC_Issuance.ipynb#Holder-AID-Setup)
-        1. [Issuer AID Setup](101_65_ACDC_Issuance.ipynb#Issuer-AID-Setup)
-        1. [Establishing Issuer-Holder Connection (OOBI)](101_65_ACDC_Issuance.ipynb#Establishing-Issuer-Holder-Connection-OOBI)
-        1. [Creating the Issuer's Credential Registry](101_65_ACDC_Issuance.ipynb#Creating-the-Issuers-Credential-Registry)
-    1. [Schema preparation](101_65_ACDC_Issuance.ipynb#Schema-preparation)
-        1. [SAIDifying the Credential Schema](101_65_ACDC_Issuance.ipynb#SAIDifying-the-Credential-Schema)
-        1. [Making the Schema Discoverable](101_65_ACDC_Issuance.ipynb#Making-the-Schema-Discoverable)
-        1. [Resolving the Schema OOBI](101_65_ACDC_Issuance.ipynb#Resolving-the-Schema-OOBI)
-    1. [Credential Creation Process](101_65_ACDC_Issuance.ipynb#Credential-Creation-Process)
-        1. [Step 1: Defining Credential Attributes](101_65_ACDC_Issuance.ipynb#Step-1:-Defining-Credential-Attributes)
-        1. [Step 2: Issuing the Credential](101_65_ACDC_Issuance.ipynb#Step-2:-Issuing-the-Credential)
-        1. [Viewing the Issued Credential](101_65_ACDC_Issuance.ipynb#Viewing-the-Issued-Credential)
-        1. [Retrieving the Credential's SAID](101_65_ACDC_Issuance.ipynb#Retrieving-the-Credentials-SAID)
-    1. [Transferring the Credential via IPEX](101_65_ACDC_Issuance.ipynb#Transferring-the-Credential-via-IPEX)
-        1. [Step 1: Issuer Sends Grant Message](101_65_ACDC_Issuance.ipynb#Step-1:-Issuer-Sends-Grant-Message)
-        1. [Step 2: Holder Receives Grant Message](101_65_ACDC_Issuance.ipynb#Step-2:-Holder-Receives-Grant-Message)
-        1. [Step 3: Holder Admits Credential](101_65_ACDC_Issuance.ipynb#Step-3:-Holder-Admits-Credential)
-        1. [Step 4: Holder Verifies Possession](101_65_ACDC_Issuance.ipynb#Step-4:-Holder-Verifies-Possession)
-1. [ACDC Presentation and Revocation with KLI: Using the IPEX Protocol](101_70_ACDC_Presentation_and_Revocation.ipynb#ACDC-Presentation-and-Revocation-with-KLI:-Using-the-IPEX-Protocol)
-    1. [Credential Presentation Overview](101_70_ACDC_Presentation_and_Revocation.ipynb#Credential-Presentation-Overview)
-        1. [Recap: Issuing the Prerequisite Credential](101_70_ACDC_Presentation_and_Revocation.ipynb#Recap:-Issuing-the-Prerequisite-Credential)
-    1. [The IPEX Presentation Flow](101_70_ACDC_Presentation_and_Revocation.ipynb#The-IPEX-Presentation-Flow)
-        1. [Verifier AID Setup](101_70_ACDC_Presentation_and_Revocation.ipynb#Verifier-AID-Setup)
-        1. [Establishing Holder-Verifier Connection (OOBI)](101_70_ACDC_Presentation_and_Revocation.ipynb#Establishing-Holder-Verifier-Connection-OOBI)
-        1. [Verifier Resolves Schema OOBI](101_70_ACDC_Presentation_and_Revocation.ipynb#Verifier-Resolves-Schema-OOBI)
-        1. [Step 1: Holder Presents Credential (Grant)](101_70_ACDC_Presentation_and_Revocation.ipynb#Step-1:-Holder-Presents-Credential-Grant)
-        1. [Step 2: Verifier Receives Presentation](101_70_ACDC_Presentation_and_Revocation.ipynb#Step-2:-Verifier-Receives-Presentation)
-        1. [Step 3: Verifier Admits and Validates Presentation](101_70_ACDC_Presentation_and_Revocation.ipynb#Step-3:-Verifier-Admits-and-Validates-Presentation)
-    1. [Credential Revocation by Issuer](101_70_ACDC_Presentation_and_Revocation.ipynb#Credential-Revocation-by-Issuer)
-
-## vLEI 102
-1. [Introducing KERIA and Signify-ts: Architecture and Concepts](102_05_Keria_Signify.ipynb#Introducing-KERIA-and-Signify-ts:-Architecture-and-Concepts)
-    1. [Client-Agent Architecture](102_05_Keria_Signify.ipynb#Client-Agent-Architecture)
-        1. [KERIA Deployment and Configuration](102_05_Keria_Signify.ipynb#KERIA-Deployment-and-Configuration)
-    1. [Agent Service Endpoints](102_05_Keria_Signify.ipynb#Agent-Service-Endpoints)
-    1. [Understanding End Roles](102_05_Keria_Signify.ipynb#Understanding-End-Roles)
-    1. [Client and Agent AIDs Explained](102_05_Keria_Signify.ipynb#Client-and-Agent-AIDs-Explained)
-1. [Signify-ts Basics: Client Setup and AID Management](102_10_Keria_Signify_Basic_Operations.ipynb#Signify-ts-Basics:-Client-Setup-and-AID-Management)
-    1. [Connecting to a KERIA Agent](102_10_Keria_Signify_Basic_Operations.ipynb#Connecting-to-a-KERIA-Agent)
-        1. [Initializing the Signify-ts Library](102_10_Keria_Signify_Basic_Operations.ipynb#Initializing-the-Signify-ts-Library)
-        1. [Creating the Client Instance](102_10_Keria_Signify_Basic_Operations.ipynb#Creating-the-Client-Instance)
-        1. [Bootstrapping and Connecting to the Agent](102_10_Keria_Signify_Basic_Operations.ipynb#Bootstrapping-and-Connecting-to-the-Agent)
-        1. [Reconnecting to an Existing Agent](102_10_Keria_Signify_Basic_Operations.ipynb#Reconnecting-to-an-Existing-Agent)
-    1. [Adding an Autonomic Identifier (AID)](102_10_Keria_Signify_Basic_Operations.ipynb#Adding-an-Autonomic-Identifier-AID)
-        1. [Initiating AID Inception](102_10_Keria_Signify_Basic_Operations.ipynb#Initiating-AID-Inception)
-        1. [Waiting for Operation Completion](102_10_Keria_Signify_Basic_Operations.ipynb#Waiting-for-Operation-Completion)
-    1. [Managing Agent Operations](102_10_Keria_Signify_Basic_Operations.ipynb#Managing-Agent-Operations)
-        1. [Listing Operations](102_10_Keria_Signify_Basic_Operations.ipynb#Listing-Operations)
-        1. [Deleting Operations](102_10_Keria_Signify_Basic_Operations.ipynb#Deleting-Operations)
-1. [Signify-ts: Securely Connecting Controllers](102_15_Keria_Signify_Connecting_Clients.ipynb#Signify-ts:-Securely-Connecting-Controllers)
-    1. [Controller and AID Setup](102_15_Keria_Signify_Connecting_Clients.ipynb#Controller-and-AID-Setup)
-    1. [Assigning Agent End Roles](102_15_Keria_Signify_Connecting_Clients.ipynb#Assigning-Agent-End-Roles)
-    1. [Discovery via OOBIs](102_15_Keria_Signify_Connecting_Clients.ipynb#Discovery-via-OOBIs)
-        1. [Generating OOBI URLs](102_15_Keria_Signify_Connecting_Clients.ipynb#Generating-OOBI-URLs)
-        1. [Resolving OOBI URLs](102_15_Keria_Signify_Connecting_Clients.ipynb#Resolving-OOBI-URLs)
-        1. [Verifying Resolved Contacts](102_15_Keria_Signify_Connecting_Clients.ipynb#Verifying-Resolved-Contacts)
-    1. [Mutual Authentication with Challenge-Response](102_15_Keria_Signify_Connecting_Clients.ipynb#Mutual-Authentication-with-Challenge-Response)
-        1. [Generating Challenge Phrases](102_15_Keria_Signify_Connecting_Clients.ipynb#Generating-Challenge-Phrases)
-        1. [Performing the Challenge-Response Protocol](102_15_Keria_Signify_Connecting_Clients.ipynb#Performing-the-Challenge-Response-Protocol)
-1. [Signify-ts: ACDC Credential Issuance with IPEX](102_20_KERIA_Signify_Credential_Issuance.ipynb#Signify-ts:-ACDC-Credential-Issuance-with-IPEX)
-    1. [Prerequisites: Client and AID Setup](102_20_KERIA_Signify_Credential_Issuance.ipynb#Prerequisites:-Client-and-AID-Setup)
-    1. [Credential Issuance Workflow Steps](102_20_KERIA_Signify_Credential_Issuance.ipynb#Credential-Issuance-Workflow-Steps)
-        1. [Step 1: Create Issuer's Credential Registry](102_20_KERIA_Signify_Credential_Issuance.ipynb#Step-1:-Create-Issuers-Credential-Registry)
-        1. [Step 2: Retrieve Schema Definition](102_20_KERIA_Signify_Credential_Issuance.ipynb#Step-2:-Retrieve-Schema-Definition)
-        1. [Step 3: Issue the ACDC](102_20_KERIA_Signify_Credential_Issuance.ipynb#Step-3:-Issue-the-ACDC)
-        1. [Step 4: Issuer Grants Credential via IPEX](102_20_KERIA_Signify_Credential_Issuance.ipynb#Step-4:-Issuer-Grants-Credential-via-IPEX)
-        1. [Step 5: Holder Receives IPEX Grant Notification](102_20_KERIA_Signify_Credential_Issuance.ipynb#Step-5:-Holder-Receives-IPEX-Grant-Notification)
-        1. [Step 6: Holder Admits Credential](102_20_KERIA_Signify_Credential_Issuance.ipynb#Step-6:-Holder-Admits-Credential)
-        1. [Step 8: Issuer Receives Admit Notification](102_20_KERIA_Signify_Credential_Issuance.ipynb#Step-8:-Issuer-Receives-Admit-Notification)
-1. [Signify-ts: ACDC Presentation and Revocation with IPEX](102_25_Keria_Signify_Credential_Presentation_and_Revocation.ipynb#Signify-ts:-ACDC-Presentation-and-Revocation-with-IPEX)
-    1. [Prerequisites: Client and Credential Setup](102_25_Keria_Signify_Credential_Presentation_and_Revocation.ipynb#Prerequisites:-Client-and-Credential-Setup)
-    1. [Credential Presentation Workflow (IPEX)](102_25_Keria_Signify_Credential_Presentation_and_Revocation.ipynb#Credential-Presentation-Workflow-IPEX)
-        1. [Step 1: Verifier Requests Presentation (Apply)](102_25_Keria_Signify_Credential_Presentation_and_Revocation.ipynb#Step-1:-Verifier-Requests-Presentation-Apply)
-        1. [Step 2: Holder Receives Apply Request](102_25_Keria_Signify_Credential_Presentation_and_Revocation.ipynb#Step-2:-Holder-Receives-Apply-Request)
-        1. [Step 3: Holder Finds Matching Credential](102_25_Keria_Signify_Credential_Presentation_and_Revocation.ipynb#Step-3:-Holder-Finds-Matching-Credential)
-        1. [Step 4: Holder Offers Credential](102_25_Keria_Signify_Credential_Presentation_and_Revocation.ipynb#Step-4:-Holder-Offers-Credential)
-        1. [Step 5: Verifier Receives Offer](102_25_Keria_Signify_Credential_Presentation_and_Revocation.ipynb#Step-5:-Verifier-Receives-Offer)
-        1. [Step 6: Verifier Agrees and Validates](102_25_Keria_Signify_Credential_Presentation_and_Revocation.ipynb#Step-6:-Verifier-Agrees-and-Validates)
-    1. [Credential Revocation by Issuer](102_25_Keria_Signify_Credential_Presentation_and_Revocation.ipynb#Credential-Revocation-by-Issuer)
-## vLEI 103
-1. [Advanced ACDC Features: Edges, Edge Operators, and Rules](103_75_ACDC_Edges_and_Rules.ipynb#Advanced-ACDC-Features:-Edges-Edge-Operators-and-Rules)
-    1. [Understanding Edges and Rules](103_75_ACDC_Edges_and_Rules.ipynb#Understanding-Edges-and-Rules)
-    1. [I2I Operator: Issuer-To-Issuee](103_75_ACDC_Edges_and_Rules.ipynb#I2I-Operator:-Issuer-To-Issuee)
-        1. [I2I Scenario Examples](103_75_ACDC_Edges_and_Rules.ipynb#I2I-Scenario-Examples)
-        1. [Use Cases for I2I](103_75_ACDC_Edges_and_Rules.ipynb#Use-Cases-for-I2I)
-    1. [NI2I Operator: Not-Issuer-To-Issuee](103_75_ACDC_Edges_and_Rules.ipynb#NI2I-Operator:-Not-Issuer-To-Issuee)
-        1. [NI2I Scenario Examples](103_75_ACDC_Edges_and_Rules.ipynb#NI2I-Scenario-Examples)
-        1. [Use Cases for NI2I](103_75_ACDC_Edges_and_Rules.ipynb#Use-Cases-for-NI2I)
-    1. [DI2I Operator: Delegated-Issuer-To-Issuee](103_75_ACDC_Edges_and_Rules.ipynb#DI2I-Operator:-Delegated-Issuer-To-Issuee)
-        1. [DI2I Scenario Example](103_75_ACDC_Edges_and_Rules.ipynb#DI2I-Scenario-Example)
-        1. [Use Cases for DI2I](103_75_ACDC_Edges_and_Rules.ipynb#Use-Cases-for-DI2I)
-
-[Next (Welcome) ->](101_05_Welcome_to_vLEI_Training_-_101.ipynb)
-
 <!-- Source: 101_05_Welcome_to_vLEI_Training_-_101.md -->
 # Welcome to vLEI Training - 101
 
@@ -445,7 +242,7 @@ What it means to be fully qualified is that the bytes in the cryptographic salt 
 !kli salt
 ```
 
-    0ADPWf4yE8GQe6VJXKBvU57U
+    0ADnHkHNLRtIG5xtdwFlXv68
 
 
 **Generate a passcode**: The passcode is used to encrypt your keystore, providing an additional layer of protection.
@@ -456,7 +253,7 @@ What it means to be fully qualified is that the bytes in the cryptographic salt 
 !kli passcode generate
 ```
 
-    hL4AW1HdHuDczLYPJLAz7
+    As1NOxmtbfW3aOTJ1vihB
 
 
 **Print a timestamp**: Timestamps are typically used in operations involving multiple signers with what are called multi-signature (or "multisig") groups.
@@ -466,7 +263,7 @@ What it means to be fully qualified is that the bytes in the cryptographic salt 
 !kli time
 ```
 
-    2025-06-04T15:01:22.020361+00:00
+    2025-06-05T22:19:24.327823+00:00
 
 
 **Display help menu**
@@ -665,7 +462,7 @@ clear_keri()
 ```
 
     Proceeding with deletion of '/usr/local/var/keri/' without confirmation.
-    ⚠️ Path not found: /usr/local/var/keri/. Nothing to remove.
+    ✅ Successfully removed: /usr/local/var/keri/
 
 
 
@@ -689,6 +486,8 @@ keystore_salt="0ABeuT2dErMrqFE5Dmrnc2Bq"
 
 
 The command sets up the necessary file structures for your keystore, so once executed, it's ready for you to create and manage Identifiers within it.
+
+![](images/empty-keystore.png)
 
 <div class="alert alert-info">
   <b>ℹ️ NOTE</b><hr>
@@ -732,6 +531,8 @@ aid_alias = "my-first-aid"
     
 
 
+![](images/incepted-keystore.png)
+
 ## Understanding Prefixes
 
 The `kli incept` command generated an AID, which is represented by a unique string, e.g., `BHt9Kw8oUgfB2kiyoj65B2VE5fZLr87S5MJP3l4JeRwC`, known as the Prefix. While closely related, they represent different aspects of the identifier:
@@ -742,7 +543,19 @@ The `kli incept` command generated an AID, which is represented by a unique stri
     - The Encoded Public Key: The public portion of the initially generated key pair associated with the AID.
 
 **Prefix Self-Certification:**  
-KERI AIDs are self-certifying. This works because the identifier's prefix embeds the necessary public key information directly within it. Because of this, anyone who has the prefix can cryptographically check signatures made with the matching private key. This proves actions related to the AID are authentic without needing to check with outside authorities or registries. **Keep in mind, this direct checking applies to the key that is currently authorized for the AID; key rotation changes the authorized key, requiring reference to the AID's KEL for verification.**
+KERI AIDs are [self-certifying](https://trustoverip.github.io/tswg-keri-specification/#self-certifying-identifier-scid) in the sense that an AID does not rely on a trusted entity and instead relies only on the keys its identifier is derived from to provide verifiability for statements made (signed) by the controller of an AID. 
+
+This works because:
+1. The identifier's prefix is derived from the set of public keys that are included in the inception event. The prefix is the self addressing identifier (SAID), a kind of digest, of the inception event. This provides a strong cryptographic binding between the AID prefix and the keys used to generate the inception event.
+2. The inception event and initial keypairs, together with the key event log and any successive keypairs resulting from rotations, are sufficient to verify any signed statement made by the AID controller.
+
+Because of this relationship between keypairs, the inception event, and the key event log, anyone who has the prefix and the KEL can cryptographically verify signatures made by a given AID with the matching private key from any given point in the history of a KEL. This verifiability establishes authenticity for all actions taken by an AID without needing to check with outside authorities or registries, meaning they are self-certifying. 
+
+### Security precaution for live transactions
+
+**Keep in mind, as a security precaution**, signature verification with a prefix and a KEL is most securely done with the most recent key that is currently authorized for the AID, as in the latest set of keys given the inception and all rotations. Key rotation changes the authorized key, requiring reference to the AID's KEL for up-to-date verification. Historical signatures may still be verified, yet to ensure proper security during a live transaction the latest controlling keypairs should always be used for signature verification. 
+
+This means signatures from old keypairs, during a live transaction, should always be rejected when verifying signatures of an in-progress transaction. Such an approach is appropriate because there is no way to know if an attacker has compromised old keypairs and is using old keys to sign the new transaction events. To adopt the highest security posture then usage of the latest keypair according to the KEL should **always** be required.
 
 <div class="alert alert-prymary">
   <b>📝 SUMMARY</b><hr>
@@ -807,6 +620,8 @@ You can use `kli status` with the `--verbose` parameter to show the key event lo
     
     
     Witnesses:	
+
+
     
     {
      "v": "KERI10JSON0000fd_",
@@ -828,12 +643,19 @@ You can use `kli status` with the `--verbose` parameter to show the key event lo
     
 
 
-Here are some descriptions of the KEL fields:
+Here are some descriptions of the KEL fields (see the [spec](https://trustoverip.github.io/tswg-keri-specification/#keri-data-structures-and-labels)):
 - `v`: Version String
 - `t`: Message type (`icp` means inception)
-- `i`: AID Prefix
+- `i`: AID Prefix that created the event ("issuer" of the event)
+- `s`: sequence number of the event, always zero for the inception event since it is the first event
 - `kt`: Keys Signing Threshold (the `isith` value used in `kli inception`)
-- `k`: List of Signing Keys (You get as many keys as defined by the `icount` value used in `kli inception`)
+- `k`: List of public keys that are Signing Keys (You get as many keys as defined by the `icount` value used in `kli inception`)
+- `nt`: Next Signing Threshold (rotation signing threshold), zero in this case. This will be explored in an upcoming lesson.
+- `n`: List of public key **digests** that are rotation keys authorized to perform rotations. Since there are no rotation keys specified here then this identifier may never rotate and may be considered to have rotated to "null" on its first event, meaning it can only ever be used for signing.
+- `bt`: Backer (witness) Threshold - the number of backer (witness) receipts the event must have in order to be considered accepted by the controller and valid.
+- `b`: Backer (witness) list - the AID prefixes of the backers (witnesses) that are authorized by the controller to generate witness receipts for this event and any after it, until changed by a rotation event.
+- `c`: configuration traits - not used here
+- `a`: anchors (seals) - list of field maps used to anchor data in a key event
 
 <div class="alert alert-info">
   <b>📚 REFERENCE</b><hr>
@@ -873,6 +695,8 @@ Now use `kli list` to list all the identifiers managed by the keystore
     my-first-aid (BHt9Kw8oUgfB2kiyoj65B2VE5fZLr87S5MJP3l4JeRwC)
 
 
+![](images/two-aids.png)
+
 <div class="alert alert-primary">
   <b>📝 SUMMARY</b><hr>
 <p>The basics of managing KERI identifiers using the KLI:</p>
@@ -885,10 +709,7 @@ Now use `kli list` to list all the identifiers managed by the keystore
 </ul>
 </div>
 
-
-```python
-
-```
+[<- Prev (Controllers and Identifiers)](101_15_Controllers_and_Identifiers.ipynb) | [Next (Signatures) ->](101_25_Signatures.ipynb)
 
 <!-- Source: 101_25_Signatures.md -->
 # Digital Signatures in KERI
@@ -909,18 +730,19 @@ The process generally involves three stages:
 
 1.  **Signing:**
     * The signer (e.g., an AID Controller) takes the information they want to sign.
-    * They create a condensed representation of the information, known as a hash.
-    * Using their unique private signing key, they apply a signing algorithm to this hash. The result is the digital signature.
-    * Only someone possessing the private key can generate a valid signature for that key.
+    * They create a condensed representation of the information, known as a digest, by using a hash function.
+      * A note on terminology: While "hash" is commonly used to refer to both the function and its output, for clarity in this text, we will use "hash function" to refer to the algorithm itself and "digest" to refer to its output.
+    * Using their unique private signing key, they apply a signing algorithm to the digest generated from the raw data. Signing means encrypting the digest of the raw data with the private key. The result is a digital signature of the digest.
+    * Only someone possessing the private key can generate a valid signature (digest) for that key.
 2.  **Attaching:**
-    * The generated signature is typically attached to the original information.
+    * The generated signature is typically attached to the original information. In the case of KERI this signature is encoded in the [Composable Event Streaming Representation](https://trustoverip.github.io/tswg-cesr-specification/) (CESR) encoding format.
 3.  **Verification:**
     * Anyone receiving the information and signature can verify its validity using the signer's corresponding public key.
-    * The verifier applies a verification algorithm using the original information, the signature, and the public key.
-    * This algorithm reverses the steps of the signing process. It uses the public key to mathematically check the signature against the information, resulting in the hash value. Then it applies the hash function to the information, and if both hash values match, then the signature is valid.
+    * The verifier applies a verification algorithm using the original information, the signature, and the corresponding public key from the correct point in history of a KEL.
+    * This algorithm is the complement of the signing process. It uses the public key to mathematically check the signature against the digest of the raw information. This means using the public key to decrypt the signature to get back to the original digest. Then the digest from the decrypted signature is compared to the digest of the raw data. If the digests match then the verification succeeds and fails otherwise.
     * **Outcome:**
-        * **Valid Signature:** If the algorithm accepts, the verifier has high confidence in the information's authenticity, integrity, and non-repudiability.
-        * **Invalid Signature:** If the algorithm rejects, the information may have been tampered with, the signature might be corrupt, or the legitimate holder of the private key didn't generate it.
+        * **Valid Signature:** If the signature verification succeeds, the verifier has high confidence in the information's authenticity, integrity, and non-repudiability and can trust the data and its originator.
+        * **Invalid Signature:** If the signature fails verification the information may have been tampered with, the signature might be corrupt, or the legitimate holder of the private key didn't generate it. Thus the verifier should not trust the data.
 
 Successful verification confirms:
 
@@ -937,8 +759,8 @@ While the verification algorithm is standard, the key challenge for a Verifier i
 The Verifier must perform these steps:
 
 1.  **Identify the Authoritative Public Key(s):**
-    * For an AID's inception event, the initial public key(s) are derived directly from the AID Prefix itself (leveraging KERI's self-certifying nature).
-    * For subsequent events (like rotations or interactions), the Verifier must consult the AID's Key Event Log. The KEL provides the history of key changes, allowing the Verifier to determine which public key(s) were valid at the specific point in time the event or message was signed.
+    * For an AID's inception event, the AID prefix is derived from the initial public key(s) (leveraging KERI's self-certifying nature).
+    * For subsequent events (like rotations or interactions), the Verifier must consult the AID's Key Event Log to get the most up to date controlling key pair(s). The KEL provides the history of key changes, allowing the Verifier to determine which public key(s) were valid at the specific point in time the event or message was signed.
 
 2.  **Perform Cryptographic Verification:**
     * Once the correct public key(s) are identified, the Verifier uses them, along with the received data and signature, in the standard cryptographic verification algorithm (as described earlier).
@@ -1013,7 +835,7 @@ Now, sign a simple text message using the private key associated with the `aid-s
     1. AABjrlljacVpT8kDsvzv3qCVR1iiwJ-XPaAiKDURCH_vdrkgJgLK4i9h2Qv-xxmT2UxCSif0C-Ovvx-xp2vVDJUB
 
 
-The output is the digital signature generated for the text "hello world" using the private key of the AID  
+The output is the digital signature generated for the text "hello world" using the private key of the AID. This digital signature is encoded in text format with the CESR encoding protocol, the core cryptographic primitive, text, and binary encoding protocol used in the KERI and ACDC protocols.
 
 ### Verifying a Valid Signature
 
@@ -1040,7 +862,9 @@ The command confirms the signature is valid. It used the public key associated w
 
 ### Impact of Tampering
 
-What happens if the signature is altered even slightly? The next command has the last character of the signature modified. Try to verify again.
+What happens if the signature is altered even slightly? The next command has the last character of the signature modified from "B" to "C" which will cause verification to fail.
+
+Try to verify again.
 
 
 
@@ -1058,10 +882,7 @@ What happens if the signature is altered even slightly? The next command has the
 
 As expected, the verification fails. Even a tiny change invalidates the signature, demonstrating the integrity protection it provides.
 
-
-```python
-
-```
+[<- Prev (Working with Keystores and AIDs via KLI)](101_20_Working_with_Keystores_and_AIDs_via_KLI.ipynb) | [Next (Rotation) ->](101_30_Key_Rotation.ipynb)
 
 <!-- Source: 101_30_Key_Rotation.md -->
 # Key Rotation and Pre-rotation
@@ -1532,7 +1353,7 @@ To verify the witness network is working, let's query the KEL of one of them usi
 !curl -s http://witness-demo:5642/oobi/BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha
 ```
 
-    {"v":"KERI10JSON0000fd_","t":"icp","d":"EIkO4CUmYXukX4auGU9yaFoQaIicfVZkazQ0A3IO5biT","i":"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","s":"0","kt":"1","k":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"],"nt":"0","n":[],"bt":"0","b":[],"c":[],"a":[]}-VAn-AABAAAMlb78gUo1_gPDwxbXyERk2sW8B0mtiNuACutAygnY78PHYUjbPj1fSY1jyid8fl4-TXgLXPnDmeoUs1UO-H0A-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-06-04T14c28c36d486205p00c00{"v":"KERI10JSON0000fd_","t":"rpy","d":"EHkrUtl8Nt7nZjJ8mApuG80us9E_td3oa4V-oW2clB2K","dt":"2024-12-31T14:06:30.123456+00:00","r":"/loc/scheme","a":{"eid":"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","scheme":"http","url":"http://witness-demo:5642/"}}-VAi-CABBBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha0BDkVOk5p25Rhim3LkhYXmDNNiUcZkgCp_BWvEB45q6f_pKJBYYlpUABpci5DMzBNXlz4RvK8ImKVc_cH-0D8Q8D{"v":"KERI10JSON0000fb_","t":"rpy","d":"EDSjg0HilC3L4I_eI53C3_6lW9I6pPbR4SWGgoOmDhMb","dt":"2024-12-31T14:06:30.123456+00:00","r":"/loc/scheme","a":{"eid":"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","scheme":"tcp","url":"tcp://witness-demo:5632/"}}-VAi-CABBBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha0BDLG3-HNp-kclaNamqIRI46rNcAhpIEQBDON2HO28r9zO-6S53_w7AA_Q4Weg4eAjvTGiXiNExhO86elrIEd74F{"v":"KERI10JSON000116_","t":"rpy","d":"EBBDzl8D5gFgFkVXaB-XNQlCem-4y5JywPcueWAMRfCp","dt":"2024-12-31T14:06:30.123456+00:00","r":"/end/role/add","a":{"cid":"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","role":"controller","eid":"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"}}-VAi-CABBBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha0BDt7alD1tA9x_9vVMKxY1Ne113qJ-xDdCyThnAh6_c13Rsrb9WW5HlKyQxyW5DVXWJjQ65yzME5kCLBiJWYBKEL
+    {"v":"KERI10JSON0000fd_","t":"icp","d":"EIkO4CUmYXukX4auGU9yaFoQaIicfVZkazQ0A3IO5biT","i":"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","s":"0","kt":"1","k":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"],"nt":"0","n":[],"bt":"0","b":[],"c":[],"a":[]}-VAn-AABAAAMlb78gUo1_gPDwxbXyERk2sW8B0mtiNuACutAygnY78PHYUjbPj1fSY1jyid8fl4-TXgLXPnDmeoUs1UO-H0A-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-06-05T13c27c38d979711p00c00{"v":"KERI10JSON0000fd_","t":"rpy","d":"EHkrUtl8Nt7nZjJ8mApuG80us9E_td3oa4V-oW2clB2K","dt":"2024-12-31T14:06:30.123456+00:00","r":"/loc/scheme","a":{"eid":"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","scheme":"http","url":"http://witness-demo:5642/"}}-VAi-CABBBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha0BDkVOk5p25Rhim3LkhYXmDNNiUcZkgCp_BWvEB45q6f_pKJBYYlpUABpci5DMzBNXlz4RvK8ImKVc_cH-0D8Q8D{"v":"KERI10JSON0000fb_","t":"rpy","d":"EDSjg0HilC3L4I_eI53C3_6lW9I6pPbR4SWGgoOmDhMb","dt":"2024-12-31T14:06:30.123456+00:00","r":"/loc/scheme","a":{"eid":"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","scheme":"tcp","url":"tcp://witness-demo:5632/"}}-VAi-CABBBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha0BDLG3-HNp-kclaNamqIRI46rNcAhpIEQBDON2HO28r9zO-6S53_w7AA_Q4Weg4eAjvTGiXiNExhO86elrIEd74F{"v":"KERI10JSON000116_","t":"rpy","d":"EBBDzl8D5gFgFkVXaB-XNQlCem-4y5JywPcueWAMRfCp","dt":"2024-12-31T14:06:30.123456+00:00","r":"/end/role/add","a":{"cid":"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","role":"controller","eid":"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"}}-VAi-CABBBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha0BDt7alD1tA9x_9vVMKxY1Ne113qJ-xDdCyThnAh6_c13Rsrb9WW5HlKyQxyW5DVXWJjQ65yzME5kCLBiJWYBKEL
 
 The command should have returned a KEL; you should be able to recognize part of it. It starts with `{"v": "KERI10JSON0000fd_", "t": "icp"...`. If so, the witness network is up and running. 
 
@@ -1968,7 +1789,7 @@ phrase_a = exec("kli challenge generate --out string")
 phrase_b = exec("kli challenge generate --out string")
 ```
 
-    place wild rabbit avoid angle robust special memory bitter audit cream peace
+    distance luxury pottery shrimp gravity winner warrior empty chef coach husband cactus
 
 
 Now, simulate the OOB exchange: `aid_b` sends `phrase_b` to `aid_a`, and `aid_a` sends `phrase_a` to `aid_b`. Each party then uses `kli challenge respond` to sign the phrase they received and `kli challenge verify` to check the response from the other party.
@@ -1985,7 +1806,7 @@ print(phrase_a)
     --recipient {aid_a}
 ```
 
-    protect alpha sentence corn clump area size inflict height rack lucky flight
+    slide ostrich gas flat flash town dust treat memory funny recipe lake
 
 
 
@@ -2001,7 +1822,7 @@ print(phrase_a)
 
     .
     
-    Signer aid_b successfully responded to challenge words: '['protect', 'alpha', 'sentence', 'corn', 'clump', 'area', 'size', 'inflict', 'height', 'rack', 'lucky', 'flight']'
+    Signer aid_b successfully responded to challenge words: '['slide', 'ostrich', 'gas', 'flat', 'flash', 'town', 'dust', 'treat', 'memory', 'funny', 'recipe', 'lake']'
     
 
 
@@ -2016,7 +1837,7 @@ print(phrase_b)
     --recipient {aid_b}
 ```
 
-    ridge indicate panda side inside quick coyote roast choose wisdom door crystal
+    page game hamster leopard seat lounge pudding young party wing mother dust
 
 
 
@@ -2032,7 +1853,7 @@ print(phrase_b)
 
     .
     
-    Signer aid_a successfully responded to challenge words: '['ridge', 'indicate', 'panda', 'side', 'inside', 'quick', 'coyote', 'roast', 'choose', 'wisdom', 'door', 'crystal']'
+    Signer aid_a successfully responded to challenge words: '['page', 'game', 'hamster', 'leopard', 'seat', 'lounge', 'pudding', 'young', 'party', 'wing', 'mother', 'dust']'
     
 
 
@@ -2175,8 +1996,8 @@ pr_continue()
     Waiting for witness receipts...
 
 
-    Prefix  EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql
-      Public key 1:  DBdyvsfLABDPYn1HXRnL66zHXLAStInBywj5g7igyJTe
+    Prefix  EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx
+      Public key 1:  DFTyYU1vqmdrGyT5Uel1EOQS00GeYry9IcHSSPn4a4gN
     
 
 
@@ -2185,13 +2006,13 @@ pr_continue()
     
 
 
-    Delegator OOBI: http://witness-demo:5642/oobi/EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql/witness
+    Delegator OOBI: http://witness-demo:5642/oobi/EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx/witness
     
     [1m[4m[44m[90m  Resolving OOBIs  [0m
     
 
 
-    http://witness-demo:5642/oobi/EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql/witness resolved
+    http://witness-demo:5642/oobi/EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx/witness resolved
 
 
     
@@ -2236,8 +2057,8 @@ pr_continue()
     Waiting for witness receipts...
 
 
-    Prefix  EGcYNX5GV2Kr4ZLNEJYmyu8SP9tqAsODYc8TFRBgHyfX
-      Public key 1:  DNe0YO6vybFcsvZa4FII2s9RcPgAXUgSHplRASV9tvK6
+    Prefix  EHllMkXRGZDES9_hlM8bUSCbK_e2siwdnWqiz34muTe-
+      Public key 1:  DJQyFrf_vWrsVze9T9lSqMCZzE8biAicRk9x-rkLYxAt
     
 
 
@@ -2294,11 +2115,11 @@ pr_continue()
 
 
     
-    [1m[94mDelegator prefix: EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql[0m
+    [1m[94mDelegator prefix: EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx[0m
     
     Command 
-    kli incept --name delegate_keystore     --alias delegate_alias     --icount 1     --isith 1     --ncount 1     --nsith 1     --wits BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha     --toad 1     --transferable     --delpre EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql     --proxy delegate_proxy_alias > ./logs/delegate_incept.log
-     started with PID: 1715
+    kli incept --name delegate_keystore     --alias delegate_alias     --icount 1     --isith 1     --ncount 1     --nsith 1     --wits BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha     --toad 1     --transferable     --delpre EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx     --proxy delegate_proxy_alias > ./logs/delegate_incept.log
+     started with PID: 22799
     
     [1m[42m[90m  You can continue ✅  [0m
     
@@ -2332,7 +2153,7 @@ pr_continue()
 
 
     
-    [1m[94m['Delegagtor Prefix  EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql', 'Delegate EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY inception Anchored at Seq. No.  1', 'Delegate EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY inception event committed.'][0m
+    [1m[94m['Delegagtor Prefix  EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx', 'Delegate EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za inception Anchored at Seq. No.  1', 'Delegate EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za inception event committed.'][0m
     
     
     [1m[42m[90m  You can continue ✅  [0m
@@ -2354,10 +2175,10 @@ pr_title(f"Delegated AID status")
 
 
     Alias: 	delegate_alias
-    Identifier: EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY
+    Identifier: EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za
     Seq No:	0
     Delegated Identifier
-        Delegator:  EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql [92m✔ Anchored[0m
+        Delegator:  EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx [92m✔ Anchored[0m
     
     
     Witnesses:
@@ -2366,7 +2187,7 @@ pr_title(f"Delegated AID status")
     Threshold:	1
     
     Public Keys:	
-      1. DEKUQA0-79W99LNe61p1DTTKWQeiAvEtfC0ARHo65di8
+      1. DN1pu3YctjX2U_1JrgMT2mn9siX4QsVAeZTJ97OHFONO
     
     
     Witnesses:	
@@ -2375,16 +2196,16 @@ pr_title(f"Delegated AID status")
     {
      "v": "KERI10JSON00018d_",
      "t": "dip",
-     "d": "EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY",
-     "i": "EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY",
+     "d": "EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za",
+     "i": "EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za",
      "s": "0",
      "kt": "1",
      "k": [
-      "DEKUQA0-79W99LNe61p1DTTKWQeiAvEtfC0ARHo65di8"
+      "DN1pu3YctjX2U_1JrgMT2mn9siX4QsVAeZTJ97OHFONO"
      ],
      "nt": "1",
      "n": [
-      "EGa-ShLUtSkZoBNH_W_L6v_xMcFkxGWzluDUa1boc7Vo"
+      "EOds8n0ZB1vs0uxE8L9iafeXJh6CW3lEIJjFM3L75h80"
      ],
      "bt": "1",
      "b": [
@@ -2392,7 +2213,7 @@ pr_title(f"Delegated AID status")
      ],
      "c": [],
      "a": [],
-     "di": "EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql"
+     "di": "EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx"
     }
     
 
@@ -2443,14 +2264,14 @@ pr_continue()
     
     Command 
     kli rotate --name delegate_keystore     --alias delegate_alias     --proxy delegate_proxy_alias
-     started with PID: 1724
+     started with PID: 22808
 
 
     
     [1m[94mRotation[0m
     
     
-    [1m[94m['Delegagtor Prefix  EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql', 'Delegate EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY rotation Anchored at Seq. No.  2', 'Delegate EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY rotation event committed.'][0m
+    [1m[94m['Delegagtor Prefix  EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx', 'Delegate EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za rotation Anchored at Seq. No.  2', 'Delegate EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za rotation event committed.'][0m
     
     
     [1m[42m[90m  You can continue ✅  [0m
@@ -2472,10 +2293,10 @@ pr_title(f"Delegated AID status")
 
 
     Alias: 	delegate_alias
-    Identifier: EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY
+    Identifier: EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za
     Seq No:	1
     Delegated Identifier
-        Delegator:  EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql [92m✔ Anchored[0m
+        Delegator:  EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx [92m✔ Anchored[0m
     
     
     Witnesses:
@@ -2484,7 +2305,7 @@ pr_title(f"Delegated AID status")
     Threshold:	1
     
     Public Keys:	
-      1. DLTfrN6iP5MtmZVuBSqaPCAdK9b2bEBE_xkhzsk7YIgZ
+      1. DOpE3UfC_FgLD87d0QANte1Sj6KFq381ryDrIuqUcOrJ
     
     
     Witnesses:	
@@ -2493,16 +2314,16 @@ pr_title(f"Delegated AID status")
     {
      "v": "KERI10JSON00018d_",
      "t": "dip",
-     "d": "EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY",
-     "i": "EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY",
+     "d": "EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za",
+     "i": "EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za",
      "s": "0",
      "kt": "1",
      "k": [
-      "DEKUQA0-79W99LNe61p1DTTKWQeiAvEtfC0ARHo65di8"
+      "DN1pu3YctjX2U_1JrgMT2mn9siX4QsVAeZTJ97OHFONO"
      ],
      "nt": "1",
      "n": [
-      "EGa-ShLUtSkZoBNH_W_L6v_xMcFkxGWzluDUa1boc7Vo"
+      "EOds8n0ZB1vs0uxE8L9iafeXJh6CW3lEIJjFM3L75h80"
      ],
      "bt": "1",
      "b": [
@@ -2510,23 +2331,23 @@ pr_title(f"Delegated AID status")
      ],
      "c": [],
      "a": [],
-     "di": "EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql"
+     "di": "EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx"
     }
     
     {
      "v": "KERI10JSON000160_",
      "t": "drt",
-     "d": "ED57vFs4WZl855xAyad_-QVvyeFRSw54kOYJ08iN7i3k",
-     "i": "EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY",
+     "d": "EEkHfhlL5L0jbH6UhoxQ46Dk5dhobvsj7r3bMEB3fOmV",
+     "i": "EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za",
      "s": "1",
-     "p": "EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY",
+     "p": "EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za",
      "kt": "1",
      "k": [
-      "DLTfrN6iP5MtmZVuBSqaPCAdK9b2bEBE_xkhzsk7YIgZ"
+      "DOpE3UfC_FgLD87d0QANte1Sj6KFq381ryDrIuqUcOrJ"
      ],
      "nt": "1",
      "n": [
-      "ECxUwHP7xaV3UQmzNog09BUbtjWqiFeV4QB5fXNvmnfY"
+      "EAxJUtnlVKLB0PFMgoOU15yxVHE53IJnBpXwYZsTKNIF"
      ],
      "bt": "1",
      "br": [],
@@ -2557,7 +2378,7 @@ pr_title(f"Delegator AID status")
 
 
     Alias: 	delegator_alias
-    Identifier: EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql
+    Identifier: EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx
     Seq No:	2
     
     Witnesses:
@@ -2566,7 +2387,7 @@ pr_title(f"Delegator AID status")
     Threshold:	3
     
     Public Keys:	
-      1. DOAyqAKM-InSDQ-0K32TkS1bsWlCExdGFEnrtavdOcNL
+      1. DFGFMsJEZMnTJM47rO4-CBiVK2wG129wND0rE1a_PNaB
     
     
     Witnesses:	
@@ -2577,16 +2398,16 @@ pr_title(f"Delegator AID status")
     {
      "v": "KERI10JSON0001b7_",
      "t": "icp",
-     "d": "EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql",
-     "i": "EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql",
+     "d": "EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx",
+     "i": "EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx",
      "s": "0",
      "kt": "1",
      "k": [
-      "DBdyvsfLABDPYn1HXRnL66zHXLAStInBywj5g7igyJTe"
+      "DFTyYU1vqmdrGyT5Uel1EOQS00GeYry9IcHSSPn4a4gN"
      ],
      "nt": "1",
      "n": [
-      "ELIxGfihcj5rhKHJCkjvy_Sl7bQ6eNOBajc8Feu3w6SW"
+      "EG3L1SrswzHHEKprAVBYUMs4OKaNvzdbHBQY5R_w4wts"
      ],
      "bt": "2",
      "b": [
@@ -2601,26 +2422,26 @@ pr_title(f"Delegator AID status")
     {
      "v": "KERI10JSON0001cf_",
      "t": "rot",
-     "d": "EF0M4VE_sTNm76RxcJq7lvvREs_AdrPtZqt8lJH6ztv7",
-     "i": "EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql",
+     "d": "EBE9RA2lP8WNy6nhiKlvfeyfQxjhrQCdMS-GGFcXIJv-",
+     "i": "EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx",
      "s": "1",
-     "p": "EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql",
+     "p": "EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx",
      "kt": "1",
      "k": [
-      "DMr2U18_KpS-KQ82M4NPqqjR-SCg1V_pLVTtBuKTJvcn"
+      "DOAvqZcaDAHDUyy1UL4EyWidF4dqcMIEJ-BCu29wMQHp"
      ],
      "nt": "1",
      "n": [
-      "EFE6dIEH0NlQhYiWhXKrZF1clwU1h56zUGhwtyFm5SQV"
+      "EB0KAOAATb2VYJE5AfKwrMtUb6tw2FxtR8_qUEfYkUBG"
      ],
      "bt": "3",
      "br": [],
      "ba": [],
      "a": [
       {
-       "i": "EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY",
+       "i": "EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za",
        "s": "0",
-       "d": "EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY"
+       "d": "EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za"
       }
      ]
     }
@@ -2628,26 +2449,26 @@ pr_title(f"Delegator AID status")
     {
      "v": "KERI10JSON0001cf_",
      "t": "rot",
-     "d": "EPT2KJZN9CL92Sehs-iu9HfiSp8unuaWWtKO_1gI1PQP",
-     "i": "EPBGfVZJ6LfuqxhAr1_7jLP1ckIRC5lhap-ItHzDivql",
+     "d": "ENlp0pAWQsXkhFOaNyqZIGtNVHhY3FlXi0IYhFoiTe1u",
+     "i": "EPlFyx-dFx0DQeCOd73HDSMLHDosGSKezvytH4znf1Kx",
      "s": "2",
-     "p": "EF0M4VE_sTNm76RxcJq7lvvREs_AdrPtZqt8lJH6ztv7",
+     "p": "EBE9RA2lP8WNy6nhiKlvfeyfQxjhrQCdMS-GGFcXIJv-",
      "kt": "1",
      "k": [
-      "DOAyqAKM-InSDQ-0K32TkS1bsWlCExdGFEnrtavdOcNL"
+      "DFGFMsJEZMnTJM47rO4-CBiVK2wG129wND0rE1a_PNaB"
      ],
      "nt": "1",
      "n": [
-      "EMB8XrhXMR-WsK8XNPOqbSzuLegqGF51OnaqYTV3x8NR"
+      "EKN9kPL4W4Y7P3rKlivrVZQ-lr1PdW6tio0wNMhtM_8N"
      ],
      "bt": "3",
      "br": [],
      "ba": [],
      "a": [
       {
-       "i": "EKUdtxrk07LrveCNRB0HqE_OD_y8Q6Bpm6hvIZui03cY",
+       "i": "EJxPMmmXRoyGuBRjTedHExReyRnDnyreVguggxwPa4Za",
        "s": "1",
-       "d": "ED57vFs4WZl855xAyad_-QVvyeFRSw54kOYJ08iN7i3k"
+       "d": "EEkHfhlL5L0jbH6UhoxQ46Dk5dhobvsj7r3bMEB3fOmV"
       }
      ]
     }
@@ -2832,16 +2653,16 @@ pr_continue()
     Waiting for witness receipts...
 
 
-    Prefix  EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c
-      Public key 1:  DJamj7mBMiXa6LX3Mh0rMkcpXtlKohUl0eCKLUqyuhTN
+    Prefix  EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf
+      Public key 1:  DJoYeV_NDnSNrW-xNsBMqXPYdh5_yWXMkhEi6zsCTiNf
     
 
 
     Waiting for witness receipts...
 
 
-    Prefix  EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP
-      Public key 1:  DKsB9FQ5xCY02l8tfLz_7OljHbc8VyvkukwbCjBwvq4_
+    Prefix  EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D
+      Public key 1:  DLGU7fG6-PejAruD40kFyl7O8SBk1Qg4nFRahWHMS-UM
     
 
 
@@ -2942,20 +2763,20 @@ pr_continue()
 
 
     
-    [1m[94mMultisig part 1 OOBI: http://witness-demo:5643/oobi/EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c/mailbox/BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM[0m
+    [1m[94mMultisig part 1 OOBI: http://witness-demo:5643/oobi/EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf/mailbox/BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM[0m
     
     
-    [1m[94mMultisig part 2 OOBI: http://witness-demo:5644/oobi/EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP/mailbox/BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX[0m
+    [1m[94mMultisig part 2 OOBI: http://witness-demo:5644/oobi/EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D/mailbox/BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX[0m
     
     
     [1m[4m[44m[90m  Resolving OOBIs  [0m
     
 
 
-    http://witness-demo:5644/oobi/EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP/mailbox/BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX resolved
+    http://witness-demo:5644/oobi/EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D/mailbox/BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX resolved
 
 
-    http://witness-demo:5643/oobi/EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c/mailbox/BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM resolved
+    http://witness-demo:5643/oobi/EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf/mailbox/BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM resolved
 
 
     
@@ -3024,18 +2845,18 @@ pr_continue()
 
 
     
-    [1m[94mMultisig part 1 prefix: EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c[0m
+    [1m[94mMultisig part 1 prefix: EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf[0m
     
     
-    [1m[94mMultisig part 2 prefix: EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c[0m
+    [1m[94mMultisig part 2 prefix: EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf[0m
     
     
     [1m[94mMultisig config: ./config/multisig/multisig_config.json[0m
     
     {
       "aids": [
-        "EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c",
-        "EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP"
+        "EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf",
+        "EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D"
       ],
       "transferable": true,
       "wits": [
@@ -3107,10 +2928,10 @@ pr_continue()
     
     Command 
     kli multisig incept --name multisig1_keystore     --alias multisig1_alias     --group multisig_group     --file ./config/multisig/multisig_config.json > ./logs/multisig_event.log
-     started with PID: 1808
+     started with PID: 22890
     Command 
     kli multisig join --name multisig2_keystore     --group multisig_group     --auto > ./logs/multisig_join.log
-     started with PID: 1809
+     started with PID: 22891
     Waiting for multisig inception to complete...
     
 
@@ -3122,13 +2943,13 @@ pr_continue()
     
     [1m[94mMultisig Event[0m
     
-    Group identifier inception initialized for EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH
+    Group identifier inception initialized for ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7
     
     Alias: 	multisig_group
-    Identifier: EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH
+    Identifier: ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7
     Seq No:	0
     Group Identifier
-        Local Indentifier:  EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c [92m✔ Fully Signed[0m
+        Local Indentifier:  EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf [92m✔ Fully Signed[0m
     
     Witnesses:
     Count:		3
@@ -3136,8 +2957,8 @@ pr_continue()
     Threshold:	2
     
     Public Keys:	
-      1. DJamj7mBMiXa6LX3Mh0rMkcpXtlKohUl0eCKLUqyuhTN
-      2. DKsB9FQ5xCY02l8tfLz_7OljHbc8VyvkukwbCjBwvq4_
+      1. DJoYeV_NDnSNrW-xNsBMqXPYdh5_yWXMkhEi6zsCTiNf
+      2. DLGU7fG6-PejAruD40kFyl7O8SBk1Qg4nFRahWHMS-UM
     
 
 
@@ -3151,8 +2972,8 @@ pr_continue()
     +-------+-----------------+----------------------------------------------+
     | Local | Name            |                     AID                      |
     +-------+-----------------+----------------------------------------------+
-    |       | multisig1_alias | EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c |
-    |   *   | multisig2_alias | EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP |
+    |   *   | multisig2_alias | EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D |
+    |       | multisig1_alias | EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf |
     +-------+-----------------+----------------------------------------------+
     
     Configuration:
@@ -3169,10 +2990,10 @@ pr_continue()
     +---------------------+----------------------------------------------+
     
     Alias: 	multisig_group
-    Identifier: EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH
+    Identifier: ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7
     Seq No:	0
     Group Identifier
-        Local Indentifier:  EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP [92m✔ Fully Signed[0m
+        Local Indentifier:  EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D [92m✔ Fully Signed[0m
     
     Witnesses:
     Count:		3
@@ -3180,8 +3001,8 @@ pr_continue()
     Threshold:	2
     
     Public Keys:	
-      1. DJamj7mBMiXa6LX3Mh0rMkcpXtlKohUl0eCKLUqyuhTN
-      2. DKsB9FQ5xCY02l8tfLz_7OljHbc8VyvkukwbCjBwvq4_
+      1. DJoYeV_NDnSNrW-xNsBMqXPYdh5_yWXMkhEi6zsCTiNf
+      2. DLGU7fG6-PejAruD40kFyl7O8SBk1Qg4nFRahWHMS-UM
     
 
 
@@ -3218,10 +3039,10 @@ pr_title(f"Multisig AID status")
 
 
     Alias: 	multisig_group
-    Identifier: EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH
+    Identifier: ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7
     Seq No:	0
     Group Identifier
-        Local Indentifier:  EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c [92m✔ Fully Signed[0m
+        Local Indentifier:  EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf [92m✔ Fully Signed[0m
     
     Witnesses:
     Count:		3
@@ -3229,8 +3050,8 @@ pr_title(f"Multisig AID status")
     Threshold:	2
     
     Public Keys:	
-      1. DJamj7mBMiXa6LX3Mh0rMkcpXtlKohUl0eCKLUqyuhTN
-      2. DKsB9FQ5xCY02l8tfLz_7OljHbc8VyvkukwbCjBwvq4_
+      1. DJoYeV_NDnSNrW-xNsBMqXPYdh5_yWXMkhEi6zsCTiNf
+      2. DLGU7fG6-PejAruD40kFyl7O8SBk1Qg4nFRahWHMS-UM
     
     
     Witnesses:	
@@ -3241,18 +3062,18 @@ pr_title(f"Multisig AID status")
     {
      "v": "KERI10JSON000215_",
      "t": "icp",
-     "d": "EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH",
-     "i": "EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH",
+     "d": "ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7",
+     "i": "ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7",
      "s": "0",
      "kt": "2",
      "k": [
-      "DJamj7mBMiXa6LX3Mh0rMkcpXtlKohUl0eCKLUqyuhTN",
-      "DKsB9FQ5xCY02l8tfLz_7OljHbc8VyvkukwbCjBwvq4_"
+      "DJoYeV_NDnSNrW-xNsBMqXPYdh5_yWXMkhEi6zsCTiNf",
+      "DLGU7fG6-PejAruD40kFyl7O8SBk1Qg4nFRahWHMS-UM"
      ],
      "nt": "2",
      "n": [
-      "EDKR0N8g5f86AVCrv2srMClZGRsUDVZSaNNSRHJq485j",
-      "EMPpccC-fJs4AGcJEGZ33EeacSAncVHe0EUe8FO4I-pC"
+      "EIJ_TXjKB7qZTp0d6fH50PG8RFzmF2tOdAtaBFfwVywz",
+      "EIhhvLMO59P89pSglfZ_YHihsb9CQo1nFBUS47wOKr5j"
      ],
      "bt": "2",
      "b": [
@@ -3313,10 +3134,10 @@ pr_continue()
     
     Command 
     kli multisig interact --name multisig1_keystore     --alias multisig_group     --data '{"d": "arbitrary data"}' > ./logs/multisig_event.log
-     started with PID: 1822
+     started with PID: 22903
     Command 
     kli multisig join --name multisig2_keystore     --group multisig_group     --auto > ./logs/multisig_join.log
-     started with PID: 1823
+     started with PID: 22904
     Waiting for multisig interaction to complete...
     
 
@@ -3330,10 +3151,10 @@ pr_continue()
     
     
     Alias: 	multisig_group
-    Identifier: EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH
+    Identifier: ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7
     Seq No:	1
     Group Identifier
-        Local Indentifier:  EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c [92m✔ Fully Signed[0m
+        Local Indentifier:  EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf [92m✔ Fully Signed[0m
     
     Witnesses:
     Count:		3
@@ -3341,8 +3162,8 @@ pr_continue()
     Threshold:	2
     
     Public Keys:	
-      1. DJamj7mBMiXa6LX3Mh0rMkcpXtlKohUl0eCKLUqyuhTN
-      2. DKsB9FQ5xCY02l8tfLz_7OljHbc8VyvkukwbCjBwvq4_
+      1. DJoYeV_NDnSNrW-xNsBMqXPYdh5_yWXMkhEi6zsCTiNf
+      2. DLGU7fG6-PejAruD40kFyl7O8SBk1Qg4nFRahWHMS-UM
     
 
 
@@ -3350,7 +3171,7 @@ pr_continue()
     [1m[94mMultisig Join[0m
     
     Waiting for group multisig events...
-    Group Multisig Interaction for multisig_group (EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH) proposed:
+    Group Multisig Interaction for multisig_group (ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7) proposed:
     Data:
     [
       {
@@ -3359,10 +3180,10 @@ pr_continue()
     ]
     
     Alias: 	multisig_group
-    Identifier: EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH
+    Identifier: ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7
     Seq No:	1
     Group Identifier
-        Local Indentifier:  EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP [92m✔ Fully Signed[0m
+        Local Indentifier:  EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D [92m✔ Fully Signed[0m
     
     Witnesses:
     Count:		3
@@ -3370,8 +3191,8 @@ pr_continue()
     Threshold:	2
     
     Public Keys:	
-      1. DJamj7mBMiXa6LX3Mh0rMkcpXtlKohUl0eCKLUqyuhTN
-      2. DKsB9FQ5xCY02l8tfLz_7OljHbc8VyvkukwbCjBwvq4_
+      1. DJoYeV_NDnSNrW-xNsBMqXPYdh5_yWXMkhEi6zsCTiNf
+      2. DLGU7fG6-PejAruD40kFyl7O8SBk1Qg4nFRahWHMS-UM
     
 
 
@@ -3397,10 +3218,10 @@ pr_title(f"Multisig AID status")
 
 
     Alias: 	multisig_group
-    Identifier: EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH
+    Identifier: ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7
     Seq No:	1
     Group Identifier
-        Local Indentifier:  EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c [92m✔ Fully Signed[0m
+        Local Indentifier:  EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf [92m✔ Fully Signed[0m
     
     Witnesses:
     Count:		3
@@ -3408,8 +3229,8 @@ pr_title(f"Multisig AID status")
     Threshold:	2
     
     Public Keys:	
-      1. DJamj7mBMiXa6LX3Mh0rMkcpXtlKohUl0eCKLUqyuhTN
-      2. DKsB9FQ5xCY02l8tfLz_7OljHbc8VyvkukwbCjBwvq4_
+      1. DJoYeV_NDnSNrW-xNsBMqXPYdh5_yWXMkhEi6zsCTiNf
+      2. DLGU7fG6-PejAruD40kFyl7O8SBk1Qg4nFRahWHMS-UM
     
     
     Witnesses:	
@@ -3420,18 +3241,18 @@ pr_title(f"Multisig AID status")
     {
      "v": "KERI10JSON000215_",
      "t": "icp",
-     "d": "EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH",
-     "i": "EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH",
+     "d": "ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7",
+     "i": "ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7",
      "s": "0",
      "kt": "2",
      "k": [
-      "DJamj7mBMiXa6LX3Mh0rMkcpXtlKohUl0eCKLUqyuhTN",
-      "DKsB9FQ5xCY02l8tfLz_7OljHbc8VyvkukwbCjBwvq4_"
+      "DJoYeV_NDnSNrW-xNsBMqXPYdh5_yWXMkhEi6zsCTiNf",
+      "DLGU7fG6-PejAruD40kFyl7O8SBk1Qg4nFRahWHMS-UM"
      ],
      "nt": "2",
      "n": [
-      "EDKR0N8g5f86AVCrv2srMClZGRsUDVZSaNNSRHJq485j",
-      "EMPpccC-fJs4AGcJEGZ33EeacSAncVHe0EUe8FO4I-pC"
+      "EIJ_TXjKB7qZTp0d6fH50PG8RFzmF2tOdAtaBFfwVywz",
+      "EIhhvLMO59P89pSglfZ_YHihsb9CQo1nFBUS47wOKr5j"
      ],
      "bt": "2",
      "b": [
@@ -3446,10 +3267,10 @@ pr_title(f"Multisig AID status")
     {
      "v": "KERI10JSON0000e1_",
      "t": "ixn",
-     "d": "EIEApX1H7R8iW10RTYyvbTR4tR0NIFyM4Z3nK-Xfzem0",
-     "i": "EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH",
+     "d": "EBG2lllVE0MVLXq_QTIGxgjlB3JcTbdmIqY1tgnTGwm8",
+     "i": "ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7",
      "s": "1",
-     "p": "EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH",
+     "p": "ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7",
      "a": [
       {
        "d": "arbitrary data"
@@ -3495,9 +3316,9 @@ pr_continue()
     Waiting for witness receipts...
 
 
-    Prefix  EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c
+    Prefix  EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf
     New Sequence No.  1
-      Public key 1:  DGIC1Fak-SGtG7LWdIzrmqYoM8rmfus4SptlDJIlyNTa
+      Public key 1:  DC8cteZsaXUlWh60yQMa3Wrkehfcri2BtF2-AsA6iOvb
 
 
     Checking for updates...
@@ -3505,7 +3326,7 @@ pr_continue()
 
     
     
-    Identifier: EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c
+    Identifier: EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf
     Seq No:	1
     
     Witnesses:
@@ -3514,16 +3335,16 @@ pr_continue()
     Threshold:	3
     
     Public Keys:	
-      1. DGIC1Fak-SGtG7LWdIzrmqYoM8rmfus4SptlDJIlyNTa
+      1. DC8cteZsaXUlWh60yQMa3Wrkehfcri2BtF2-AsA6iOvb
     
 
 
     Waiting for witness receipts...
 
 
-    Prefix  EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP
+    Prefix  EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D
     New Sequence No.  1
-      Public key 1:  DB4JiY-QDBD39TzRXdByCftPniWaYGCy46IeoDdlRWr7
+      Public key 1:  DOvHW60LEbJSFNvSm0ywnE0heUY0h0TSANC-MMJDVqQ2
 
 
     Checking for updates...
@@ -3531,7 +3352,7 @@ pr_continue()
 
     
     
-    Identifier: EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP
+    Identifier: EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D
     Seq No:	1
     
     Witnesses:
@@ -3540,7 +3361,7 @@ pr_continue()
     Threshold:	3
     
     Public Keys:	
-      1. DB4JiY-QDBD39TzRXdByCftPniWaYGCy46IeoDdlRWr7
+      1. DOvHW60LEbJSFNvSm0ywnE0heUY0h0TSANC-MMJDVqQ2
     
 
 
@@ -3602,11 +3423,11 @@ pr_continue()
     [1m[4m[44m[90m  Rotating multisig group  [0m
     
     Command 
-    kli multisig rotate --name multisig1_keystore     --alias multisig_group     --smids EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c     --smids EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP     --rmids EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c     --rmids EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP     --isith '["1/2", "1/2"]'     --nsith '["1/2", "1/2"]' > ./logs/multisig_event.log
-     started with PID: 1856
+    kli multisig rotate --name multisig1_keystore     --alias multisig_group     --smids EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf     --smids EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D     --rmids EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf     --rmids EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D     --isith '["1/2", "1/2"]'     --nsith '["1/2", "1/2"]' > ./logs/multisig_event.log
+     started with PID: 22936
     Command 
     kli multisig join --name multisig2_keystore     --group multisig_group     --auto > ./logs/multisig_join.log
-     started with PID: 1857
+     started with PID: 22937
     Waiting for multisig rotation to complete...
     
 
@@ -3620,10 +3441,10 @@ pr_continue()
     
     
     Alias: 	multisig_group
-    Identifier: EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH
+    Identifier: ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7
     Seq No:	2
     Group Identifier
-        Local Indentifier:  EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c [92m✔ Fully Signed[0m
+        Local Indentifier:  EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf [92m✔ Fully Signed[0m
     
     Witnesses:
     Count:		3
@@ -3631,8 +3452,8 @@ pr_continue()
     Threshold:	3
     
     Public Keys:	
-      1. DGIC1Fak-SGtG7LWdIzrmqYoM8rmfus4SptlDJIlyNTa
-      2. DB4JiY-QDBD39TzRXdByCftPniWaYGCy46IeoDdlRWr7
+      1. DC8cteZsaXUlWh60yQMa3Wrkehfcri2BtF2-AsA6iOvb
+      2. DOvHW60LEbJSFNvSm0ywnE0heUY0h0TSANC-MMJDVqQ2
     
 
 
@@ -3647,16 +3468,16 @@ pr_continue()
     +-------+-----------------+----------------------------------------------+-----------+
     | Local | Name            |                     AID                      | Threshold |
     +-------+-----------------+----------------------------------------------+-----------+
-    |       | multisig1_alias | EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c |    1/2    |
-    |   *   | multisig2_alias | EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP |    1/2    |
+    |       | multisig1_alias | EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf |    1/2    |
+    |   *   | multisig2_alias | EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D |    1/2    |
     +-------+-----------------+----------------------------------------------+-----------+
     
     Rotation Members
     +-------+-----------------+----------------------------------------------+-----------+
     | Local | Name            |                     AID                      | Threshold |
     +-------+-----------------+----------------------------------------------+-----------+
-    |       | multisig1_alias | EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c |    1/2    |
-    |   *   | multisig2_alias | EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP |    1/2    |
+    |       | multisig1_alias | EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf |    1/2    |
+    |   *   | multisig2_alias | EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D |    1/2    |
     +-------+-----------------+----------------------------------------------+-----------+
     
     Configuration:
@@ -3667,10 +3488,10 @@ pr_continue()
     +-------------------+-------+
     
     Alias: 	multisig_group
-    Identifier: EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH
+    Identifier: ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7
     Seq No:	2
     Group Identifier
-        Local Indentifier:  EDRpBUlvCLaZ3xK11118vM2BfQ5E-qjllg5pFXFO0NPP [92m✔ Fully Signed[0m
+        Local Indentifier:  EHlV74t539u9GzGSlx-MZJYUOGtRXUkYlMwY3m_8993D [92m✔ Fully Signed[0m
     
     Witnesses:
     Count:		3
@@ -3678,8 +3499,8 @@ pr_continue()
     Threshold:	3
     
     Public Keys:	
-      1. DGIC1Fak-SGtG7LWdIzrmqYoM8rmfus4SptlDJIlyNTa
-      2. DB4JiY-QDBD39TzRXdByCftPniWaYGCy46IeoDdlRWr7
+      1. DC8cteZsaXUlWh60yQMa3Wrkehfcri2BtF2-AsA6iOvb
+      2. DOvHW60LEbJSFNvSm0ywnE0heUY0h0TSANC-MMJDVqQ2
     
 
 
@@ -3717,10 +3538,10 @@ pr_title(f"Multisig AID status")
 
 
     Alias: 	multisig_group
-    Identifier: EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH
+    Identifier: ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7
     Seq No:	2
     Group Identifier
-        Local Indentifier:  EFSe_lmMvLh-E1MXjYEw2goaUwpZovkjCFErGZFdpy8c [92m✔ Fully Signed[0m
+        Local Indentifier:  EHqBLZjr7ibOKSomXWq82n_tdk5oV_KgvPD4KGrgTwuf [92m✔ Fully Signed[0m
     
     Witnesses:
     Count:		3
@@ -3728,8 +3549,8 @@ pr_title(f"Multisig AID status")
     Threshold:	3
     
     Public Keys:	
-      1. DGIC1Fak-SGtG7LWdIzrmqYoM8rmfus4SptlDJIlyNTa
-      2. DB4JiY-QDBD39TzRXdByCftPniWaYGCy46IeoDdlRWr7
+      1. DC8cteZsaXUlWh60yQMa3Wrkehfcri2BtF2-AsA6iOvb
+      2. DOvHW60LEbJSFNvSm0ywnE0heUY0h0TSANC-MMJDVqQ2
     
     
     Witnesses:	
@@ -3740,18 +3561,18 @@ pr_title(f"Multisig AID status")
     {
      "v": "KERI10JSON000215_",
      "t": "icp",
-     "d": "EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH",
-     "i": "EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH",
+     "d": "ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7",
+     "i": "ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7",
      "s": "0",
      "kt": "2",
      "k": [
-      "DJamj7mBMiXa6LX3Mh0rMkcpXtlKohUl0eCKLUqyuhTN",
-      "DKsB9FQ5xCY02l8tfLz_7OljHbc8VyvkukwbCjBwvq4_"
+      "DJoYeV_NDnSNrW-xNsBMqXPYdh5_yWXMkhEi6zsCTiNf",
+      "DLGU7fG6-PejAruD40kFyl7O8SBk1Qg4nFRahWHMS-UM"
      ],
      "nt": "2",
      "n": [
-      "EDKR0N8g5f86AVCrv2srMClZGRsUDVZSaNNSRHJq485j",
-      "EMPpccC-fJs4AGcJEGZ33EeacSAncVHe0EUe8FO4I-pC"
+      "EIJ_TXjKB7qZTp0d6fH50PG8RFzmF2tOdAtaBFfwVywz",
+      "EIhhvLMO59P89pSglfZ_YHihsb9CQo1nFBUS47wOKr5j"
      ],
      "bt": "2",
      "b": [
@@ -3766,10 +3587,10 @@ pr_title(f"Multisig AID status")
     {
      "v": "KERI10JSON0000e1_",
      "t": "ixn",
-     "d": "EIEApX1H7R8iW10RTYyvbTR4tR0NIFyM4Z3nK-Xfzem0",
-     "i": "EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH",
+     "d": "EBG2lllVE0MVLXq_QTIGxgjlB3JcTbdmIqY1tgnTGwm8",
+     "i": "ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7",
      "s": "1",
-     "p": "EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH",
+     "p": "ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7",
      "a": [
       {
        "d": "arbitrary data"
@@ -3780,25 +3601,25 @@ pr_title(f"Multisig AID status")
     {
      "v": "KERI10JSON0001d2_",
      "t": "rot",
-     "d": "EHmOg-rZFq8bON03ydSGGEeImqTcrayuV2KBqK6FtIpn",
-     "i": "EBm6I-m6wRvaIhxXd72jADCDJQOybMFFdPxHS0QFNHaH",
+     "d": "ED1p1Zrp1urM3Cpz4vONxVH4VhxiQdXBkAnwYmMXwNDu",
+     "i": "ENo05Rd1UsfA2VN8iCWPVKvUmH_gfUhR4AfB2q8yDvb7",
      "s": "2",
-     "p": "EIEApX1H7R8iW10RTYyvbTR4tR0NIFyM4Z3nK-Xfzem0",
+     "p": "EBG2lllVE0MVLXq_QTIGxgjlB3JcTbdmIqY1tgnTGwm8",
      "kt": [
       "1/2",
       "1/2"
      ],
      "k": [
-      "DGIC1Fak-SGtG7LWdIzrmqYoM8rmfus4SptlDJIlyNTa",
-      "DB4JiY-QDBD39TzRXdByCftPniWaYGCy46IeoDdlRWr7"
+      "DC8cteZsaXUlWh60yQMa3Wrkehfcri2BtF2-AsA6iOvb",
+      "DOvHW60LEbJSFNvSm0ywnE0heUY0h0TSANC-MMJDVqQ2"
      ],
      "nt": [
       "1/2",
       "1/2"
      ],
      "n": [
-      "EM6gJGrWi4Y_gCG01fFvio2zN_z6uUCipy0xIqbLRqw1",
-      "EDtuGqxCVZ91iR0-nM0J1Dk6Z8cshBkj-5S3jlKydUoY"
+      "EM4SIwQkFvDovLYbAwW_B3BTzUG5vjGLoNgsr9fn0iQ7",
+      "EGc_Ql5rivcUiEItP1iWha4toZ_yKaegVunjrp5Ft3QI"
      ],
      "bt": "3",
      "br": [],
@@ -4174,7 +3995,7 @@ holder_aid = "holder_aid"
     KERI Keystore created at: /usr/local/var/keri/ks/holder_ks
     KERI Database created at: /usr/local/var/keri/db/holder_ks
     KERI Credential Store created at: /usr/local/var/keri/reg/holder_ks
-      aeid: BAL-KC971KSegfhUenj9j9szQqiC0zcByLTA5H6doDVu
+      aeid: BICUosWNZLBkmmcLnqJQ7EoebiGTGB6-n6qop_XHMdwc
     
     Loading 3 OOBIs...
 
@@ -4187,8 +4008,8 @@ holder_aid = "holder_aid"
     Waiting for witness receipts...
 
 
-    Prefix  EGFWtZLEd34VcrTeB-H8cj1pO5NN2Df8Hd4voS1hAlbm
-      Public key 1:  DE8iSHeGK9wT33nqnrc0raFovOTCUzN9tL31vQfaqW6I
+    Prefix  EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV
+      Public key 1:  DOk5PB5QzMujgQsDpKtE1cuO74lw-vYDNOPHDc6Vmigy
     
 
 
@@ -4219,7 +4040,7 @@ issuer_aid = "issuer_aid"
     KERI Keystore created at: /usr/local/var/keri/ks/issuer_ks
     KERI Database created at: /usr/local/var/keri/db/issuer_ks
     KERI Credential Store created at: /usr/local/var/keri/reg/issuer_ks
-      aeid: BN7BNasUYsXWMi03L714naWt0AXdsv0rWNK4vFDQKZFc
+      aeid: BAWwrOMuTGH3knQTtOIEdVA_Tg2gXXSp0vAQdyOQooc1
     
     Loading 3 OOBIs...
 
@@ -4232,8 +4053,8 @@ issuer_aid = "issuer_aid"
     Waiting for witness receipts...
 
 
-    Prefix  EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ
-      Public key 1:  DK6tDonaHYTnawp4z7nTilL4_LSrNu522MJ8ghnr_MWa
+    Prefix  ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
+      Public key 1:  DGaL9B_Q4d03QpZGnnmDiqrQiow_wKWzq-1EXAEYYBXf
     
 
 
@@ -4258,10 +4079,10 @@ issuer_oobi = exec(issuer_oobi_gen)
     --oobi {holder_oobi}
 ```
 
-    http://witness-demo:5642/oobi/EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ/witness resolved
+    http://witness-demo:5642/oobi/ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL/witness resolved
 
 
-    http://witness-demo:5642/oobi/EGFWtZLEd34VcrTeB-H8cj1pO5NN2Df8Hd4voS1hAlbm/witness resolved
+    http://witness-demo:5642/oobi/EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV/witness resolved
 
 
 ### Creating the Issuer's Credential Registry
@@ -4286,8 +4107,8 @@ issuer_registry_name="issuer_registry"
     Sending TEL events to witnesses
 
 
-    Registry:  issuer_registry(EMtK7g4vnlSWBOtamxDycKesN1GlvBfOgq_9qoqnTkqu) 
-      created for Identifier Prefix:  EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ
+    Registry:  issuer_registry(EL8zPepRFo0SVJ16k5VhclcxH5n2rWegdKVpOI1wMsUU) 
+      created for Identifier Prefix:  ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
 
 
 To query the status of a registry, use the command `kli vc registry status`. This shows the registry's SAID, its current sequence number (how many events have occurred in its TEL), and the controlling AID.
@@ -4299,9 +4120,11 @@ To query the status of a registry, use the command `kli vc registry status`. Thi
     --registry-name {issuer_registry_name} 
 ```
 
-    Registry:  EMtK7g4vnlSWBOtamxDycKesN1GlvBfOgq_9qoqnTkqu
+    Registry:  EL8zPepRFo0SVJ16k5VhclcxH5n2rWegdKVpOI1wMsUU
+
+
     Seq No.  0
-        Controlling Identifier:  EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ
+        Controlling Identifier:  ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
     
     Backers: Not supported
     Events:	Interaction Allowed
@@ -4451,7 +4274,7 @@ time = exec("kli time")
     Sending TEL events to witnesses
 
 
-    ELd3cfOo_XCmgEL5MJfWqseQ159BAGDAPucF_FDiQawo has been created.
+    EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe has been created.
 
 
 ### Viewing the Issued Credential
@@ -4466,24 +4289,26 @@ The kli vc list command allows the Issuer to see the credentials they have issue
     --verbose
 ```
 
-    Current issued credentials for issuer_aid (EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ):
+    Current issued credentials for issuer_aid (ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL):
     
-    Credential #1: ELd3cfOo_XCmgEL5MJfWqseQ159BAGDAPucF_FDiQawo
+
+
+    Credential #1: EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe
         Type: EventPass
         Status: Issued [92m✔[0m
-        Issued by EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ
-        Issued on 2025-06-04T15:03:16.842175+00:00
+        Issued by ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
+        Issued on 2025-06-05T22:21:23.472507+00:00
         Full Credential:
       {
         "v": "ACDC10JSON0001c4_",
-        "d": "ELd3cfOo_XCmgEL5MJfWqseQ159BAGDAPucF_FDiQawo",
-        "i": "EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ",
-        "ri": "EMtK7g4vnlSWBOtamxDycKesN1GlvBfOgq_9qoqnTkqu",
+        "d": "EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe",
+        "i": "ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL",
+        "ri": "EL8zPepRFo0SVJ16k5VhclcxH5n2rWegdKVpOI1wMsUU",
         "s": "EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK",
         "a": {
-          "d": "EJn2CCWM7ZwZKC1R58Sfna1BbsK8_ET-0ZGcNWsc39pH",
-          "i": "EGFWtZLEd34VcrTeB-H8cj1pO5NN2Df8Hd4voS1hAlbm",
-          "dt": "2025-06-04T15:03:16.842175+00:00",
+          "d": "EE6q_yM1ZbXJfJW8ohy2UGj_ojXokDmJOfmKbDI5kIsg",
+          "i": "EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV",
+          "dt": "2025-06-05T22:21:23.472507+00:00",
           "eventName": "GLEIF Summit",
           "accessLevel": "staff",
           "validDate": "2026-10-01"
@@ -4515,7 +4340,7 @@ credential_said=exec(get_credential_said)
 print(credential_said)
 ```
 
-    ELd3cfOo_XCmgEL5MJfWqseQ159BAGDAPucF_FDiQawo
+    EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe
 
 
 ## Transferring the Credential via IPEX
@@ -4548,7 +4373,7 @@ time = exec("kli time")
     --time {time}
 ```
 
-    Sending message EEcql8Xt6iO8QlTgezO0HpsCEUCDpP5w2UHAgV9tHYM3 to EGFWtZLEd34VcrTeB-H8cj1pO5NN2Df8Hd4voS1hAlbm
+    Sending message EGgL9qjiT5fa8yzyxGkVoTgtn8fDzsmmtz4PiafwHeme to EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV
 
 
     ... grant message sent
@@ -4569,12 +4394,12 @@ This step isn't strictly required for the workflow but allows the Issuer to view
     
     Sent IPEX Messages:
     
-    GRANT - SAID: EEcql8Xt6iO8QlTgezO0HpsCEUCDpP5w2UHAgV9tHYM3
-    Credential ELd3cfOo_XCmgEL5MJfWqseQ159BAGDAPucF_FDiQawo:
+    GRANT - SAID: EGgL9qjiT5fa8yzyxGkVoTgtn8fDzsmmtz4PiafwHeme
+    Credential EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe:
         Type: EventPass
         Status: Issued [92m✔[0m
-        Issued by EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ
-        Issued on 2025-06-04T15:03:16.842175+00:00
+        Issued by ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
+        Issued on 2025-06-05T22:21:23.472507+00:00
         Already responded? No [91m✘[0m
     
 
@@ -4592,7 +4417,7 @@ print(ipex_said)
 
 ```
 
-    EEcql8Xt6iO8QlTgezO0HpsCEUCDpP5w2UHAgV9tHYM3
+    EGgL9qjiT5fa8yzyxGkVoTgtn8fDzsmmtz4PiafwHeme
 
 
 **Holder Views Received Messages (Optional)**
@@ -4609,12 +4434,12 @@ Similar to the Issuer checking sent messages, the Holder can use `kli ipex list`
     
     Received IPEX Messages:
     
-    GRANT - SAID: EEcql8Xt6iO8QlTgezO0HpsCEUCDpP5w2UHAgV9tHYM3
-    Credential ELd3cfOo_XCmgEL5MJfWqseQ159BAGDAPucF_FDiQawo:
+    GRANT - SAID: EGgL9qjiT5fa8yzyxGkVoTgtn8fDzsmmtz4PiafwHeme
+    Credential EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe:
         Type: EventPass
         Status: Issued [92m✔[0m
-        Issued by EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ
-        Issued on 2025-06-04T15:03:16.842175+00:00
+        Issued by ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
+        Issued on 2025-06-05T22:21:23.472507+00:00
         Already responded? No [91m✘[0m
     
 
@@ -4641,7 +4466,7 @@ time = exec("kli time")
     --time {time}
 ```
 
-    Sending admit message to EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ
+    Sending admit message to ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
 
 
     ... admit message sent
@@ -4661,10 +4486,12 @@ The Holder can optionally check their sent IPEX messages to confirm the `ADMIT` 
 
     
     Sent IPEX Messages:
+
+
     
-    ADMIT - SAID: ENJd_fU7WIYMpDf5eAWJfVbvIDUtQCLGATL7N0lhNEm_
-    Admitted message SAID: EEcql8Xt6iO8QlTgezO0HpsCEUCDpP5w2UHAgV9tHYM3
-    Credential ELd3cfOo_XCmgEL5MJfWqseQ159BAGDAPucF_FDiQawo:
+    ADMIT - SAID: ECIUUwBReqnt4pjZ7URjMGb_wqIShlezRjcfO_0HO4Hd
+    Admitted message SAID: EGgL9qjiT5fa8yzyxGkVoTgtn8fDzsmmtz4PiafwHeme
+    Credential EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe:
         Type: EventPass
         Status: Accepted [92m✔[0m
     
@@ -4681,26 +4508,24 @@ The issuance process is complete! The Holder now possesses the verifiable creden
     --verbose
 ```
 
-    Current received credentials for holder_aid (EGFWtZLEd34VcrTeB-H8cj1pO5NN2Df8Hd4voS1hAlbm):
+    Current received credentials for holder_aid (EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV):
     
-
-
-    Credential #1: ELd3cfOo_XCmgEL5MJfWqseQ159BAGDAPucF_FDiQawo
+    Credential #1: EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe
         Type: EventPass
         Status: Issued [92m✔[0m
-        Issued by EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ
-        Issued on 2025-06-04T15:03:16.842175+00:00
+        Issued by ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
+        Issued on 2025-06-05T22:21:23.472507+00:00
         Full Credential:
       {
         "v": "ACDC10JSON0001c4_",
-        "d": "ELd3cfOo_XCmgEL5MJfWqseQ159BAGDAPucF_FDiQawo",
-        "i": "EEIQ8qCtswSd-w4_d8DhjxjGJPBX2MUfr8wEJ2g00TtJ",
-        "ri": "EMtK7g4vnlSWBOtamxDycKesN1GlvBfOgq_9qoqnTkqu",
+        "d": "EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe",
+        "i": "ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL",
+        "ri": "EL8zPepRFo0SVJ16k5VhclcxH5n2rWegdKVpOI1wMsUU",
         "s": "EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK",
         "a": {
-          "d": "EJn2CCWM7ZwZKC1R58Sfna1BbsK8_ET-0ZGcNWsc39pH",
-          "i": "EGFWtZLEd34VcrTeB-H8cj1pO5NN2Df8Hd4voS1hAlbm",
-          "dt": "2025-06-04T15:03:16.842175+00:00",
+          "d": "EE6q_yM1ZbXJfJW8ohy2UGj_ojXokDmJOfmKbDI5kIsg",
+          "i": "EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV",
+          "dt": "2025-06-05T22:21:23.472507+00:00",
           "eventName": "GLEIF Summit",
           "accessLevel": "staff",
           "validDate": "2026-10-01"
@@ -4871,7 +4696,7 @@ pr_continue()
     KERI Keystore created at: /usr/local/var/keri/ks/holder_presentation_ks
     KERI Database created at: /usr/local/var/keri/db/holder_presentation_ks
     KERI Credential Store created at: /usr/local/var/keri/reg/holder_presentation_ks
-      aeid: BFrQUhb_Q3fF769wYEoom0xAI5rMcynIchip24ERPG2r
+      aeid: BHQHgkOvgReP8UnWK6ALrbIs6XB-7erlXU1HrUOf9p3I
     
     Loading 3 OOBIs...
 
@@ -4884,15 +4709,15 @@ pr_continue()
     Waiting for witness receipts...
 
 
-    Prefix  EACgLu5i0hrj-80IJAeT94o1Y1kwapxveSfYl0DCofEc
-      Public key 1:  DMt75jxTltoUKn-y8ksNUE9BCDKTpFf2Qe8EZAND3bBs
+    Prefix  EKTsH9f4rhij7VT6dmiUOJzPL7KGJeIbTOnnSzAsrEFU
+      Public key 1:  DFKc79G0e4ku9qjNf2419HrnmBQ-pf1Z-602oAjhvQJR
     
 
 
     KERI Keystore created at: /usr/local/var/keri/ks/issuer_presentation_ks
     KERI Database created at: /usr/local/var/keri/db/issuer_presentation_ks
     KERI Credential Store created at: /usr/local/var/keri/reg/issuer_presentation_ks
-      aeid: BDLvnpI2rgoPJM4OCpYtvcyu9PbzQnpULgZwOW0iKE6W
+      aeid: BNWqcUUCns-8s_jXmzg_MPMzq0SFuTHfiY8OJlhTeEa2
     
     Loading 3 OOBIs...
 
@@ -4905,8 +4730,8 @@ pr_continue()
     Waiting for witness receipts...
 
 
-    Prefix  EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd
-      Public key 1:  DNRvbxGnX8VVGMYW1ixAiIMbNgYffEGPLZpQVuZdfdvQ
+    Prefix  EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO
+      Public key 1:  DKHZJRB83VPD9SEkpCO56JCoaFg7g4UvvygoH76D4YXW
     
 
 
@@ -4916,14 +4741,14 @@ pr_continue()
     Sending TEL events to witnesses
 
 
-    Registry:  issuer_registry(EIJCqyK-W9LZKaIv6xMJNmE-_mvtM3-RnMm4POsGtayO) 
-      created for Identifier Prefix:  EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd
+    Registry:  issuer_registry(ENileSLbbV2XRl5-yDhaAYbKNCbzUh0wTafSJ9ZBVmhD) 
+      created for Identifier Prefix:  EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO
 
 
-    http://witness-demo:5642/oobi/EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd/witness resolved
+    http://witness-demo:5642/oobi/EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO/witness resolved
 
 
-    http://witness-demo:5642/oobi/EACgLu5i0hrj-80IJAeT94o1Y1kwapxveSfYl0DCofEc/witness resolved
+    http://witness-demo:5642/oobi/EKTsH9f4rhij7VT6dmiUOJzPL7KGJeIbTOnnSzAsrEFU/witness resolved
 
 
     http://vlei-server:7723/oobi/EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK resolved
@@ -4938,16 +4763,16 @@ pr_continue()
     Sending TEL events to witnesses
 
 
-    EM6q2emrEmhTLKp4GCkCLjJvG3SRYgZL65Uwd-lRq0aR has been created.
+    EHMbH_hoEzN3RXkHhx7SPA5y7y6-Y8MuXLgLLqUkU3UL has been created.
 
 
-    Sending message EHUcBjMrznuSW-zXz2EpNjpa7r6PnJg87PoQLH9J2FXx to EACgLu5i0hrj-80IJAeT94o1Y1kwapxveSfYl0DCofEc
+    Sending message EBRQJP2VemYRMIV3fHHpV154A0v7p_GIyu43w52Dpacf to EKTsH9f4rhij7VT6dmiUOJzPL7KGJeIbTOnnSzAsrEFU
 
 
     ... grant message sent
 
 
-    Sending admit message to EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd
+    Sending admit message to EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO
 
 
     ... admit message sent
@@ -4972,24 +4797,24 @@ First, confirm the Holder has the credential:
     --verbose
 ```
 
-    Current received credentials for holder_aid (EACgLu5i0hrj-80IJAeT94o1Y1kwapxveSfYl0DCofEc):
+    Current received credentials for holder_aid (EKTsH9f4rhij7VT6dmiUOJzPL7KGJeIbTOnnSzAsrEFU):
     
-    Credential #1: EM6q2emrEmhTLKp4GCkCLjJvG3SRYgZL65Uwd-lRq0aR
+    Credential #1: EHMbH_hoEzN3RXkHhx7SPA5y7y6-Y8MuXLgLLqUkU3UL
         Type: EventPass
         Status: Issued [92m✔[0m
-        Issued by EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd
-        Issued on 2025-06-04T15:03:45.318753+00:00
+        Issued by EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO
+        Issued on 2025-06-05T22:21:57.656852+00:00
         Full Credential:
       {
         "v": "ACDC10JSON0001c4_",
-        "d": "EM6q2emrEmhTLKp4GCkCLjJvG3SRYgZL65Uwd-lRq0aR",
-        "i": "EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd",
-        "ri": "EIJCqyK-W9LZKaIv6xMJNmE-_mvtM3-RnMm4POsGtayO",
+        "d": "EHMbH_hoEzN3RXkHhx7SPA5y7y6-Y8MuXLgLLqUkU3UL",
+        "i": "EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO",
+        "ri": "ENileSLbbV2XRl5-yDhaAYbKNCbzUh0wTafSJ9ZBVmhD",
         "s": "EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK",
         "a": {
-          "d": "EFFLM-bc6W9slQVyRib_oxBjeoa9-x5C4cKB005E-Uit",
-          "i": "EACgLu5i0hrj-80IJAeT94o1Y1kwapxveSfYl0DCofEc",
-          "dt": "2025-06-04T15:03:45.318753+00:00",
+          "d": "EIarjpmZWm9ko98rBbrGQ_ISxEzcP8nMZWD7ZhBnBoze",
+          "i": "EKTsH9f4rhij7VT6dmiUOJzPL7KGJeIbTOnnSzAsrEFU",
+          "dt": "2025-06-05T22:21:57.656852+00:00",
           "eventName": "GLEIF Summit",
           "accessLevel": "staff",
           "validDate": "2026-10-01"
@@ -5023,7 +4848,7 @@ verifier_aid = "verifier_aid"
     KERI Keystore created at: /usr/local/var/keri/ks/verifier_ks
     KERI Database created at: /usr/local/var/keri/db/verifier_ks
     KERI Credential Store created at: /usr/local/var/keri/reg/verifier_ks
-      aeid: BN41M6w-AkCOGo39hwUh4l6reChpVtcprWM97qvXPAqZ
+      aeid: BBdwEg_yiSSYCkulDzvWVC7Yt8pxyo0-1QXO1wK9y3XO
     
     Loading 3 OOBIs...
 
@@ -5036,8 +4861,8 @@ verifier_aid = "verifier_aid"
     Waiting for witness receipts...
 
 
-    Prefix  EMmc7O2UkOI6KC2vcBo-eFwvwHkwveyIW-Rw4Nk_jxan
-      Public key 1:  DPHFCZa-reSplNen33oY8-2Sn1T1c7e44VSQzH4CDP6j
+    Prefix  EJLZ-W2MArXetfQ0oBuzhcl8Depk37LbUV4UuRNraSaU
+      Public key 1:  DOQIffAkPjF9r6Ka99SfGUuVe2b8NDJ3avjNg3WJ88DT
     
 
 
@@ -5062,10 +4887,10 @@ verifier_oobi = exec(verifier_oobi_gen)
 
 ```
 
-    http://witness-demo:5642/oobi/EMmc7O2UkOI6KC2vcBo-eFwvwHkwveyIW-Rw4Nk_jxan/witness resolved
+    http://witness-demo:5642/oobi/EJLZ-W2MArXetfQ0oBuzhcl8Depk37LbUV4UuRNraSaU/witness resolved
 
 
-    http://witness-demo:5642/oobi/EACgLu5i0hrj-80IJAeT94o1Y1kwapxveSfYl0DCofEc/witness resolved
+    http://witness-demo:5642/oobi/EKTsH9f4rhij7VT6dmiUOJzPL7KGJeIbTOnnSzAsrEFU/witness resolved
 
 
 ### Verifier Resolves Schema OOBI
@@ -5105,7 +4930,7 @@ time = exec("kli time")
     --time {time}
 ```
 
-    Sending message EK8Uqww85qp1X5yfuePYZXrL_RrAn9kCVNTtUp6x3G9H to EMmc7O2UkOI6KC2vcBo-eFwvwHkwveyIW-Rw4Nk_jxan
+    Sending message EG1Bmw-Rvih_y-pr5H_6PrqInThLwWTZJsmbZFF7Uzuk to EJLZ-W2MArXetfQ0oBuzhcl8Depk37LbUV4UuRNraSaU
 
 
     ... grant message sent
@@ -5123,7 +4948,7 @@ ipex_said=exec(get_ipex_said)
 print(ipex_said)
 ```
 
-    EK8Uqww85qp1X5yfuePYZXrL_RrAn9kCVNTtUp6x3G9H
+    EG1Bmw-Rvih_y-pr5H_6PrqInThLwWTZJsmbZFF7Uzuk
 
 
 **Verifier displays credential (Optional)**
@@ -5142,24 +4967,24 @@ Before formally admitting the credential, the Verifier can inspect the received 
     
     Received IPEX Messages:
     
-    GRANT - SAID: EK8Uqww85qp1X5yfuePYZXrL_RrAn9kCVNTtUp6x3G9H
-    Credential EM6q2emrEmhTLKp4GCkCLjJvG3SRYgZL65Uwd-lRq0aR:
+    GRANT - SAID: EG1Bmw-Rvih_y-pr5H_6PrqInThLwWTZJsmbZFF7Uzuk
+    Credential EHMbH_hoEzN3RXkHhx7SPA5y7y6-Y8MuXLgLLqUkU3UL:
         Type: EventPass
         Status: Issued [92m✔[0m
-        Issued by EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd
-        Issued on 2025-06-04T15:03:45.318753+00:00
+        Issued by EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO
+        Issued on 2025-06-05T22:21:57.656852+00:00
         Already responded? No [91m✘[0m
         Full Credential:
       {
         "v": "ACDC10JSON0001c4_",
-        "d": "EM6q2emrEmhTLKp4GCkCLjJvG3SRYgZL65Uwd-lRq0aR",
-        "i": "EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd",
-        "ri": "EIJCqyK-W9LZKaIv6xMJNmE-_mvtM3-RnMm4POsGtayO",
+        "d": "EHMbH_hoEzN3RXkHhx7SPA5y7y6-Y8MuXLgLLqUkU3UL",
+        "i": "EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO",
+        "ri": "ENileSLbbV2XRl5-yDhaAYbKNCbzUh0wTafSJ9ZBVmhD",
         "s": "EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK",
         "a": {
-          "d": "EFFLM-bc6W9slQVyRib_oxBjeoa9-x5C4cKB005E-Uit",
-          "i": "EACgLu5i0hrj-80IJAeT94o1Y1kwapxveSfYl0DCofEc",
-          "dt": "2025-06-04T15:03:45.318753+00:00",
+          "d": "EIarjpmZWm9ko98rBbrGQ_ISxEzcP8nMZWD7ZhBnBoze",
+          "i": "EKTsH9f4rhij7VT6dmiUOJzPL7KGJeIbTOnnSzAsrEFU",
+          "dt": "2025-06-05T22:21:57.656852+00:00",
           "eventName": "GLEIF Summit",
           "accessLevel": "staff",
           "validDate": "2026-10-01"
@@ -5189,7 +5014,7 @@ time = exec("kli time")
     --time {time}
 ```
 
-    Sending admit message to EACgLu5i0hrj-80IJAeT94o1Y1kwapxveSfYl0DCofEc
+    Sending admit message to EKTsH9f4rhij7VT6dmiUOJzPL7KGJeIbTOnnSzAsrEFU
 
 
     ... admit message sent
@@ -5211,25 +5036,25 @@ Finally, the Verifier can check the status of the received IPEX message again. T
     
     Received IPEX Messages:
     
-    GRANT - SAID: EK8Uqww85qp1X5yfuePYZXrL_RrAn9kCVNTtUp6x3G9H
-    Credential EM6q2emrEmhTLKp4GCkCLjJvG3SRYgZL65Uwd-lRq0aR:
+    GRANT - SAID: EG1Bmw-Rvih_y-pr5H_6PrqInThLwWTZJsmbZFF7Uzuk
+    Credential EHMbH_hoEzN3RXkHhx7SPA5y7y6-Y8MuXLgLLqUkU3UL:
         Type: EventPass
         Status: Issued [92m✔[0m
-        Issued by EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd
-        Issued on 2025-06-04T15:03:45.318753+00:00
+        Issued by EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO
+        Issued on 2025-06-05T22:21:57.656852+00:00
         Already responded? Yes [92m✔[0m
-        Response: [92mAdmit[0m (EHamHmk1meFFVG0YH5LTsyhFz4QWKZxpbLpourIL25wv)
+        Response: [92mAdmit[0m (EMcJw7qIEc2YVySRfN6z_SemI21KCvThiiFbN0T0XAFE)
         Full Credential:
       {
         "v": "ACDC10JSON0001c4_",
-        "d": "EM6q2emrEmhTLKp4GCkCLjJvG3SRYgZL65Uwd-lRq0aR",
-        "i": "EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd",
-        "ri": "EIJCqyK-W9LZKaIv6xMJNmE-_mvtM3-RnMm4POsGtayO",
+        "d": "EHMbH_hoEzN3RXkHhx7SPA5y7y6-Y8MuXLgLLqUkU3UL",
+        "i": "EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO",
+        "ri": "ENileSLbbV2XRl5-yDhaAYbKNCbzUh0wTafSJ9ZBVmhD",
         "s": "EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK",
         "a": {
-          "d": "EFFLM-bc6W9slQVyRib_oxBjeoa9-x5C4cKB005E-Uit",
-          "i": "EACgLu5i0hrj-80IJAeT94o1Y1kwapxveSfYl0DCofEc",
-          "dt": "2025-06-04T15:03:45.318753+00:00",
+          "d": "EIarjpmZWm9ko98rBbrGQ_ISxEzcP8nMZWD7ZhBnBoze",
+          "i": "EKTsH9f4rhij7VT6dmiUOJzPL7KGJeIbTOnnSzAsrEFU",
+          "dt": "2025-06-05T22:21:57.656852+00:00",
           "eventName": "GLEIF Summit",
           "accessLevel": "staff",
           "validDate": "2026-10-01"
@@ -5273,13 +5098,13 @@ Now, if the Issuer lists their issued credentials again, the status will reflect
     -i
 ```
 
-    Current issued credentials for issuer_aid (EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd):
+    Current issued credentials for issuer_aid (EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO):
     
-    Credential #1: EM6q2emrEmhTLKp4GCkCLjJvG3SRYgZL65Uwd-lRq0aR
+    Credential #1: EHMbH_hoEzN3RXkHhx7SPA5y7y6-Y8MuXLgLLqUkU3UL
         Type: EventPass
         Status: Revoked [91m✘[0m
-        Issued by EFf6lKON0stKX83sHZfqclTVdiQ8vKTXUGBrMyFQa8Yd
-        Issued on 2025-06-04T15:04:11.864435+00:00
+        Issued by EGS90tmpUs2itV1eevY7v5twNQIDB-66hSwX3GKjlruO
+        Issued on 2025-06-05T22:22:28.440209+00:00
 
 
 <div class="alert alert-primary">
@@ -5340,8 +5165,8 @@ I2I signifies: "My authority to issue this current ACDC comes from the fact that
 ### I2I Scenario Examples
 
 1.  **Endorsement for Building Access:**
-    * **Scenario:** A company (ACME) issues a "Manager" ACDC to an Employee. The Employee (now acting as an issuer by virtue of their managerial role) then issues an "Access Granted" ACDC for a specific building to a sub-contractor they hired. The "Access Granted" ACDC would have an I2I edge pointing back to the employee's "Manager" ACDC.
-    * **Chain:** ACME (Issuer) -> "Manager" ACDC (Issuee: Employee) -> Employee (Issuer, leveraging their "Manager" status) -> "Access Granted" ACDC (Issuee: Sub-contractor).
+    * **Scenario:** A company (ACME) issues a "Manager role" ACDC to an Employee. The Employee (now acting as an issuer by virtue of their managerial role) then issues an "Access" ACDC for a specific building to a sub-contractor they hired. The "Access" ACDC would have an I2I edge pointing back to the employee's "Manager role" ACDC.
+    * **Chain:** ACME (Issuer) -> "Manager role" ACDC (Issuee: Employee) -> Employee (Issuer, leveraging their "Manager" status) -> "Access" ACDC (Issuee: Sub-contractor).
     * **Significance:** The I2I edge ensures the Manager issuing access is verifiably the same individual to whom ACME conferred managerial status.
 
 2.  **Membership Level Endorsement for Event Access:**
@@ -5425,13 +5250,1177 @@ ACDC Edges (<code>e</code> section) link ACDCs, with Edge Operators defining rel
 # ACDC Issuance with KLI: Issuer-To-Issuee
 
 <div class="alert alert-primary">
-  <b>🎯 OBJECTIVE</b><hr>
-
+<b>🎯 OBJECTIVE</b><hr>
+Demonstrate how to issue chained Authentic Chained Data Containers (ACDCs) using an Issuer-To-Issuee (<code>I2I</code>) edge relationship with the KERI Command Line Interface (KLI). It also illustrates how to embed a simple rule within an ACDC. We will implement the "Endorsement for Building Access" scenario.
 </div>
 
+## Scenario Recap: Endorsement for Building Access
+
+This notebook focuses on the practical KLI commands for implementing an `I2I` chained credential scenario. For a detailed theoretical explanation of ACDC Edges, Edge Operators, and Rules, please refer to the "Advanced ACDC Features: Edges, Edge Operators, and Rules" notebook. To summarize: 
+
+- **ACME Corp** issues a "Role Credential" to an Employee.
+- The **Employee**, by virtue of their "Role Credential", issues an "Access Credential" to a **Sub-contractor**.
+- The **Access Credential** contains an `I2I` edge linking back to the Employee's "Role Credential", signifying that the Employee's authority to grant access is derived from their managerial role.
+- The **Access Credential** will also include a simple textual rule regarding its usage policy.
+
+
+## Initial Setup: Keystores, AIDs, Registries, and OOBIs
+As usual, it is necessary to set up our participants:
+
+- Acme Corporation (`acme_aid`): The initial authority in this scenario, responsible for issuing the Role Credential.
+- Employee (`employee_aid`): This participant will first receive the Role Credential from Acme and subsequently issue the Access Credential.
+- Sub-contractor (`subcontractor_aid`): The recipient of the Access Credential.
+
+For each participant:
+- Initialize their respective keystores.
+- Incept their Autonomic Identifiers (AIDs). These AIDs will be configured as transferable and will utilize the default witness setup from `keystore_init_config.json`.
+- Establish OOBI connections. This involves generating OOBIs for each AID and resolving them to ensure all necessary participants (Acme-Employee, Employee-Sub-contractor) can securely discover each other.
+
+For ACME and the Employee:
+- Incept a credential registry
+
+
+```python
+# Imports and Utility functions
+from scripts.utils import exec, clear_keri, pr_title, pr_message, pr_continue
+from scripts.saidify import get_schema_said
+import json, os
+
+clear_keri()
+
+# ACME Keystore and AID
+acme_keystore_name = "acme_ks"
+acme_salt = exec("kli salt")
+acme_aid_alias = "acme"
+acme_registry_name = "acme_mgr_registry"
+
+# Employee Keystore and AID
+employee_keystore_name = "employee_ks"
+employee_salt = exec("kli salt")
+employee_aid_alias = "employee"
+employee_registry_name = "employee_access_registry"
+
+# Sub-contractor Keystore and AID
+subcontractor_keystore_name = "subcontractor_ks"
+subcontractor_salt = exec("kli salt")
+subcontractor_aid_alias = "subcontractor"
+
+pr_title("Initializing keystores")
+
+!kli init --name {acme_keystore_name} \
+    --nopasscode \
+    --salt {acme_salt} \
+    --config-dir ./config \
+    --config-file keystore_init_config.json
+
+!kli init --name {employee_keystore_name} \
+    --nopasscode \
+    --salt {employee_salt} \
+    --config-dir ./config \
+    --config-file keystore_init_config.json
+
+!kli init --name {subcontractor_keystore_name} \
+    --nopasscode \
+    --salt {subcontractor_salt} \
+    --config-dir ./config \
+    --config-file keystore_init_config.json
+
+pr_title("Initializing AIDs")
+
+!kli incept --name {acme_keystore_name} \
+    --alias {acme_aid_alias} \
+    --file ./config/aid_inception_config.json # Uses witnesses and transferable settings
+
+!kli incept --name {employee_keystore_name} \
+    --alias {employee_aid_alias} \
+    --file ./config/aid_inception_config.json
+
+!kli incept --name {subcontractor_keystore_name} \
+    --alias {subcontractor_aid_alias} \
+    --file ./config/aid_inception_config.json
+
+pr_title("Initializing Credential Registries")
+
+!kli vc registry incept --name {acme_keystore_name} \
+    --alias {acme_aid_alias} \
+    --registry-name {acme_registry_name}
+
+!kli vc registry incept --name {employee_keystore_name} \
+    --alias {employee_aid_alias} \
+    --registry-name {employee_registry_name}
+
+
+acme_aid_prefix = exec(f"kli aid --name {acme_keystore_name} --alias {acme_aid_alias}")
+employee_aid_prefix = exec(f"kli aid --name {employee_keystore_name}  --alias {employee_aid_alias}")
+subcontractor_aid_prefix = exec(f"kli aid --name {subcontractor_keystore_name}  --alias {subcontractor_aid_alias}")
+
+pr_message(f"ACME AID: {acme_aid_prefix}")
+pr_message(f"Employee AID: {employee_aid_prefix}")
+pr_message(f"Sub-contractor AID: {subcontractor_aid_prefix}")
+
+pr_title("Generating and resolving OOBIs")
+
+# ACME and Employee OOBI Exchange
+acme_oobi = exec(f"kli oobi generate --name {acme_keystore_name} --alias {acme_aid_alias} --role witness")
+employee_oobi = exec(f"kli oobi generate --name {employee_keystore_name} --alias {employee_aid_alias} --role witness")
+
+!kli oobi resolve --name {acme_keystore_name} \
+    --oobi-alias {employee_aid_alias} \
+    --oobi {employee_oobi}
+
+!kli oobi resolve --name {employee_keystore_name} \
+    --oobi-alias {acme_aid_alias} \
+    --oobi {acme_oobi}
+
+# Employee and Sub-contractor OOBI Exchange
+subcontractor_oobi = exec(f"kli oobi generate --name {subcontractor_keystore_name}  --alias {subcontractor_aid_alias} --role witness")
+
+!kli oobi resolve --name {employee_keystore_name} \
+    --oobi-alias {subcontractor_aid_alias} \
+    --oobi {subcontractor_oobi}
+
+!kli oobi resolve --name {subcontractor_keystore_name} \
+    --oobi-alias {employee_aid_alias} \
+    --oobi {employee_oobi}
+
+pr_message("OOBI connections established.")
+
+pr_continue()
+```
+
+    Proceeding with deletion of '/usr/local/var/keri/' without confirmation.
+    ✅ Successfully removed: /usr/local/var/keri/
+
+
+    
+    [1m[4m[44m[90m  Initializing keystores  [0m
+    
+
+
+    KERI Keystore created at: /usr/local/var/keri/ks/acme_ks
+    KERI Database created at: /usr/local/var/keri/db/acme_ks
+    KERI Credential Store created at: /usr/local/var/keri/reg/acme_ks
+    
+    Loading 3 OOBIs...
+
+
+    http://witness-demo:5642/oobi/BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha/controller?name=Wan&tag=witness succeeded
+    http://witness-demo:5643/oobi/BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM/controller?name=Wes&tag=witness succeeded
+    http://witness-demo:5644/oobi/BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX/controller?name=Wil&tag=witness succeeded
+
+
+    KERI Keystore created at: /usr/local/var/keri/ks/employee_ks
+    KERI Database created at: /usr/local/var/keri/db/employee_ks
+    KERI Credential Store created at: /usr/local/var/keri/reg/employee_ks
+    
+    Loading 3 OOBIs...
+
+
+    http://witness-demo:5642/oobi/BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha/controller?name=Wan&tag=witness succeeded
+    http://witness-demo:5643/oobi/BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM/controller?name=Wes&tag=witness succeeded
+    http://witness-demo:5644/oobi/BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX/controller?name=Wil&tag=witness succeeded
+
+
+    KERI Keystore created at: /usr/local/var/keri/ks/subcontractor_ks
+    KERI Database created at: /usr/local/var/keri/db/subcontractor_ks
+    KERI Credential Store created at: /usr/local/var/keri/reg/subcontractor_ks
+    
+    Loading 3 OOBIs...
+
+
+    http://witness-demo:5642/oobi/BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha/controller?name=Wan&tag=witness succeeded
+    http://witness-demo:5643/oobi/BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM/controller?name=Wes&tag=witness succeeded
+    http://witness-demo:5644/oobi/BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX/controller?name=Wil&tag=witness succeeded
+
+
+    
+    [1m[4m[44m[90m  Initializing AIDs  [0m
+    
+
+
+    Waiting for witness receipts...
+
+
+    Prefix  EGlbqwf3Ga4BvF6VXKlf40PHPKDE9O9Sh2DLYLrq_G8H
+      Public key 1:  DMAGtf7bbvSjdrfQ2FFbCCKtB6wR7s--B-w7l-RMtMaG
+    
+
+
+    Waiting for witness receipts...
+
+
+    Prefix  EKZJBOcl723F-JnNz8uZNlqhANgto4_0UxLWMSoFO9ly
+      Public key 1:  DEjaa5ldc04HQNiiWuh2uj2Q5c1EHIq9zMkGocHvoYOG
+    
+
+
+    Waiting for witness receipts...
+
+
+    Prefix  EGdluYSncX2IGrXQltbI20VZzX-4ZHim-otOImaP1Sk_
+      Public key 1:  DGEpYCWM5l-WrmgtdCc_cghizJpHSCCO7rmGsYq-_EA4
+    
+
+
+    
+    [1m[4m[44m[90m  Initializing Credential Registries  [0m
+    
+
+
+    Waiting for TEL event witness receipts
+
+
+    Sending TEL events to witnesses
+
+
+    Registry:  acme_mgr_registry(EPCdfo7GCMux8P8lrHAjbz-mtNzOj5I9IRX2CIj44K0W) 
+      created for Identifier Prefix:  EGlbqwf3Ga4BvF6VXKlf40PHPKDE9O9Sh2DLYLrq_G8H
+
+
+    Waiting for TEL event witness receipts
+
+
+    Sending TEL events to witnesses
+
+
+    Registry:  employee_access_registry(ECoFStsBpu1oDnXxFsZEcQgTb9o851V7gy7-VEeTMr5_) 
+      created for Identifier Prefix:  EKZJBOcl723F-JnNz8uZNlqhANgto4_0UxLWMSoFO9ly
+
+
+    
+    [1m[94mACME AID: EGlbqwf3Ga4BvF6VXKlf40PHPKDE9O9Sh2DLYLrq_G8H[0m
+    
+    
+    [1m[94mEmployee AID: EKZJBOcl723F-JnNz8uZNlqhANgto4_0UxLWMSoFO9ly[0m
+    
+    
+    [1m[94mSub-contractor AID: EGdluYSncX2IGrXQltbI20VZzX-4ZHim-otOImaP1Sk_[0m
+    
+    
+    [1m[4m[44m[90m  Generating and resolving OOBIs  [0m
+    
+
+
+    http://witness-demo:5642/oobi/EKZJBOcl723F-JnNz8uZNlqhANgto4_0UxLWMSoFO9ly/witness resolved
+
+
+    http://witness-demo:5642/oobi/EGlbqwf3Ga4BvF6VXKlf40PHPKDE9O9Sh2DLYLrq_G8H/witness resolved
+
+
+    http://witness-demo:5642/oobi/EGdluYSncX2IGrXQltbI20VZzX-4ZHim-otOImaP1Sk_/witness resolved
+
+
+    http://witness-demo:5642/oobi/EKZJBOcl723F-JnNz8uZNlqhANgto4_0UxLWMSoFO9ly/witness resolved
+
+
+    
+    [1m[94mOOBI connections established.[0m
+    
+    
+    [1m[42m[90m  You can continue ✅  [0m
+    
+    
+
+
+## Schema Definitions
+
+We need two ACDC schemas:
+- Role Schema (`role_schema.json`): For the credential ACME issues to the Employee.
+- Access Schema (`access_schema.json`): For the credential the Employee issues to the Sub-contractor. This schema will include definitions for an `e` (edges) section to specify the I2I link and an `r` (rules) section.
+
+<div class="alert alert-info">
+<b>ℹ️ NOTE</b><hr>
+For this notebook,the schemas have been SAIDified and made available on a schema server. The SAIDification process was covered in the "SAIDifying ACDC Schemas" notebook.
+
+### Role Schema
+
+This schema defines the structure of the "Role Credential." It has a structure that is rather similar to the other schemas presented so far during the training:
+
+- Filename: `role_schema.json` (content shown SAIDified)
+
+
+```python
+role_schema_path = "config/schemas/role_schema.json" 
+pr_title(f"Schema: {role_schema_path}")
+
+role_schema_said = get_schema_said(role_schema_path)
+pr_message(f"Schema SAID: {role_schema_said}")
+
+pr_message(f"Retieving Schema from Server:")
+!curl -s http://vlei-server:7723/oobi/{role_schema_said} | jq
+
+pr_continue()
+```
+
+    
+    [1m[4m[44m[90m  Schema: config/schemas/role_schema.json  [0m
+    
+    
+    [1m[94mSchema SAID: ENWatfUaeryBqvGnG7VdILVcqk84_eoxmiaJYguJXaRw[0m
+    
+    
+    [1m[94mRetieving Schema from Server:[0m
+    
+    [1;39m{
+      [0m[34;1m"$id"[0m[1;39m: [0m[0;32m"ENWatfUaeryBqvGnG7VdILVcqk84_eoxmiaJYguJXaRw"[0m[1;39m,
+      [0m[34;1m"$schema"[0m[1;39m: [0m[0;32m"http://json-schema.org/draft-07/schema#"[0m[1;39m,
+      [0m[34;1m"title"[0m[1;39m: [0m[0;32m"RoleCredential"[0m[1;39m,
+      [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Credential signifying a role within an organization."[0m[1;39m,
+      [0m[34;1m"type"[0m[1;39m: [0m[0;32m"object"[0m[1;39m,
+      [0m[34;1m"credentialType"[0m[1;39m: [0m[0;32m"RoleCredential"[0m[1;39m,
+      [0m[34;1m"version"[0m[1;39m: [0m[0;32m"1.0.0"[0m[1;39m,
+      [0m[34;1m"properties"[0m[1;39m: [0m[1;39m{
+        [0m[34;1m"v"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Credential Version String"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"d"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Credential SAID"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"u"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"One time use nonce"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"i"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Issuer AID"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"ri"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Registry SAID"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"s"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Schema SAID"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"a"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"oneOf"[0m[1;39m: [0m[1;39m[
+            [1;39m{
+              [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Attributes block SAID"[0m[1;39m,
+              [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+            [1;39m}[0m[1;39m,
+            [1;39m{
+              [0m[34;1m"$id"[0m[1;39m: [0m[0;32m"EFmgKWjhXaH2MYUmlNy5-t8Y6SHZ0InHriOkyAnI4777"[0m[1;39m,
+              [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Attributes block"[0m[1;39m,
+              [0m[34;1m"type"[0m[1;39m: [0m[0;32m"object"[0m[1;39m,
+              [0m[34;1m"properties"[0m[1;39m: [0m[1;39m{
+                [0m[34;1m"d"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Attributes data SAID"[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+                [1;39m}[0m[1;39m,
+                [0m[34;1m"i"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Issuee AID (Employee's AID)"[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+                [1;39m}[0m[1;39m,
+                [0m[34;1m"dt"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Issuance date time"[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m,
+                  [0m[34;1m"format"[0m[1;39m: [0m[0;32m"date-time"[0m[1;39m
+                [1;39m}[0m[1;39m,
+                [0m[34;1m"roleTitle"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"The title of the role."[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+                [1;39m}[0m[1;39m,
+                [0m[34;1m"department"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"The department the employee belongs to."[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+                [1;39m}[0m[1;39m
+              [1;39m}[0m[1;39m,
+              [0m[34;1m"additionalProperties"[0m[1;39m: [0m[0;39mfalse[0m[1;39m,
+              [0m[34;1m"required"[0m[1;39m: [0m[1;39m[
+                [0;32m"d"[0m[1;39m,
+                [0;32m"i"[0m[1;39m,
+                [0;32m"dt"[0m[1;39m,
+                [0;32m"roleTitle"[0m[1;39m,
+                [0;32m"department"[0m[1;39m
+              [1;39m][0m[1;39m
+            [1;39m}[0m[1;39m
+          [1;39m][0m[1;39m
+        [1;39m}[0m[1;39m
+      [1;39m}[0m[1;39m,
+      [0m[34;1m"additionalProperties"[0m[1;39m: [0m[0;39mfalse[0m[1;39m,
+      [0m[34;1m"required"[0m[1;39m: [0m[1;39m[
+        [0;32m"v"[0m[1;39m,
+        [0;32m"d"[0m[1;39m,
+        [0;32m"i"[0m[1;39m,
+        [0;32m"ri"[0m[1;39m,
+        [0;32m"s"[0m[1;39m,
+        [0;32m"a"[0m[1;39m
+      [1;39m][0m[1;39m
+    [1;39m}[0m
+
+
+    
+    [1m[42m[90m  You can continue ✅  [0m
+    
+    
+
+
+### Access Schema
+This schema defines the "Access Credential". It includes an `e` (edges) section for the `I2I` link to the Role Credential and an `r` (rules) section for a usage policy.
+
+Filename: `access_schema.json` (content shown SAIDified)
+
+
+
+```python
+access_schema_path = "config/schemas/access_schema.json" 
+pr_title(f"Schema: {access_schema_path}")
+
+access_schema_said = get_schema_said(access_schema_path)
+pr_message(f"Schema SAID: {access_schema_said}")
+
+pr_message(f"Retieving Schema from Server:")
+!curl -s http://vlei-server:7723/oobi/{access_schema_said} | jq
+
+pr_continue()
+```
+
+    
+    [1m[4m[44m[90m  Schema: config/schemas/access_schema.json  [0m
+    
+    
+    [1m[94mSchema SAID: EF2zX3g5YDyHMSjgsK4OayZMFmLRMxcAJfW363JhBOfD[0m
+    
+    
+    [1m[94mRetieving Schema from Server:[0m
+    
+    [1;39m{
+      [0m[34;1m"$id"[0m[1;39m: [0m[0;32m"EF2zX3g5YDyHMSjgsK4OayZMFmLRMxcAJfW363JhBOfD"[0m[1;39m,
+      [0m[34;1m"$schema"[0m[1;39m: [0m[0;32m"http://json-schema.org/draft-07/schema#"[0m[1;39m,
+      [0m[34;1m"title"[0m[1;39m: [0m[0;32m"AccessCredential"[0m[1;39m,
+      [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Credential granting access to a specific building or area, endorsed by a manager."[0m[1;39m,
+      [0m[34;1m"type"[0m[1;39m: [0m[0;32m"object"[0m[1;39m,
+      [0m[34;1m"credentialType"[0m[1;39m: [0m[0;32m"AccessCredential"[0m[1;39m,
+      [0m[34;1m"version"[0m[1;39m: [0m[0;32m"1.0.0"[0m[1;39m,
+      [0m[34;1m"properties"[0m[1;39m: [0m[1;39m{
+        [0m[34;1m"v"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Credential Version String"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"d"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Credential SAID"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"u"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"One time use nonce"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"i"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Issuer AID (Employee's AID)"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"ri"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Registry SAID"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"s"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Schema SAID"[0m[1;39m,
+          [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"a"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"oneOf"[0m[1;39m: [0m[1;39m[
+            [1;39m{
+              [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Attributes block SAID"[0m[1;39m,
+              [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+            [1;39m}[0m[1;39m,
+            [1;39m{
+              [0m[34;1m"$id"[0m[1;39m: [0m[0;32m"EOxa7LAD2BoA9tk9n0CW4zH7nF91DP1g_Pjz1wC_FuNw"[0m[1;39m,
+              [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Attributes block"[0m[1;39m,
+              [0m[34;1m"type"[0m[1;39m: [0m[0;32m"object"[0m[1;39m,
+              [0m[34;1m"properties"[0m[1;39m: [0m[1;39m{
+                [0m[34;1m"d"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Attributes data SAID"[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+                [1;39m}[0m[1;39m,
+                [0m[34;1m"i"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Issuee AID (Sub-contractor's AID)"[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+                [1;39m}[0m[1;39m,
+                [0m[34;1m"dt"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Issuance date time"[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m,
+                  [0m[34;1m"format"[0m[1;39m: [0m[0;32m"date-time"[0m[1;39m
+                [1;39m}[0m[1;39m,
+                [0m[34;1m"buildingId"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Identifier for the building access is granted to."[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+                [1;39m}[0m[1;39m,
+                [0m[34;1m"accessLevel"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Level of access granted."[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+                [1;39m}[0m[1;39m
+              [1;39m}[0m[1;39m,
+              [0m[34;1m"additionalProperties"[0m[1;39m: [0m[0;39mfalse[0m[1;39m,
+              [0m[34;1m"required"[0m[1;39m: [0m[1;39m[
+                [0;32m"d"[0m[1;39m,
+                [0;32m"i"[0m[1;39m,
+                [0;32m"dt"[0m[1;39m,
+                [0;32m"buildingId"[0m[1;39m,
+                [0;32m"accessLevel"[0m[1;39m
+              [1;39m][0m[1;39m
+            [1;39m}[0m[1;39m
+          [1;39m][0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"e"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"oneOf"[0m[1;39m: [0m[1;39m[
+            [1;39m{
+              [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Edges block SAID"[0m[1;39m,
+              [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+            [1;39m}[0m[1;39m,
+            [1;39m{
+              [0m[34;1m"$id"[0m[1;39m: [0m[0;32m"EI8RvTM23u-pQDK-KpDUBWOKbiOW8fpnzktVVBCLy55N"[0m[1;39m,
+              [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Edges block"[0m[1;39m,
+              [0m[34;1m"type"[0m[1;39m: [0m[0;32m"object"[0m[1;39m,
+              [0m[34;1m"properties"[0m[1;39m: [0m[1;39m{
+                [0m[34;1m"d"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Edges block SAID"[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+                [1;39m}[0m[1;39m,
+                [0m[34;1m"manager_endorsement"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Link to the Manager Credential that endorses this access"[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"object"[0m[1;39m,
+                  [0m[34;1m"properties"[0m[1;39m: [0m[1;39m{
+                    [0m[34;1m"n"[0m[1;39m: [0m[1;39m{
+                      [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Issuer credential SAID"[0m[1;39m,
+                      [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+                    [1;39m}[0m[1;39m,
+                    [0m[34;1m"s"[0m[1;39m: [0m[1;39m{
+                      [0m[34;1m"description"[0m[1;39m: [0m[0;32m"SAID of required schema of the credential pointed to by this node"[0m[1;39m,
+                      [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m,
+                      [0m[34;1m"const"[0m[1;39m: [0m[0;32m"ENWatfUaeryBqvGnG7VdILVcqk84_eoxmiaJYguJXaRw"[0m[1;39m
+                    [1;39m}[0m[1;39m,
+                    [0m[34;1m"o"[0m[1;39m: [0m[1;39m{
+                      [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Operator indicating this node is the issuer"[0m[1;39m,
+                      [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m,
+                      [0m[34;1m"const"[0m[1;39m: [0m[0;32m"I2I"[0m[1;39m
+                    [1;39m}[0m[1;39m
+                  [1;39m}[0m[1;39m,
+                  [0m[34;1m"additionalProperties"[0m[1;39m: [0m[0;39mfalse[0m[1;39m,
+                  [0m[34;1m"required"[0m[1;39m: [0m[1;39m[
+                    [0;32m"n"[0m[1;39m,
+                    [0;32m"s"[0m[1;39m,
+                    [0;32m"o"[0m[1;39m
+                  [1;39m][0m[1;39m
+                [1;39m}[0m[1;39m
+              [1;39m}[0m[1;39m,
+              [0m[34;1m"additionalProperties"[0m[1;39m: [0m[0;39mfalse[0m[1;39m,
+              [0m[34;1m"required"[0m[1;39m: [0m[1;39m[
+                [0;32m"d"[0m[1;39m,
+                [0;32m"manager_endorsement"[0m[1;39m
+              [1;39m][0m[1;39m
+            [1;39m}[0m[1;39m
+          [1;39m][0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"r"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"oneOf"[0m[1;39m: [0m[1;39m[
+            [1;39m{
+              [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Rules block SAID"[0m[1;39m,
+              [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+            [1;39m}[0m[1;39m,
+            [1;39m{
+              [0m[34;1m"$id"[0m[1;39m: [0m[0;32m"EKDmqq14KgthMAV23sCbzgdFFjT-v9x01toUsyfyi2uU"[0m[1;39m,
+              [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Rules governing the use of this access credential."[0m[1;39m,
+              [0m[34;1m"type"[0m[1;39m: [0m[0;32m"object"[0m[1;39m,
+              [0m[34;1m"properties"[0m[1;39m: [0m[1;39m{
+                [0m[34;1m"d"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Rules block SAID"[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m
+                [1;39m}[0m[1;39m,
+                [0m[34;1m"usageDisclaimer"[0m[1;39m: [0m[1;39m{
+                  [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Usage Disclaimer"[0m[1;39m,
+                  [0m[34;1m"type"[0m[1;39m: [0m[0;32m"object"[0m[1;39m,
+                  [0m[34;1m"properties"[0m[1;39m: [0m[1;39m{
+                    [0m[34;1m"l"[0m[1;39m: [0m[1;39m{
+                      [0m[34;1m"description"[0m[1;39m: [0m[0;32m"Associated legal language"[0m[1;39m,
+                      [0m[34;1m"type"[0m[1;39m: [0m[0;32m"string"[0m[1;39m,
+                      [0m[34;1m"const"[0m[1;39m: [0m[0;32m"This mock credential grants no actual access. For illustrative use only."[0m[1;39m
+                    [1;39m}[0m[1;39m
+                  [1;39m}[0m[1;39m
+                [1;39m}[0m[1;39m
+              [1;39m}[0m[1;39m,
+              [0m[34;1m"additionalProperties"[0m[1;39m: [0m[0;39mfalse[0m[1;39m,
+              [0m[34;1m"required"[0m[1;39m: [0m[1;39m[
+                [0;32m"d"[0m[1;39m,
+                [0;32m"usageDisclaimer"[0m[1;39m
+              [1;39m][0m[1;39m
+            [1;39m}[0m[1;39m
+          [1;39m][0m[1;39m
+        [1;39m}[0m[1;39m
+      [1;39m}[0m[1;39m,
+      [0m[34;1m"additionalProperties"[0m[1;39m: [0m[0;39mfalse[0m[1;39m,
+      [0m[34;1m"required"[0m[1;39m: [0m[1;39m[
+        [0;32m"v"[0m[1;39m,
+        [0;32m"d"[0m[1;39m,
+        [0;32m"i"[0m[1;39m,
+        [0;32m"ri"[0m[1;39m,
+        [0;32m"s"[0m[1;39m,
+        [0;32m"a"[0m[1;39m,
+        [0;32m"e"[0m[1;39m,
+        [0;32m"r"[0m[1;39m
+      [1;39m][0m[1;39m
+    [1;39m}[0m
+
+
+    
+    [1m[42m[90m  You can continue ✅  [0m
+    
+    
+
+
+## Resolving Schema OOBIs
+All parties need to resolve the OOBIs for these schemas from the schema server.
+
+
+```python
+pr_title("Resolving schema OOBIs")
+
+role_schema_oobi = f"http://vlei-server:7723/oobi/{role_schema_said}"
+access_schema_oobi = f"http://vlei-server:7723/oobi/{access_schema_said}"
+
+# ACME Corp
+!kli oobi resolve --name {acme_keystore_name} \
+    --oobi-alias "role_schema" \
+    --oobi {role_schema_oobi}
+
+!kli oobi resolve --name {acme_keystore_name} \
+    --oobi-alias "access_schema" \
+    --oobi {access_schema_oobi}
+
+# Employee
+!kli oobi resolve --name {employee_keystore_name} \
+    --oobi-alias "role_schema" --oobi {role_schema_oobi}
+
+!kli oobi resolve --name {employee_keystore_name} \
+    --oobi-alias "access_schema" \
+    --oobi {access_schema_oobi}
+
+# Sub-contractor
+!kli oobi resolve --name {subcontractor_keystore_name} \
+    --oobi-alias "role_schema" \
+    --oobi {role_schema_oobi}
+
+!kli oobi resolve --name {subcontractor_keystore_name} \
+    --oobi-alias "access_schema" \
+    --oobi {access_schema_oobi}
+
+pr_message("Schema OOBIs resolved.")
+pr_continue()
+```
+
+    
+    [1m[4m[44m[90m  Resolving schema OOBIs  [0m
+    
+
+
+    http://vlei-server:7723/oobi/ENWatfUaeryBqvGnG7VdILVcqk84_eoxmiaJYguJXaRw resolved
+
+
+    http://vlei-server:7723/oobi/EF2zX3g5YDyHMSjgsK4OayZMFmLRMxcAJfW363JhBOfD resolved
+
+
+    http://vlei-server:7723/oobi/ENWatfUaeryBqvGnG7VdILVcqk84_eoxmiaJYguJXaRw resolved
+
+
+    http://vlei-server:7723/oobi/EF2zX3g5YDyHMSjgsK4OayZMFmLRMxcAJfW363JhBOfD resolved
+
+
+    http://vlei-server:7723/oobi/ENWatfUaeryBqvGnG7VdILVcqk84_eoxmiaJYguJXaRw resolved
+
+
+    http://vlei-server:7723/oobi/EF2zX3g5YDyHMSjgsK4OayZMFmLRMxcAJfW363JhBOfD resolved
+
+
+    
+    [1m[94mSchema OOBIs resolved.[0m
+    
+    
+    [1m[42m[90m  You can continue ✅  [0m
+    
+    
+
+
+## Issuing credentials
+
+Now that the setup is complete and the schemas are available, its necessary to create the credential chain. 
+
+
+### Step 1: Role Credential Issuance
+
+The Keystores, AIDs, and Credential Registry for ACME Corporation were created during the initial setup. The next step is to create the credential that grants the "Engineering Manager" role to the employee.
+
+**ACME Creates Role Credential Data**
+
+Create a JSON file `role_cred_data.json` with the attributes for this specific credential
+
+
+```python
+pr_title("Creating role credential data")
+
+!echo '{ \
+    "roleTitle": "Engineering Manager", \
+    "department": "Technology Innovations" \
+}' > config/credential_data/role_cred_data.json
+
+!cat config/credential_data/role_cred_data.json | jq
+
+pr_continue()
+```
+
+    
+    [1m[4m[44m[90m  Creating role credential data  [0m
+    
+
+
+    [1;39m{
+      [0m[34;1m"roleTitle"[0m[1;39m: [0m[0;32m"Engineering Manager"[0m[1;39m,
+      [0m[34;1m"department"[0m[1;39m: [0m[0;32m"Technology Innovations"[0m[1;39m
+    [1;39m}[0m
+
+
+    
+    [1m[42m[90m  You can continue ✅  [0m
+    
+    
+
+
+**ACME Issues Role Credential to Employee**
+
+Now that the credential data is in the file the next step is to create the credential with `!kli vc create`
+
+
+```python
+pr_title("Creating Role credential")
+
+issue_time_acme = exec("kli time")
+!kli vc create --name {acme_keystore_name} \
+    --alias {acme_aid_alias} \
+    --registry-name {acme_registry_name} \
+    --schema {role_schema_said} \
+    --recipient {employee_aid_prefix} \
+    --data "@./config/credential_data/role_cred_data.json" \
+    --time {issue_time_acme}
+
+role_credential_said = exec(f"kli vc list --name {acme_keystore_name} --alias {acme_aid_alias} --issued --said --schema {role_schema_said}")
+pr_message(f"Role Credential SAID: {role_credential_said}")
+
+pr_continue()
+```
+
+    
+    [1m[4m[44m[90m  Creating Role credential  [0m
+    
+
+
+    Waiting for TEL event witness receipts
+
+
+    Sending TEL events to witnesses
+
+
+    EEfT-xtk8IdQZsadomUzunO1U7zCUD0FTO1eEKfNTd4r has been created.
+
+
+    
+    [1m[94mRole Credential SAID: EEfT-xtk8IdQZsadomUzunO1U7zCUD0FTO1eEKfNTd4r[0m
+    
+    
+    [1m[42m[90m  You can continue ✅  [0m
+    
+    
+
+
+**IPEX Transfer: ACME Grants, Employee Admits Manager Credential**
+
+Next, perform the IPEX transfer as done in previous ACDC issuance examples. Afterwards, the employee will have the role credential.
+
+
+```python
+pr_title("Transfering credential (ipex grant)")
+
+time = exec("kli time")
+!kli ipex grant --name {acme_keystore_name} \
+    --alias {acme_aid_alias} \
+    --said {role_credential_said} \
+    --recipient {employee_aid_prefix} \
+    --time {time}
+
+pr_title("Admiting credential (ipex grant)")
+# Employee polls for the grant and admits it
+employee_grant_msg_said = exec(f"kli ipex list --name {employee_keystore_name} --alias {employee_aid_alias} --poll --said")
+time = exec("kli time")
+!kli ipex admit --name {employee_keystore_name} \
+    --alias {employee_aid_alias} \
+    --said {employee_grant_msg_said} \
+    --time {time}
+
+# Employee lists the received credential
+pr_message("\nEmployee's received Manager Credential:")
+!kli vc list --name {employee_keystore_name} \
+    --alias {employee_aid_alias} \
+    --verbose
+
+pr_continue()
+```
+
+    
+    [1m[4m[44m[90m  Transfering credential (ipex grant)  [0m
+    
+
+
+    Sending message EE1wNop_RImEpqJWcSbK_-CllXXC3QR1aq_OnP4925Th to EKZJBOcl723F-JnNz8uZNlqhANgto4_0UxLWMSoFO9ly
+
+
+    ... grant message sent
+
+
+    
+    [1m[4m[44m[90m  Admiting credential (ipex grant)  [0m
+    
+
+
+    Sending admit message to EGlbqwf3Ga4BvF6VXKlf40PHPKDE9O9Sh2DLYLrq_G8H
+
+
+    ... admit message sent
+
+
+    
+    [1m[94m
+    Employee's received Manager Credential:[0m
+    
+
+
+    Current received credentials for employee (EKZJBOcl723F-JnNz8uZNlqhANgto4_0UxLWMSoFO9ly):
+    
+    Credential #1: EEfT-xtk8IdQZsadomUzunO1U7zCUD0FTO1eEKfNTd4r
+        Type: RoleCredential
+        Status: Issued [92m✔[0m
+        Issued by EGlbqwf3Ga4BvF6VXKlf40PHPKDE9O9Sh2DLYLrq_G8H
+        Issued on 2025-06-05T22:23:08.052322+00:00
+        Full Credential:
+      {
+        "v": "ACDC10JSON0001c2_",
+        "d": "EEfT-xtk8IdQZsadomUzunO1U7zCUD0FTO1eEKfNTd4r",
+        "i": "EGlbqwf3Ga4BvF6VXKlf40PHPKDE9O9Sh2DLYLrq_G8H",
+        "ri": "EPCdfo7GCMux8P8lrHAjbz-mtNzOj5I9IRX2CIj44K0W",
+        "s": "ENWatfUaeryBqvGnG7VdILVcqk84_eoxmiaJYguJXaRw",
+        "a": {
+          "d": "EPomGK9qOAiFFBCi8SZK7981gVA2zrBF_h3L0dFhP3lL",
+          "i": "EKZJBOcl723F-JnNz8uZNlqhANgto4_0UxLWMSoFO9ly",
+          "dt": "2025-06-05T22:23:08.052322+00:00",
+          "roleTitle": "Engineering Manager",
+          "department": "Technology Innovations"
+        }
+      }
+
+
+    
+    [1m[42m[90m  You can continue ✅  [0m
+    
+    
+
+
+### Step 2: Access Credential Data blocks
+
+The Employee, now holding the "Role Credential", issues the "Access Credential" to the Sub-contractor. This new credential will link to the Manager Credential via an `I2I` edge and include a "Usage Disclaimer" rule. For this is necessary to create JSON files for the attributes (`access_cred_data.json`), the edge (`access_cred_edge.json`), and the rule (`access_cred_rule.json`). The attributes, edges, and rules blocks are displayed below.
+
+
+#### Attributes Data
+
+Generic mock data to represent an access claim.
+
+
+```python
+pr_message("Acces Credential Attributes")
+
+access_cred_data_file_path = "config/credential_data/access_cred_data.json"
+
+access_data = {
+    "buildingId": "HQ-EastWing", 
+    "accessLevel": "Level 2 - Common Areas & Labs" 
+}
+
+with open(access_cred_data_file_path, 'w') as f:
+    json.dump(access_data, f, indent=4)
+
+!cat {access_cred_data_file_path} | jq
+
+```
+
+    
+    [1m[94mAcces Credential Attributes[0m
+    
+    [1;39m{
+      [0m[34;1m"buildingId"[0m[1;39m: [0m[0;32m"HQ-EastWing"[0m[1;39m,
+      [0m[34;1m"accessLevel"[0m[1;39m: [0m[0;32m"Level 2 - Common Areas & Labs"[0m[1;39m
+    [1;39m}[0m
+
+
+#### Edge Data and SAID Calculation
+
+When creating the Edge Data, the `manager_endorsement` edge is defined to link to the SAID of the `role_credential_said` (the credential issued by ACME to the Employee). The schema SAID `s` for this edge points to `role_schema_said`, and the operator `o` is set to `I2I`.
+
+To make this edge block verifiable, the `!kli saidify --file` command is used. When this command is executed, KERI processes the JSON content of the specified file and calculates a Self-Addressing Identifier (SAID) for its entire content. Crucially, the command then modifies the input file in place:
+- It adds (or updates, if already present) a top-level field named `d` within the JSON structure of the file.
+- The value of this `d` field is set to the newly calculated SAID.
+
+
+```python
+pr_message("Acces Credential Edges")
+
+access_cred_edge_file_path = "config/credential_data/access_cred_edge.json"
+
+access_edge = {
+    "d": "",
+    "manager_endorsement": {
+        "n": role_credential_said,
+        "s": role_schema_said,
+        "o": "I2I"
+    }
+}
+
+with open(access_cred_edge_file_path, 'w') as f:
+    json.dump(access_edge, f, indent=4)
+
+!kli saidify --file {access_cred_edge_file_path}
+
+!cat {access_cred_edge_file_path} | jq
+
+```
+
+    
+    [1m[94mAcces Credential Edges[0m
+    
+
+
+    [1;39m{
+      [0m[34;1m"d"[0m[1;39m: [0m[0;32m"EDRQ1Kp1Bf2byY8r0ZU8AvSon-WdrO9-vOG7_3eIH0Or"[0m[1;39m,
+      [0m[34;1m"manager_endorsement"[0m[1;39m: [0m[1;39m{
+        [0m[34;1m"n"[0m[1;39m: [0m[0;32m"EEfT-xtk8IdQZsadomUzunO1U7zCUD0FTO1eEKfNTd4r"[0m[1;39m,
+        [0m[34;1m"s"[0m[1;39m: [0m[0;32m"ENWatfUaeryBqvGnG7VdILVcqk84_eoxmiaJYguJXaRw"[0m[1;39m,
+        [0m[34;1m"o"[0m[1;39m: [0m[0;32m"I2I"[0m[1;39m
+      [1;39m}[0m[1;39m
+    [1;39m}[0m
+
+
+#### Rule Data
+
+The rule section `usageDisclaimer` contains a simple legal disclaimer. Take notice that this data block is also SAIDified.
+
+
+```python
+pr_message("Acces Credential Rules")
+
+access_cred_rule_file_path = "config/credential_data/access_cred_rule.json"
+
+access_rule = {
+  "d": "",
+  "usageDisclaimer": {
+    "l": "This mock credential grants no actual access. For illustrative use only."
+  }
+}
+
+with open(access_cred_rule_file_path, 'w') as f:
+    json.dump(access_rule, f, indent=4)
+
+!kli saidify --file {access_cred_rule_file_path}
+
+!cat {access_cred_rule_file_path} | jq
+
+```
+
+    
+    [1m[94mAcces Credential Rules[0m
+    
+
+
+    [1;39m{
+      [0m[34;1m"d"[0m[1;39m: [0m[0;32m"EGVMk928-Fz4DK2NSvZgtG0JJrMlrpxvuxBKPvFxfPSQ"[0m[1;39m,
+      [0m[34;1m"usageDisclaimer"[0m[1;39m: [0m[1;39m{
+        [0m[34;1m"l"[0m[1;39m: [0m[0;32m"This mock credential grants no actual access. For illustrative use only."[0m[1;39m
+      [1;39m}[0m[1;39m
+    [1;39m}[0m
+
+
+### Step3: Employee Creates Access Credential for Sub-contractor
+
+Now, the Employee uses `kli vc create` with the attributes, SAIDified edges, and SAIDified rules files to issue the Access Credential. Notice the additional parameters `--edges` and `rules` to supply the data blocks to the command.
+
+
+```python
+time = exec("kli time")
+!kli vc create --name {employee_keystore_name} \
+    --alias {employee_aid_alias} \
+    --registry-name {employee_registry_name} \
+    --schema {access_schema_said} \
+    --recipient {subcontractor_aid_alias} \
+    --data  "@./config/credential_data/access_cred_data.json" \
+    --edges "@./config/credential_data/access_cred_edge.json" \
+    --rules "@./config/credential_data/access_cred_rule.json" \
+    --time {time}
+
+access_credential_said = exec(f"kli vc list --name {employee_keystore_name} --alias {employee_aid_alias} --issued --said --schema {access_schema_said}")
+pr_message(f"Access Credential SAID: {access_credential_said}")
+
+pr_continue()
+
+```
+
+    Waiting for TEL event witness receipts
+
+
+    Sending TEL events to witnesses
+
+
+    EKUsRCZXkEXFy3mXESZAsJ8WOoP6eiOYgJU8GlCnBEV9 has been created.
+
+
+    
+    [1m[94mAccess Credential SAID: EKUsRCZXkEXFy3mXESZAsJ8WOoP6eiOYgJU8GlCnBEV9[0m
+    
+    
+    [1m[42m[90m  You can continue ✅  [0m
+    
+    
+
+
+### Step 4: Employee Grants, Sub-contractor Admits Access Credential
+
+
+```python
+pr_title("Transfering Access Credential from Employee to Sub-contractor")
+
+time = exec("kli time")
+!kli ipex grant --name {employee_keystore_name} \
+    --alias {employee_aid_alias} \
+    --said {access_credential_said} \
+    --recipient {subcontractor_aid_prefix} \
+    --time {time}
+
+pr_title("Sub-contractor admitting Access Credential")
+# Sub-contractor polls for the grant and admits it
+subcontractor_grant_msg_said = exec(f"kli ipex list --name {subcontractor_keystore_name} --alias {subcontractor_aid_alias} --poll --said")
+time = exec("kli time")
+!kli ipex admit --name {subcontractor_keystore_name} \
+    --alias {subcontractor_aid_alias} \
+    --said {subcontractor_grant_msg_said} \
+    --time {time}
+
+# Sub-contractor lists the received credential
+pr_message("\nSub-contractor's received Access Credential:")
+!kli vc list --name {subcontractor_keystore_name} \
+    --alias {subcontractor_aid_alias} \
+    --verbose
+
+pr_continue()
+```
+
+    
+    [1m[4m[44m[90m  Transfering Access Credential from Employee to Sub-contractor  [0m
+    
+
+
+    Sending message EOQnVV8GLD6isYgqHjaA9ohuSUCDujgMgaPlvCxHIJb3 to EGdluYSncX2IGrXQltbI20VZzX-4ZHim-otOImaP1Sk_
+
+
+    ... grant message sent
+
+
+    
+    [1m[4m[44m[90m  Sub-contractor admitting Access Credential  [0m
+    
+
+
+    Sending admit message to EKZJBOcl723F-JnNz8uZNlqhANgto4_0UxLWMSoFO9ly
+
+
+    ... admit message sent
+
+
+    
+    [1m[94m
+    Sub-contractor's received Access Credential:[0m
+    
+
+
+    Current received credentials for subcontractor (EGdluYSncX2IGrXQltbI20VZzX-4ZHim-otOImaP1Sk_):
+    
+    Credential #1: EKUsRCZXkEXFy3mXESZAsJ8WOoP6eiOYgJU8GlCnBEV9
+        Type: AccessCredential
+        Status: Issued [92m✔[0m
+        Issued by EKZJBOcl723F-JnNz8uZNlqhANgto4_0UxLWMSoFO9ly
+        Issued on 2025-06-05T22:23:24.095891+00:00
+        Full Credential:
+      {
+        "v": "ACDC10JSON000320_",
+        "d": "EKUsRCZXkEXFy3mXESZAsJ8WOoP6eiOYgJU8GlCnBEV9",
+        "i": "EKZJBOcl723F-JnNz8uZNlqhANgto4_0UxLWMSoFO9ly",
+        "ri": "ECoFStsBpu1oDnXxFsZEcQgTb9o851V7gy7-VEeTMr5_",
+        "s": "EF2zX3g5YDyHMSjgsK4OayZMFmLRMxcAJfW363JhBOfD",
+        "a": {
+          "d": "EFlWyQZhutX7a8p8xC-0QEmvWzSj7vOEpqgU1ePjVK5v",
+          "i": "EGdluYSncX2IGrXQltbI20VZzX-4ZHim-otOImaP1Sk_",
+          "dt": "2025-06-05T22:23:24.095891+00:00",
+          "buildingId": "HQ-EastWing",
+          "accessLevel": "Level 2 - Common Areas & Labs"
+        },
+        "e": {
+          "d": "EDRQ1Kp1Bf2byY8r0ZU8AvSon-WdrO9-vOG7_3eIH0Or",
+          "manager_endorsement": {
+            "n": "EEfT-xtk8IdQZsadomUzunO1U7zCUD0FTO1eEKfNTd4r",
+            "s": "ENWatfUaeryBqvGnG7VdILVcqk84_eoxmiaJYguJXaRw",
+            "o": "I2I"
+          }
+        },
+        "r": {
+          "d": "EGVMk928-Fz4DK2NSvZgtG0JJrMlrpxvuxBKPvFxfPSQ",
+          "usageDisclaimer": {
+            "l": "This mock credential grants no actual access. For illustrative use only."
+          }
+        }
+      }
+
+
+    
+    [1m[42m[90m  You can continue ✅  [0m
+    
+
+
+    
+
+
+The output for the Sub-contractor's received AccessCredential clearly shows:
+- The attributes (`a` section) for building access.
+- The edge (`e` section) with manager_endorsement linking to the RoleCredential's SAID (`n`) and using the `I2I` operator (`o`).
+- The rule (`r` section) with the `usageDisclaimer`.
+
 <div class="alert alert-primary">
-  <b>📝 SUMMARY</b><hr>
-  
+<b>📝 SUMMARY</b><hr>
+This notebook demonstrated the creation of a chained ACDC relationship using an Issuer-To-Issuee (I2I) edge and the inclusion of a rule:
+<ol>
+<li><b>Initial Setup:</b> Keystores, AIDs (ACME, Employee, Sub-contractor), and credential registries (for ACME and Employee) were initialized. OOBI connections were established between relevant parties.</li>
+<li><b>Schema Preparation:</b> Two schemas, role_schema.json (for ACME to Employee) and access_schema.json (for Employee to Sub-contractor), were defined. The access_schema.json included definitions for an e (edges) section and an r (rules) section. Both schemas were assumed to be SAIDified and resolvable via a schema server.</li>
+<li><b>Role Credential Issuance (ACME to Employee):</b>
+<ul>
+<li>ACME created data for the Role Credential.</li>
+<li>ACME issued the Role Credential to the Employee's AID using <code>kli vc create</code>.</li>
+<li>The Role Credential was transferred to the Employee via IPEX (<code>kli ipex grant</code> from ACME, <code>kli ipex admit</code> by Employee).</li>
+</ul>
+</li>
+<li><b>Access Credential Issuance (Employee to Sub-contractor):</b>
+<ul>
+<li>The Employee created data for the Access Credential attributes.</li>
+<li>A separate JSON file for the <b>edge</b> was created. This edge (<code>manager_endorsement</code>) pointed to the SAID of the Role Credential received by the Employee (<code>role_credential_said</code>), specified the Role Credential's schema SAID, and used the <code>"o": "I2I"</code> operator. This edge file was SAIDified using <code>kli saidify --file</code>, which populates its <code>d</code> field.</li>
+<li>A separate JSON file for the <b>rule</b> (<code>usageDisclaimer</code>) was created and SAIDified using <code>kli saidify --file</code>.</li>
+<li>The Employee issued the Access Credential to the Sub-contractor's AID using <code>kli vc create</code>, referencing the attributes data file, the SAIDified edge file (<code>--edges</code>), and the SAIDified rule file (<code>--rules</code>).</li>
+<li>The Access Credential was transferred to the Sub-contractor via IPEX.</li>
+</ul>
+</li>
+<li><b>Verification:</b> The Sub-contractor's received Access Credential clearly displayed the attributes, the I2I edge linking to the Employee's Role Credential, and the embedded rule.</li>
+</ol>
+This process illustrates how KERI and ACDC can model real-world endorsement scenarios where the authority to issue a credential is derived from another, verifiable credential held by the issuer, and how additional conditions can be embedded using rules.
 </div>
 
 <!-- Source: 101_85_ACDC_Chained_Credentials_NI2I.md -->
@@ -5439,7 +6428,10 @@ ACDC Edges (<code>e</code> section) link ACDCs, with Edge Operators defining rel
 
 <div class="alert alert-primary">
   <b>🎯 OBJECTIVE</b><hr>
-
+<div class="alert alert-primary">
+<b>🎯 OBJECTIVE</b><hr>
+Demonstrate the issuance of an ACDC that utilizes a Not-Issuer-To-Issuee (NI2I) edge, illustrating how the current ACDC references another for context without implying the issuer is the issuee of the linked ACDC.
+</div>
 </div>
 
 <div class="alert alert-primary">
@@ -5621,7 +6613,7 @@ console.log('Using Passcode (bran):', bran);
     SignifyClient instance created.
 
 
-    Using Passcode (bran): C1WD4N5K5qoovdB_Mp6p9
+    Using Passcode (bran): BApT9i2XsUns6384Hm-gi
 
 
 <div class="alert alert-info">
@@ -5678,25 +6670,25 @@ console.log('Agent AID Delegator:', state.agent.di); // Should be the Client AID
     -------------------------
 
 
-    Client AID Prefix:  EGy50CruzvlE_E4tdzQl22ycLSTAZQR8PqygPT9yYfzf
+    Client AID Prefix:  EEQA_wP3T-k_Dk4J95HfAgenIMPpu3LoO6UmjvvJtOLx
 
 
-    Client AID Keys:    [ [32m"DIOOCc4UlRPN9Wry5a0POEMyjxouJFcDBHnJCIk5CyTk"[39m ]
+    Client AID Keys:    [ [32m"DMpZZV2qGCIL6QQcLBXlagK8xgIUhZLZgu6fUdHfXSuS"[39m ]
 
 
-    Client AID Next Keys Digest:  [ [32m"EAuuqjV6pvECpRJdHCU5NkSaNSYLZuaOcckoGN3fbd30"[39m ]
+    Client AID Next Keys Digest:  [ [32m"EHf2IvFcKcVcj6ldr-xg8-B35QTanqRj4x6X7fLTyzaj"[39m ]
 
 
     
 
 
-    Agent AID Prefix:    EBDgKlsReAaSA3Kr5MHb3B7u30l8hHhvl6j-Njr4vCdJ
+    Agent AID Prefix:    EChGpccHrvgi4VPdENasgLNxBrS-LZzdeCnvnn2N3pr4
 
 
     Agent AID Type:      dip
 
 
-    Agent AID Delegator: EGy50CruzvlE_E4tdzQl22ycLSTAZQR8PqygPT9yYfzf
+    Agent AID Delegator: EEQA_wP3T-k_Dk4J95HfAgenIMPpu3LoO6UmjvvJtOLx
 
 
 **Output Explanation:**
@@ -5747,13 +6739,13 @@ console.log('Agent AID Delegator:', state2.agent.di); // Should be the same Clie
     ---------------------------
 
 
-    Client AID Prefix:   EGy50CruzvlE_E4tdzQl22ycLSTAZQR8PqygPT9yYfzf
+    Client AID Prefix:   EEQA_wP3T-k_Dk4J95HfAgenIMPpu3LoO6UmjvvJtOLx
 
 
-    Agent AID Prefix:    EBDgKlsReAaSA3Kr5MHb3B7u30l8hHhvl6j-Njr4vCdJ
+    Agent AID Prefix:    EChGpccHrvgi4VPdENasgLNxBrS-LZzdeCnvnn2N3pr4
 
 
-    Agent AID Delegator: EGy50CruzvlE_E4tdzQl22ycLSTAZQR8PqygPT9yYfzf
+    Agent AID Delegator: EEQA_wP3T-k_Dk4J95HfAgenIMPpu3LoO6UmjvvJtOLx
 
 
 <div class="alert alert-primary">
@@ -5821,8 +6813,8 @@ console.log(inceptionOperation);
 
 
     {
-      name: [32m"witness.EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c"[39m,
-      metadata: { pre: [32m"EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c"[39m, sn: [33m0[39m },
+      name: [32m"witness.ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI"[39m,
+      metadata: { pre: [32m"ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI"[39m, sn: [33m0[39m },
       done: [33mfalse[39m,
       error: [1mnull[22m,
       response: [1mnull[22m
@@ -5868,20 +6860,20 @@ console.log(`Witnesses specified: ${JSON.stringify(newAidInceptionEvent.b)}`);
 
 
     {
-      name: [32m"witness.EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c"[39m,
-      metadata: { pre: [32m"EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c"[39m, sn: [33m0[39m },
+      name: [32m"witness.ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI"[39m,
+      metadata: { pre: [32m"ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI"[39m, sn: [33m0[39m },
       done: [33mtrue[39m,
       error: [1mnull[22m,
       response: {
         v: [32m"KERI10JSON0001b7_"[39m,
         t: [32m"icp"[39m,
-        d: [32m"EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c"[39m,
-        i: [32m"EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c"[39m,
+        d: [32m"ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI"[39m,
+        i: [32m"ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI"[39m,
         s: [32m"0"[39m,
         kt: [32m"1"[39m,
-        k: [ [32m"DFg0XKcOYNByPQxeLJJLkQbcp6PCrw9Ok0_KjvVuExLD"[39m ],
+        k: [ [32m"DOh50oA_ktyrDpUQuuN9pw0_DsFwor7SGyMtMGyGTuBY"[39m ],
         nt: [32m"1"[39m,
-        n: [ [32m"EEYOcoApbjh470lF3oW9d1rd-T2t6Rf7FcaN8svFIptE"[39m ],
+        n: [ [32m"ELl0a5Sp0RQalHP2XZvqssJ1mET6iN9VLPIpTVRJEJU3"[39m ],
         bt: [32m"2"[39m,
         b: [
           [32m"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"[39m,
@@ -5895,7 +6887,7 @@ console.log(`Witnesses specified: ${JSON.stringify(newAidInceptionEvent.b)}`);
 
 
     
-    Successfully created AID with prefix: EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c
+    Successfully created AID with prefix: ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI
 
 
     Witnesses specified: ["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM","BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX"]
@@ -5932,9 +6924,9 @@ console.log(JSON.stringify(operationsList, null, 2));
 
     [
       {
-        "name": "witness.EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c",
+        "name": "witness.ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI",
         "metadata": {
-          "pre": "EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c",
+          "pre": "ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI",
           "sn": 0
         },
         "done": true,
@@ -5942,16 +6934,16 @@ console.log(JSON.stringify(operationsList, null, 2));
         "response": {
           "v": "KERI10JSON0001b7_",
           "t": "icp",
-          "d": "EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c",
-          "i": "EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c",
+          "d": "ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI",
+          "i": "ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI",
           "s": "0",
           "kt": "1",
           "k": [
-            "DFg0XKcOYNByPQxeLJJLkQbcp6PCrw9Ok0_KjvVuExLD"
+            "DOh50oA_ktyrDpUQuuN9pw0_DsFwor7SGyMtMGyGTuBY"
           ],
           "nt": "1",
           "n": [
-            "EEYOcoApbjh470lF3oW9d1rd-T2t6Rf7FcaN8svFIptE"
+            "ELl0a5Sp0RQalHP2XZvqssJ1mET6iN9VLPIpTVRJEJU3"
           ],
           "bt": "2",
           "b": [
@@ -5977,7 +6969,7 @@ console.log(`\nDeleted operation: ${opNameToDelete}`);
 ```
 
     
-    Deleted operation: witness.EKFj1FVb9deU-fAm94I-tx0qomV2kezIBDra6Blg_e1c
+    Deleted operation: witness.ED59PgemGUWacYFLvChmn-J3cQtMGi1HKHiJJpKRXOnI
 
 
 <div class="alert alert-primary">
@@ -6079,8 +7071,8 @@ await clientB.operations().delete(BInceptionOperation.name);
 console.log(`Client A AID Pre: ${aidA.i}\nClient B AID Pre: ${aidB.i}`)
 ```
 
-    Client A AID Pre: EF3amv_TdT60MIZDjsNKjtDGzqljq9-1TkpzipRRFWAP
-    Client B AID Pre: EHtWV0lIqejGwtanN_ArPXdjn_DxDFDF9exx5DAEIMCf
+    Client A AID Pre: ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn
+    Client B AID Pre: EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS
 
 
 <div class="alert alert-info">
@@ -6143,10 +7135,10 @@ console.log(`Client B: Assigned '${agentRole}' role to KERIA Agent ${clientB.age
 
 ```
 
-    Client A: Assigned 'agent' role to KERIA Agent EPCGywnfSg2wYIpe9MJMeEm06vrDdiwreZpSR_WzhuDi for AID EF3amv_TdT60MIZDjsNKjtDGzqljq9-1TkpzipRRFWAP
+    Client A: Assigned 'agent' role to KERIA Agent ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX for AID ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn
 
 
-    Client B: Assigned 'agent' role to KERIA Agent EB0PfSwfCwxW0jh8Sm3_5rKHk0L5uJYO1qbjV3kH63v4 for AID EHtWV0lIqejGwtanN_ArPXdjn_DxDFDF9exx5DAEIMCf
+    Client B: Assigned 'agent' role to KERIA Agent EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h for AID EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS
 
 
 ## Discovery via OOBIs
@@ -6178,10 +7170,10 @@ console.log(`Client B (Betty) generated OOBI for aidB: ${oobiB_url}`);
 
 ```
 
-    Client A (Alfred) generated OOBI for aidA: http://keria:3902/oobi/EF3amv_TdT60MIZDjsNKjtDGzqljq9-1TkpzipRRFWAP/agent/EPCGywnfSg2wYIpe9MJMeEm06vrDdiwreZpSR_WzhuDi
+    Client A (Alfred) generated OOBI for aidA: http://keria:3902/oobi/ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn/agent/ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX
 
 
-    Client B (Betty) generated OOBI for aidB: http://keria:3902/oobi/EHtWV0lIqejGwtanN_ArPXdjn_DxDFDF9exx5DAEIMCf/agent/EB0PfSwfCwxW0jh8Sm3_5rKHk0L5uJYO1qbjV3kH63v4
+    Client B (Betty) generated OOBI for aidB: http://keria:3902/oobi/EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS/agent/EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h
 
 
 ### Resolving OOBI URLs
@@ -6252,11 +7244,11 @@ console.log(BContacts);
     [
       {
         alias: [32m"Betty_Contact_for_Alfred"[39m,
-        oobi: [32m"http://keria:3902/oobi/EHtWV0lIqejGwtanN_ArPXdjn_DxDFDF9exx5DAEIMCf/agent/EB0PfSwfCwxW0jh8Sm3_5rKHk0L5uJYO1qbjV3kH63v4"[39m,
-        id: [32m"EHtWV0lIqejGwtanN_ArPXdjn_DxDFDF9exx5DAEIMCf"[39m,
+        oobi: [32m"http://keria:3902/oobi/EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS/agent/EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h"[39m,
+        id: [32m"EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS"[39m,
         ends: {
           agent: {
-            EB0PfSwfCwxW0jh8Sm3_5rKHk0L5uJYO1qbjV3kH63v4: { http: [32m"http://keria:3902/"[39m }
+            [32m"EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h"[39m: { http: [32m"http://keria:3902/"[39m }
           },
           witness: {
             [32m"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"[39m: {
@@ -6282,11 +7274,11 @@ console.log(BContacts);
     [
       {
         alias: [32m"Alfred_Contact_for_Betty"[39m,
-        oobi: [32m"http://keria:3902/oobi/EF3amv_TdT60MIZDjsNKjtDGzqljq9-1TkpzipRRFWAP/agent/EPCGywnfSg2wYIpe9MJMeEm06vrDdiwreZpSR_WzhuDi"[39m,
-        id: [32m"EF3amv_TdT60MIZDjsNKjtDGzqljq9-1TkpzipRRFWAP"[39m,
+        oobi: [32m"http://keria:3902/oobi/ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn/agent/ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX"[39m,
+        id: [32m"ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn"[39m,
         ends: {
           agent: {
-            EPCGywnfSg2wYIpe9MJMeEm06vrDdiwreZpSR_WzhuDi: { http: [32m"http://keria:3902/"[39m }
+            ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX: { http: [32m"http://keria:3902/"[39m }
           },
           witness: {
             [32m"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"[39m: {
@@ -6345,22 +7337,22 @@ console.log("Client B's challenge words for Alfred:", challengeWordsB.words);
 ```
 
     Client A's challenge words for Betty: [
-      [32m"hood"[39m,     [32m"gown"[39m,
-      [32m"scatter"[39m,  [32m"cable"[39m,
-      [32m"level"[39m,    [32m"false"[39m,
-      [32m"sentence"[39m, [32m"enroll"[39m,
-      [32m"snap"[39m,     [32m"fly"[39m,
-      [32m"budget"[39m,   [32m"bring"[39m
+      [32m"myself"[39m,   [32m"abandon"[39m,
+      [32m"dinner"[39m,   [32m"silly"[39m,
+      [32m"luxury"[39m,   [32m"despair"[39m,
+      [32m"increase"[39m, [32m"blossom"[39m,
+      [32m"federal"[39m,  [32m"luxury"[39m,
+      [32m"rabbit"[39m,   [32m"usual"[39m
     ]
 
 
     Client B's challenge words for Alfred: [
-      [32m"inherit"[39m,  [32m"okay"[39m,
-      [32m"elbow"[39m,    [32m"episode"[39m,
-      [32m"canal"[39m,    [32m"wrestle"[39m,
-      [32m"ribbon"[39m,   [32m"fortune"[39m,
-      [32m"favorite"[39m, [32m"correct"[39m,
-      [32m"relief"[39m,   [32m"photo"[39m
+      [32m"umbrella"[39m, [32m"favorite"[39m,
+      [32m"person"[39m,   [32m"entire"[39m,
+      [32m"two"[39m,      [32m"tooth"[39m,
+      [32m"begin"[39m,    [32m"all"[39m,
+      [32m"behave"[39m,   [32m"slim"[39m,
+      [32m"vibrant"[39m,  [32m"under"[39m
     ]
 
 
@@ -6410,7 +7402,7 @@ console.log(AContactsAfterAuth)
 ```
 
     
-    Betty (aidB: EHtWV0lIqejGwtanN_ArPXdjn_DxDFDF9exx5DAEIMCf) responding to Alfred's (aidA: EF3amv_TdT60MIZDjsNKjtDGzqljq9-1TkpzipRRFWAP) challenge...
+    Betty (aidB: EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS) responding to Alfred's (aidA: ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn) challenge...
 
 
     Betty's response sent.
@@ -6420,7 +7412,7 @@ console.log(AContactsAfterAuth)
     Alfred (aidA) verifying Betty's (aidB) response...
 
 
-    Alfred: Betty's response verified. SAID of exn: EKlk7aI3pzn1vUokeYT7kYaOMxMZtVRs64F-wxGJ2X3L
+    Alfred: Betty's response verified. SAID of exn: EP_IBY5H9_7TvQzdkx5ekGerGXRb485SzAWm9W6Pgcya
 
 
     Alfred: Marked Betty's contact as authenticated.
@@ -6429,11 +7421,11 @@ console.log(AContactsAfterAuth)
     [
       {
         alias: [32m"Betty_Contact_for_Alfred"[39m,
-        oobi: [32m"http://keria:3902/oobi/EHtWV0lIqejGwtanN_ArPXdjn_DxDFDF9exx5DAEIMCf/agent/EB0PfSwfCwxW0jh8Sm3_5rKHk0L5uJYO1qbjV3kH63v4"[39m,
-        id: [32m"EHtWV0lIqejGwtanN_ArPXdjn_DxDFDF9exx5DAEIMCf"[39m,
+        oobi: [32m"http://keria:3902/oobi/EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS/agent/EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h"[39m,
+        id: [32m"EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS"[39m,
         ends: {
           agent: {
-            EB0PfSwfCwxW0jh8Sm3_5rKHk0L5uJYO1qbjV3kH63v4: { http: [32m"http://keria:3902/"[39m }
+            [32m"EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h"[39m: { http: [32m"http://keria:3902/"[39m }
           },
           witness: {
             [32m"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"[39m: {
@@ -6452,16 +7444,16 @@ console.log(AContactsAfterAuth)
         },
         challenges: [
           {
-            dt: [32m"2025-06-04T15:04:33.451000+00:00"[39m,
+            dt: [32m"2025-06-05T22:23:51.289000+00:00"[39m,
             words: [
-              [32m"hood"[39m,     [32m"gown"[39m,
-              [32m"scatter"[39m,  [32m"cable"[39m,
-              [32m"level"[39m,    [32m"false"[39m,
-              [32m"sentence"[39m, [32m"enroll"[39m,
-              [32m"snap"[39m,     [32m"fly"[39m,
-              [32m"budget"[39m,   [32m"bring"[39m
+              [32m"myself"[39m,   [32m"abandon"[39m,
+              [32m"dinner"[39m,   [32m"silly"[39m,
+              [32m"luxury"[39m,   [32m"despair"[39m,
+              [32m"increase"[39m, [32m"blossom"[39m,
+              [32m"federal"[39m,  [32m"luxury"[39m,
+              [32m"rabbit"[39m,   [32m"usual"[39m
             ],
-            said: [32m"EKlk7aI3pzn1vUokeYT7kYaOMxMZtVRs64F-wxGJ2X3L"[39m,
+            said: [32m"EP_IBY5H9_7TvQzdkx5ekGerGXRb485SzAWm9W6Pgcya"[39m,
             authenticated: [33mtrue[39m
           }
         ],
@@ -6512,7 +7504,7 @@ console.log(BContactsAfterAuth);
 ```
 
     
-    Alfred (aidA: EF3amv_TdT60MIZDjsNKjtDGzqljq9-1TkpzipRRFWAP) responding to Betty's (aidB: EHtWV0lIqejGwtanN_ArPXdjn_DxDFDF9exx5DAEIMCf) challenge...
+    Alfred (aidA: ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn) responding to Betty's (aidB: EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS) challenge...
 
 
     Alfred's response sent.
@@ -6522,7 +7514,7 @@ console.log(BContactsAfterAuth);
     Betty (aidB) verifying Alfred's (aidA) response...
 
 
-    Betty: Alfred's response verified. SAID of exn: EGG2ygr-T5YAfa73R3wOAsTPMsR9tAkRZj1__6Jy18Ca
+    Betty: Alfred's response verified. SAID of exn: EFfTZfIUwyOyNp-tMHtQJ3OSLqyiB_oiR-fmAxYeOpir
 
 
     Betty: Marked Alfred's contact as authenticated.
@@ -6531,11 +7523,11 @@ console.log(BContactsAfterAuth);
     [
       {
         alias: [32m"Alfred_Contact_for_Betty"[39m,
-        oobi: [32m"http://keria:3902/oobi/EF3amv_TdT60MIZDjsNKjtDGzqljq9-1TkpzipRRFWAP/agent/EPCGywnfSg2wYIpe9MJMeEm06vrDdiwreZpSR_WzhuDi"[39m,
-        id: [32m"EF3amv_TdT60MIZDjsNKjtDGzqljq9-1TkpzipRRFWAP"[39m,
+        oobi: [32m"http://keria:3902/oobi/ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn/agent/ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX"[39m,
+        id: [32m"ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn"[39m,
         ends: {
           agent: {
-            EPCGywnfSg2wYIpe9MJMeEm06vrDdiwreZpSR_WzhuDi: { http: [32m"http://keria:3902/"[39m }
+            ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX: { http: [32m"http://keria:3902/"[39m }
           },
           witness: {
             [32m"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"[39m: {
@@ -6554,16 +7546,16 @@ console.log(BContactsAfterAuth);
         },
         challenges: [
           {
-            dt: [32m"2025-06-04T15:04:33.948000+00:00"[39m,
+            dt: [32m"2025-06-05T22:23:51.755000+00:00"[39m,
             words: [
-              [32m"inherit"[39m,  [32m"okay"[39m,
-              [32m"elbow"[39m,    [32m"episode"[39m,
-              [32m"canal"[39m,    [32m"wrestle"[39m,
-              [32m"ribbon"[39m,   [32m"fortune"[39m,
-              [32m"favorite"[39m, [32m"correct"[39m,
-              [32m"relief"[39m,   [32m"photo"[39m
+              [32m"umbrella"[39m, [32m"favorite"[39m,
+              [32m"person"[39m,   [32m"entire"[39m,
+              [32m"two"[39m,      [32m"tooth"[39m,
+              [32m"begin"[39m,    [32m"all"[39m,
+              [32m"behave"[39m,   [32m"slim"[39m,
+              [32m"vibrant"[39m,  [32m"under"[39m
             ],
-            said: [32m"EGG2ygr-T5YAfa73R3wOAsTPMsR9tAkRZj1__6Jy18Ca"[39m,
+            said: [32m"EFfTZfIUwyOyNp-tMHtQJ3OSLqyiB_oiR-fmAxYeOpir"[39m,
             authenticated: [33mtrue[39m
           }
         ],
@@ -6717,25 +7709,25 @@ await resolveOOBI(verifierClient, schemaOOBI, schemaContactAlias);
 console.log("Client setup and OOBI resolutions complete.");
 ```
 
-    Using Passcode (bran): B3DY034H9XuzFT-Ptv4b1
+    Using Passcode (bran): CnWecw3c9lNoJGRW9wKsM
 
 
     Client boot process initiated with KERIA agent.
 
 
-      Client AID Prefix:  EGa8jF_kAcwenOhS5ZZkG-IMVdfsj4d534NHjf0pV0oJ
+      Client AID Prefix:  EHtLfQtuv6rZFw-zyREaFC4bUTtjrLBIY1ncEgO-1awU
 
 
-      Agent AID Prefix:   EH3zywrsDY7rTTfu3GLhkO1qoEOKRXlVnSDSQyyt26tr
+      Agent AID Prefix:   EIgRWGIJ1BzDDGdN_Q9CiB5eCk-hE2ZyW6aUZIznpvDW
 
 
     Initiating AID inception for alias: issuerAid
 
 
-    Successfully created AID with prefix: ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij
+    Successfully created AID with prefix: EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak
 
 
-    Assigning 'agent' role to KERIA Agent EH3zywrsDY7rTTfu3GLhkO1qoEOKRXlVnSDSQyyt26tr for AID alias issuerAid
+    Assigning 'agent' role to KERIA Agent EIgRWGIJ1BzDDGdN_Q9CiB5eCk-hE2ZyW6aUZIznpvDW for AID alias issuerAid
 
 
     Successfully assigned 'agent' role for AID alias issuerAid.
@@ -6744,28 +7736,28 @@ console.log("Client setup and OOBI resolutions complete.");
     Generating OOBI for AID alias issuerAid with role agent
 
 
-    Generated OOBI URL: http://keria:3902/oobi/ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij/agent/EH3zywrsDY7rTTfu3GLhkO1qoEOKRXlVnSDSQyyt26tr
+    Generated OOBI URL: http://keria:3902/oobi/EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak/agent/EIgRWGIJ1BzDDGdN_Q9CiB5eCk-hE2ZyW6aUZIznpvDW
 
 
-    Using Passcode (bran): AkNzx1mKWHbfeEUrCuSLB
+    Using Passcode (bran): BZCm0D0prnW1nFoXo_n_a
 
 
     Client boot process initiated with KERIA agent.
 
 
-      Client AID Prefix:  EM2zmilQcexjBGkZ7L5Q36wjGGQ349sP8ha6Ir06ReYg
+      Client AID Prefix:  EDnlKtF7-GEb5aEWeo4FN8WxsI4Xn5f42A_nMlRKAnNw
 
 
-      Agent AID Prefix:   EFBboib9VLJnpogPdt46kowsAPECn_RU6xlI-OkgJYdW
+      Agent AID Prefix:   EOjIY4Slxw38XvwNGFcYg9hmgaj0fmPzyEQc6hfZEM3B
 
 
     Initiating AID inception for alias: holderAid
 
 
-    Successfully created AID with prefix: EAtu8ymzJ_oDcexdqTJjYcq-Crh7ofWjTfwec9OdFk6k
+    Successfully created AID with prefix: EDuMtFBduortAQvD2Ywsp_6sPHrlDQyKPshlsRTWV2xv
 
 
-    Assigning 'agent' role to KERIA Agent EFBboib9VLJnpogPdt46kowsAPECn_RU6xlI-OkgJYdW for AID alias holderAid
+    Assigning 'agent' role to KERIA Agent EOjIY4Slxw38XvwNGFcYg9hmgaj0fmPzyEQc6hfZEM3B for AID alias holderAid
 
 
     Successfully assigned 'agent' role for AID alias holderAid.
@@ -6774,28 +7766,28 @@ console.log("Client setup and OOBI resolutions complete.");
     Generating OOBI for AID alias holderAid with role agent
 
 
-    Generated OOBI URL: http://keria:3902/oobi/EAtu8ymzJ_oDcexdqTJjYcq-Crh7ofWjTfwec9OdFk6k/agent/EFBboib9VLJnpogPdt46kowsAPECn_RU6xlI-OkgJYdW
+    Generated OOBI URL: http://keria:3902/oobi/EDuMtFBduortAQvD2Ywsp_6sPHrlDQyKPshlsRTWV2xv/agent/EOjIY4Slxw38XvwNGFcYg9hmgaj0fmPzyEQc6hfZEM3B
 
 
-    Using Passcode (bran): Brj2-63aeIamrXA5cYa8C
+    Using Passcode (bran): Di823IcRXD3pydDWPuXOp
 
 
     Client boot process initiated with KERIA agent.
 
 
-      Client AID Prefix:  EMSdy38QjsLFdNN-pLogMXBiCneroknsvsr1bArfEa4a
+      Client AID Prefix:  EKG9RhwweaFwMz5WNkC-zvUhi9G8cY5tfsTqr9-HT8ep
 
 
-      Agent AID Prefix:   EMCiB96yeLF1D1b_-UT5VhdnayUjc8sCSrkk09q9yUUF
+      Agent AID Prefix:   EHdg5Z7VGCtIFcbVkYnDsL4_8ygWJJ_TX0KP_bydfsQY
 
 
     Initiating AID inception for alias: verifierAid
 
 
-    Successfully created AID with prefix: EL0en3tVUTPBx2AYPwsF4xYsGNqeVVnrKxubMGfBWkRj
+    Successfully created AID with prefix: EBKTy4GFE2Ggv4gbVW8I9XHu_iTjvMdJ1omLphdsO5lQ
 
 
-    Assigning 'agent' role to KERIA Agent EMCiB96yeLF1D1b_-UT5VhdnayUjc8sCSrkk09q9yUUF for AID alias verifierAid
+    Assigning 'agent' role to KERIA Agent EHdg5Z7VGCtIFcbVkYnDsL4_8ygWJJ_TX0KP_bydfsQY for AID alias verifierAid
 
 
     Successfully assigned 'agent' role for AID alias verifierAid.
@@ -6804,10 +7796,10 @@ console.log("Client setup and OOBI resolutions complete.");
     Generating OOBI for AID alias verifierAid with role agent
 
 
-    Generated OOBI URL: http://keria:3902/oobi/EL0en3tVUTPBx2AYPwsF4xYsGNqeVVnrKxubMGfBWkRj/agent/EMCiB96yeLF1D1b_-UT5VhdnayUjc8sCSrkk09q9yUUF
+    Generated OOBI URL: http://keria:3902/oobi/EBKTy4GFE2Ggv4gbVW8I9XHu_iTjvMdJ1omLphdsO5lQ/agent/EHdg5Z7VGCtIFcbVkYnDsL4_8ygWJJ_TX0KP_bydfsQY
 
 
-    Resolving OOBI URL: http://keria:3902/oobi/EAtu8ymzJ_oDcexdqTJjYcq-Crh7ofWjTfwec9OdFk6k/agent/EFBboib9VLJnpogPdt46kowsAPECn_RU6xlI-OkgJYdW with alias holderContact
+    Resolving OOBI URL: http://keria:3902/oobi/EDuMtFBduortAQvD2Ywsp_6sPHrlDQyKPshlsRTWV2xv/agent/EOjIY4Slxw38XvwNGFcYg9hmgaj0fmPzyEQc6hfZEM3B with alias holderContact
 
 
     Successfully resolved OOBI URL. Response: OK
@@ -6816,7 +7808,7 @@ console.log("Client setup and OOBI resolutions complete.");
     Contact "holderContact" (ID: undefined) added/updated.
 
 
-    Resolving OOBI URL: http://keria:3902/oobi/ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij/agent/EH3zywrsDY7rTTfu3GLhkO1qoEOKRXlVnSDSQyyt26tr with alias issuerContact
+    Resolving OOBI URL: http://keria:3902/oobi/EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak/agent/EIgRWGIJ1BzDDGdN_Q9CiB5eCk-hE2ZyW6aUZIznpvDW with alias issuerContact
 
 
     Successfully resolved OOBI URL. Response: OK
@@ -6825,7 +7817,7 @@ console.log("Client setup and OOBI resolutions complete.");
     Contact "issuerContact" (ID: undefined) added/updated.
 
 
-    Resolving OOBI URL: http://keria:3902/oobi/EAtu8ymzJ_oDcexdqTJjYcq-Crh7ofWjTfwec9OdFk6k/agent/EFBboib9VLJnpogPdt46kowsAPECn_RU6xlI-OkgJYdW with alias holderContact
+    Resolving OOBI URL: http://keria:3902/oobi/EDuMtFBduortAQvD2Ywsp_6sPHrlDQyKPshlsRTWV2xv/agent/EOjIY4Slxw38XvwNGFcYg9hmgaj0fmPzyEQc6hfZEM3B with alias holderContact
 
 
     Successfully resolved OOBI URL. Response: OK
@@ -6834,7 +7826,7 @@ console.log("Client setup and OOBI resolutions complete.");
     Contact "holderContact" (ID: undefined) added/updated.
 
 
-    Resolving OOBI URL: http://keria:3902/oobi/EL0en3tVUTPBx2AYPwsF4xYsGNqeVVnrKxubMGfBWkRj/agent/EMCiB96yeLF1D1b_-UT5VhdnayUjc8sCSrkk09q9yUUF with alias verifierContact
+    Resolving OOBI URL: http://keria:3902/oobi/EBKTy4GFE2Ggv4gbVW8I9XHu_iTjvMdJ1omLphdsO5lQ/agent/EHdg5Z7VGCtIFcbVkYnDsL4_8ygWJJ_TX0KP_bydfsQY with alias verifierContact
 
 
     Successfully resolved OOBI URL. Response: OK
@@ -6913,19 +7905,19 @@ const issuerRegistry = issuerRegistries[0]
 console.log(`Registry: Name='${issuerRegistry.name}', SAID (regk)='${issuerRegistry.regk}'`);
 ```
 
-    Registry 'issuerRegistry' created for Issuer AID ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij.
+    Registry 'issuerRegistry' created for Issuer AID EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak.
 
 
     Registry creation response: {
       "anchor": {
-        "i": "EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M",
+        "i": "EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK",
         "s": "0",
-        "d": "EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M"
+        "d": "EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK"
       }
     }
 
 
-    Registry: Name='issuerRegistry', SAID (regk)='EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M'
+    Registry: Name='issuerRegistry', SAID (regk)='EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK'
 
 
 ### Step 2: Retrieve Schema Definition
@@ -7035,31 +8027,31 @@ console.log(issuerCredential)
     {
       sad: {
         v: [32m"ACDC10JSON0001c4_"[39m,
-        d: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
-        i: [32m"ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij"[39m,
-        ri: [32m"EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M"[39m,
+        d: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
+        i: [32m"EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak"[39m,
+        ri: [32m"EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK"[39m,
         s: [32m"EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK"[39m,
         a: {
-          d: [32m"EHOflATLiJkQuoq3Cqy9BLjH5WF8rtcN1jWAaj4xYfh4"[39m,
-          i: [32m"EAtu8ymzJ_oDcexdqTJjYcq-Crh7ofWjTfwec9OdFk6k"[39m,
+          d: [32m"EGmYpfqwx-IAXb5TinMWNLpVJ6YGRimlIasburVbiSHw"[39m,
+          i: [32m"EDuMtFBduortAQvD2Ywsp_6sPHrlDQyKPshlsRTWV2xv"[39m,
           eventName: [32m"GLEIF Summit"[39m,
           accessLevel: [32m"staff"[39m,
           validDate: [32m"2026-10-01"[39m,
-          dt: [32m"2025-06-04T15:04:46.493000+00:00"[39m
+          dt: [32m"2025-06-05T22:24:03.630000+00:00"[39m
         }
       },
-      atc: [32m"-IABEPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I0AAAAAAAAAAAAAAAAAAAAAAAEPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+      atc: [32m"-IABECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO0AAAAAAAAAAAAAAAAAAAAAAAECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
       iss: {
         v: [32m"KERI10JSON0000ed_"[39m,
         t: [32m"iss"[39m,
-        d: [32m"EHTPnwtg_PDXi6ybEsUgxt3s9fcGGAb2BFSVNqY7XvsJ"[39m,
-        i: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+        d: [32m"EBtTQSVGcMG6y77Jn53woLxsxdhAodol2i20HfDgnONX"[39m,
+        i: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
         s: [32m"0"[39m,
-        ri: [32m"EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M"[39m,
-        dt: [32m"2025-06-04T15:04:46.493000+00:00"[39m
+        ri: [32m"EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK"[39m,
+        dt: [32m"2025-06-05T22:24:03.630000+00:00"[39m
       },
-      issatc: [32m"-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACEC7WN6ibPwkVlsFk7poKqoyRHRF9X_fwyC0dKCUiyarj"[39m,
-      pre: [32m"ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij"[39m,
+      issatc: [32m"-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACEAYL-QBEI1F3pcUQwgN_gslBHsn1AvJyPKPVzKJFxpvg"[39m,
+      pre: [32m"EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak"[39m,
       schema: {
         [32m"$id"[39m: [32m"EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK"[39m,
         [32m"$schema"[39m: [32m"http://json-schema.org/draft-07/schema#"[39m,
@@ -7083,37 +8075,37 @@ console.log(issuerCredential)
       chains: [],
       status: {
         vn: [ [33m1[39m, [33m0[39m ],
-        i: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+        i: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
         s: [32m"0"[39m,
-        d: [32m"EHTPnwtg_PDXi6ybEsUgxt3s9fcGGAb2BFSVNqY7XvsJ"[39m,
-        ri: [32m"EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M"[39m,
+        d: [32m"EBtTQSVGcMG6y77Jn53woLxsxdhAodol2i20HfDgnONX"[39m,
+        ri: [32m"EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK"[39m,
         ra: {},
-        a: { s: [33m2[39m, d: [32m"EC7WN6ibPwkVlsFk7poKqoyRHRF9X_fwyC0dKCUiyarj"[39m },
-        dt: [32m"2025-06-04T15:04:46.493000+00:00"[39m,
+        a: { s: [33m2[39m, d: [32m"EAYL-QBEI1F3pcUQwgN_gslBHsn1AvJyPKPVzKJFxpvg"[39m },
+        dt: [32m"2025-06-05T22:24:03.630000+00:00"[39m,
         et: [32m"iss"[39m
       },
       anchor: {
-        pre: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+        pre: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
         sn: [33m0[39m,
-        d: [32m"EHTPnwtg_PDXi6ybEsUgxt3s9fcGGAb2BFSVNqY7XvsJ"[39m
+        d: [32m"EBtTQSVGcMG6y77Jn53woLxsxdhAodol2i20HfDgnONX"[39m
       },
       anc: {
         v: [32m"KERI10JSON00013a_"[39m,
         t: [32m"ixn"[39m,
-        d: [32m"EC7WN6ibPwkVlsFk7poKqoyRHRF9X_fwyC0dKCUiyarj"[39m,
-        i: [32m"ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij"[39m,
+        d: [32m"EAYL-QBEI1F3pcUQwgN_gslBHsn1AvJyPKPVzKJFxpvg"[39m,
+        i: [32m"EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak"[39m,
         s: [32m"2"[39m,
-        p: [32m"EPBXiith2VTRHo7eNpVfsgeJDi2vG1MUJd9c9x7cb25v"[39m,
+        p: [32m"EH-GVRRyM4-emR_ZRmiOFczW8lWWZWcgU6HMUZyfcJZ1"[39m,
         a: [
           {
-            i: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+            i: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
             s: [32m"0"[39m,
-            d: [32m"EHTPnwtg_PDXi6ybEsUgxt3s9fcGGAb2BFSVNqY7XvsJ"[39m
+            d: [32m"EBtTQSVGcMG6y77Jn53woLxsxdhAodol2i20HfDgnONX"[39m
           }
         ]
       },
       ancatc: [
-        [32m"-VBq-AABAAB3pcqDdNtfLxtRqwQQXs-F1HufOB6oHRnfHky_WWjUazpG32crtROcZ2lOUUbRiAOV9TAkDPIpxtvh-5x0oOUG-BADAABO7mFEmlZDQV6Hh6Ur1DgB9ja612Da4TrJBxUlOqeNCJdkqoFDbM3tVkMhSKL_rFw7A3yAT333PWV6NazrIPYGABCoMVuKFdOnXYgmOFfl4_jp9Cb-omprJiZzFNRm96oF5MWLlGSI1mbg01j9ezbt7ywo6CA7JeA3yn9rmUmEzwsFACBvst5rfp4fUrMJkCLVTxEN-rtja9tN4iSesA-5iRV_zMprC8Enzd4H134nFLtYoShzcPsCwNLO3Bx7_6T3d3MF-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-06-04T15c04c46d579147p00c00"[39m
+        [32m"-VBq-AABAACZ8USvkHvarIHTgFMXEtLI-qzyDPITmfpktSxN9hTVml2x9ftL3noXqinOYIdwB0ZnRYNE9szrnhb3hS7A5E4N-BADAABKJS0x50cZVhqdM8iiL8jkscMmye8v9V52E7Qx30pxhxO6-36_Yza-u0I0A94GZQZYyhraLL8x8mGVtVg42CQOABAiFxcOvmzjaYSMIX47FtXv1jVXHbTORw9trvdq-l7p0EQWR936L3SiMGCQxxgQISPtfgxha9fFh_2nXgx3U1EKACCck4cdWQJ4qEhU9QiJ6--PK2oeHMoYGo6bpIbPO6TZkXfqaV1E_oa-_gvgDOmf_IWf86jM-bx6e1-jVEXh7EkK-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-06-05T22c24c03d728977p00c00"[39m
       ]
     }
 
@@ -7203,13 +8195,13 @@ console.log(credentialState) // Displays the status (e.g., issued, revoked)
 
     {
       vn: [ [33m1[39m, [33m0[39m ],
-      i: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+      i: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
       s: [32m"0"[39m,
-      d: [32m"EHTPnwtg_PDXi6ybEsUgxt3s9fcGGAb2BFSVNqY7XvsJ"[39m,
-      ri: [32m"EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M"[39m,
+      d: [32m"EBtTQSVGcMG6y77Jn53woLxsxdhAodol2i20HfDgnONX"[39m,
+      ri: [32m"EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK"[39m,
       ra: {},
-      a: { s: [33m2[39m, d: [32m"EC7WN6ibPwkVlsFk7poKqoyRHRF9X_fwyC0dKCUiyarj"[39m },
-      dt: [32m"2025-06-04T15:04:46.493000+00:00"[39m,
+      a: { s: [33m2[39m, d: [32m"EAYL-QBEI1F3pcUQwgN_gslBHsn1AvJyPKPVzKJFxpvg"[39m },
+      dt: [32m"2025-06-05T22:24:03.630000+00:00"[39m,
       et: [32m"iss"[39m
     }
 
@@ -7262,12 +8254,12 @@ console.log(grantExchange) // Displays the content of the grant message
 ```
 
     {
-      i: [32m"0ACpFi2wWXVI5mv-fI13hdts"[39m,
-      dt: [32m"2025-06-04T15:04:47.739121+00:00"[39m,
+      i: [32m"0AD38NYp2ZoLdoVQRJsZ8LaY"[39m,
+      dt: [32m"2025-06-05T22:24:04.982407+00:00"[39m,
       r: [33mfalse[39m,
       a: {
         r: [32m"/exn/ipex/grant"[39m,
-        d: [32m"EJu1IhOMLN0C0gEWzB8-SE9I9XZ47M9qA5hKD3ckMNO3"[39m,
+        d: [32m"EKf5N_ScQr_jTmL5VFUZU2s8lIuBODb6n9OZ59FyN4Vl"[39m,
         m: [32m""[39m
       }
     }
@@ -7277,55 +8269,55 @@ console.log(grantExchange) // Displays the content of the grant message
       exn: {
         v: [32m"KERI10JSON00057f_"[39m,
         t: [32m"exn"[39m,
-        d: [32m"EJu1IhOMLN0C0gEWzB8-SE9I9XZ47M9qA5hKD3ckMNO3"[39m,
-        i: [32m"ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij"[39m,
-        rp: [32m"EAtu8ymzJ_oDcexdqTJjYcq-Crh7ofWjTfwec9OdFk6k"[39m,
+        d: [32m"EKf5N_ScQr_jTmL5VFUZU2s8lIuBODb6n9OZ59FyN4Vl"[39m,
+        i: [32m"EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak"[39m,
+        rp: [32m"EDuMtFBduortAQvD2Ywsp_6sPHrlDQyKPshlsRTWV2xv"[39m,
         p: [32m""[39m,
-        dt: [32m"2025-06-04T15:04:47.370000+00:00"[39m,
+        dt: [32m"2025-06-05T22:24:04.612000+00:00"[39m,
         r: [32m"/ipex/grant"[39m,
         q: {},
-        a: { i: [32m"EAtu8ymzJ_oDcexdqTJjYcq-Crh7ofWjTfwec9OdFk6k"[39m, m: [32m""[39m },
+        a: { i: [32m"EDuMtFBduortAQvD2Ywsp_6sPHrlDQyKPshlsRTWV2xv"[39m, m: [32m""[39m },
         e: {
           acdc: {
             v: [32m"ACDC10JSON0001c4_"[39m,
-            d: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
-            i: [32m"ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij"[39m,
-            ri: [32m"EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M"[39m,
+            d: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
+            i: [32m"EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak"[39m,
+            ri: [32m"EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK"[39m,
             s: [32m"EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK"[39m,
             a: {
-              d: [32m"EHOflATLiJkQuoq3Cqy9BLjH5WF8rtcN1jWAaj4xYfh4"[39m,
-              i: [32m"EAtu8ymzJ_oDcexdqTJjYcq-Crh7ofWjTfwec9OdFk6k"[39m,
+              d: [32m"EGmYpfqwx-IAXb5TinMWNLpVJ6YGRimlIasburVbiSHw"[39m,
+              i: [32m"EDuMtFBduortAQvD2Ywsp_6sPHrlDQyKPshlsRTWV2xv"[39m,
               eventName: [32m"GLEIF Summit"[39m,
               accessLevel: [32m"staff"[39m,
               validDate: [32m"2026-10-01"[39m,
-              dt: [32m"2025-06-04T15:04:46.493000+00:00"[39m
+              dt: [32m"2025-06-05T22:24:03.630000+00:00"[39m
             }
           },
           iss: {
             v: [32m"KERI10JSON0000ed_"[39m,
             t: [32m"iss"[39m,
-            d: [32m"EHTPnwtg_PDXi6ybEsUgxt3s9fcGGAb2BFSVNqY7XvsJ"[39m,
-            i: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+            d: [32m"EBtTQSVGcMG6y77Jn53woLxsxdhAodol2i20HfDgnONX"[39m,
+            i: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
             s: [32m"0"[39m,
-            ri: [32m"EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M"[39m,
-            dt: [32m"2025-06-04T15:04:46.493000+00:00"[39m
+            ri: [32m"EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK"[39m,
+            dt: [32m"2025-06-05T22:24:03.630000+00:00"[39m
           },
           anc: {
             v: [32m"KERI10JSON00013a_"[39m,
             t: [32m"ixn"[39m,
-            d: [32m"EC7WN6ibPwkVlsFk7poKqoyRHRF9X_fwyC0dKCUiyarj"[39m,
-            i: [32m"ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij"[39m,
+            d: [32m"EAYL-QBEI1F3pcUQwgN_gslBHsn1AvJyPKPVzKJFxpvg"[39m,
+            i: [32m"EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak"[39m,
             s: [32m"2"[39m,
-            p: [32m"EPBXiith2VTRHo7eNpVfsgeJDi2vG1MUJd9c9x7cb25v"[39m,
+            p: [32m"EH-GVRRyM4-emR_ZRmiOFczW8lWWZWcgU6HMUZyfcJZ1"[39m,
             a: [ [36m[Object][39m ]
           },
-          d: [32m"EKCB1GWu-PA0b37I_5daRbTlOrOABL7O4eNNR1sW4qIM"[39m
+          d: [32m"EPJBZrkPLMTw2huqFoSl39Bds4rWbj4N6r4vuGsgiuVc"[39m
         }
       },
       pathed: {
-        acdc: [32m"-IABEPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I0AAAAAAAAAAAAAAAAAAAAAAAEHTPnwtg_PDXi6ybEsUgxt3s9fcGGAb2BFSVNqY7XvsJ"[39m,
-        iss: [32m"-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAAAEC7WN6ibPwkVlsFk7poKqoyRHRF9X_fwyC0dKCUiyarj"[39m,
-        anc: [32m"-VBq-AABAAB3pcqDdNtfLxtRqwQQXs-F1HufOB6oHRnfHky_WWjUazpG32crtROcZ2lOUUbRiAOV9TAkDPIpxtvh-5x0oOUG-BADAABO7mFEmlZDQV6Hh6Ur1DgB9ja612Da4TrJBxUlOqeNCJdkqoFDbM3tVkMhSKL_rFw7A3yAT333PWV6NazrIPYGABCoMVuKFdOnXYgmOFfl4_jp9Cb-omprJiZzFNRm96oF5MWLlGSI1mbg01j9ezbt7ywo6CA7JeA3yn9rmUmEzwsFACBvst5rfp4fUrMJkCLVTxEN-rtja9tN4iSesA-5iRV_zMprC8Enzd4H134nFLtYoShzcPsCwNLO3Bx7_6T3d3MF-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-06-04T15c04c46d579147p00c00"[39m
+        acdc: [32m"-IABECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO0AAAAAAAAAAAAAAAAAAAAAAAEBtTQSVGcMG6y77Jn53woLxsxdhAodol2i20HfDgnONX"[39m,
+        iss: [32m"-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAAAEAYL-QBEI1F3pcUQwgN_gslBHsn1AvJyPKPVzKJFxpvg"[39m,
+        anc: [32m"-VBq-AABAACZ8USvkHvarIHTgFMXEtLI-qzyDPITmfpktSxN9hTVml2x9ftL3noXqinOYIdwB0ZnRYNE9szrnhb3hS7A5E4N-BADAABKJS0x50cZVhqdM8iiL8jkscMmye8v9V52E7Qx30pxhxO6-36_Yza-u0I0A94GZQZYyhraLL8x8mGVtVg42CQOABAiFxcOvmzjaYSMIX47FtXv1jVXHbTORw9trvdq-l7p0EQWR936L3SiMGCQxxgQISPtfgxha9fFh_2nXgx3U1EKACCck4cdWQJ4qEhU9QiJ6--PK2oeHMoYGo6bpIbPO6TZkXfqaV1E_oa-_gvgDOmf_IWf86jM-bx6e1-jVEXh7EkK-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-06-05T22c24c03d728977p00c00"[39m
       }
     }
 
@@ -7386,12 +8378,12 @@ console.log(holderReceivedCredential);
       total: [33m1[39m,
       notes: [
         {
-          i: [32m"0ACpFi2wWXVI5mv-fI13hdts"[39m,
-          dt: [32m"2025-06-04T15:04:47.739121+00:00"[39m,
+          i: [32m"0AD38NYp2ZoLdoVQRJsZ8LaY"[39m,
+          dt: [32m"2025-06-05T22:24:04.982407+00:00"[39m,
           r: [33mtrue[39m,
           a: {
             r: [32m"/exn/ipex/grant"[39m,
-            d: [32m"EJu1IhOMLN0C0gEWzB8-SE9I9XZ47M9qA5hKD3ckMNO3"[39m,
+            d: [32m"EKf5N_ScQr_jTmL5VFUZU2s8lIuBODb6n9OZ59FyN4Vl"[39m,
             m: [32m""[39m
           }
         }
@@ -7405,31 +8397,31 @@ console.log(holderReceivedCredential);
     {
       sad: {
         v: [32m"ACDC10JSON0001c4_"[39m,
-        d: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
-        i: [32m"ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij"[39m,
-        ri: [32m"EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M"[39m,
+        d: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
+        i: [32m"EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak"[39m,
+        ri: [32m"EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK"[39m,
         s: [32m"EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK"[39m,
         a: {
-          d: [32m"EHOflATLiJkQuoq3Cqy9BLjH5WF8rtcN1jWAaj4xYfh4"[39m,
-          i: [32m"EAtu8ymzJ_oDcexdqTJjYcq-Crh7ofWjTfwec9OdFk6k"[39m,
+          d: [32m"EGmYpfqwx-IAXb5TinMWNLpVJ6YGRimlIasburVbiSHw"[39m,
+          i: [32m"EDuMtFBduortAQvD2Ywsp_6sPHrlDQyKPshlsRTWV2xv"[39m,
           eventName: [32m"GLEIF Summit"[39m,
           accessLevel: [32m"staff"[39m,
           validDate: [32m"2026-10-01"[39m,
-          dt: [32m"2025-06-04T15:04:46.493000+00:00"[39m
+          dt: [32m"2025-06-05T22:24:03.630000+00:00"[39m
         }
       },
-      atc: [32m"-IABEPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I0AAAAAAAAAAAAAAAAAAAAAAAEPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+      atc: [32m"-IABECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO0AAAAAAAAAAAAAAAAAAAAAAAECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
       iss: {
         v: [32m"KERI10JSON0000ed_"[39m,
         t: [32m"iss"[39m,
-        d: [32m"EHTPnwtg_PDXi6ybEsUgxt3s9fcGGAb2BFSVNqY7XvsJ"[39m,
-        i: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+        d: [32m"EBtTQSVGcMG6y77Jn53woLxsxdhAodol2i20HfDgnONX"[39m,
+        i: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
         s: [32m"0"[39m,
-        ri: [32m"EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M"[39m,
-        dt: [32m"2025-06-04T15:04:46.493000+00:00"[39m
+        ri: [32m"EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK"[39m,
+        dt: [32m"2025-06-05T22:24:03.630000+00:00"[39m
       },
-      issatc: [32m"-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACEC7WN6ibPwkVlsFk7poKqoyRHRF9X_fwyC0dKCUiyarj"[39m,
-      pre: [32m"ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij"[39m,
+      issatc: [32m"-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACEAYL-QBEI1F3pcUQwgN_gslBHsn1AvJyPKPVzKJFxpvg"[39m,
+      pre: [32m"EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak"[39m,
       schema: {
         [32m"$id"[39m: [32m"EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK"[39m,
         [32m"$schema"[39m: [32m"http://json-schema.org/draft-07/schema#"[39m,
@@ -7453,37 +8445,37 @@ console.log(holderReceivedCredential);
       chains: [],
       status: {
         vn: [ [33m1[39m, [33m0[39m ],
-        i: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+        i: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
         s: [32m"0"[39m,
-        d: [32m"EHTPnwtg_PDXi6ybEsUgxt3s9fcGGAb2BFSVNqY7XvsJ"[39m,
-        ri: [32m"EMaXNezCJ4L32YVtNSn3A0TGzGwl059pWNfNDeNP3g8M"[39m,
+        d: [32m"EBtTQSVGcMG6y77Jn53woLxsxdhAodol2i20HfDgnONX"[39m,
+        ri: [32m"EFRsZKzhX16pRpGJR2PrY1Q3JQWU0JsA3_Sstc9cu-CK"[39m,
         ra: {},
-        a: { s: [33m2[39m, d: [32m"EC7WN6ibPwkVlsFk7poKqoyRHRF9X_fwyC0dKCUiyarj"[39m },
-        dt: [32m"2025-06-04T15:04:46.493000+00:00"[39m,
+        a: { s: [33m2[39m, d: [32m"EAYL-QBEI1F3pcUQwgN_gslBHsn1AvJyPKPVzKJFxpvg"[39m },
+        dt: [32m"2025-06-05T22:24:03.630000+00:00"[39m,
         et: [32m"iss"[39m
       },
       anchor: {
-        pre: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+        pre: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
         sn: [33m0[39m,
-        d: [32m"EHTPnwtg_PDXi6ybEsUgxt3s9fcGGAb2BFSVNqY7XvsJ"[39m
+        d: [32m"EBtTQSVGcMG6y77Jn53woLxsxdhAodol2i20HfDgnONX"[39m
       },
       anc: {
         v: [32m"KERI10JSON00013a_"[39m,
         t: [32m"ixn"[39m,
-        d: [32m"EC7WN6ibPwkVlsFk7poKqoyRHRF9X_fwyC0dKCUiyarj"[39m,
-        i: [32m"ENotjFflUyGuOjygEcvPKbFPxM7kh1vN9ci_6eFyH9ij"[39m,
+        d: [32m"EAYL-QBEI1F3pcUQwgN_gslBHsn1AvJyPKPVzKJFxpvg"[39m,
+        i: [32m"EG1-XGIRXIc-EwmQI_VeGkWgtD9CfPVl4ofEBf6BA4Ak"[39m,
         s: [32m"2"[39m,
-        p: [32m"EPBXiith2VTRHo7eNpVfsgeJDi2vG1MUJd9c9x7cb25v"[39m,
+        p: [32m"EH-GVRRyM4-emR_ZRmiOFczW8lWWZWcgU6HMUZyfcJZ1"[39m,
         a: [
           {
-            i: [32m"EPn6wt7a_vKatnnsPVtMuoVwED3KOos2_cLr_w-30I6I"[39m,
+            i: [32m"ECrfo90QVwsAjSg4D5VpaNDW0ggOndsFHjKyymjhJ6ZO"[39m,
             s: [32m"0"[39m,
-            d: [32m"EHTPnwtg_PDXi6ybEsUgxt3s9fcGGAb2BFSVNqY7XvsJ"[39m
+            d: [32m"EBtTQSVGcMG6y77Jn53woLxsxdhAodol2i20HfDgnONX"[39m
           }
         ]
       },
       ancatc: [
-        [32m"-VBq-AABAAB3pcqDdNtfLxtRqwQQXs-F1HufOB6oHRnfHky_WWjUazpG32crtROcZ2lOUUbRiAOV9TAkDPIpxtvh-5x0oOUG-BADAABO7mFEmlZDQV6Hh6Ur1DgB9ja612Da4TrJBxUlOqeNCJdkqoFDbM3tVkMhSKL_rFw7A3yAT333PWV6NazrIPYGABCoMVuKFdOnXYgmOFfl4_jp9Cb-omprJiZzFNRm96oF5MWLlGSI1mbg01j9ezbt7ywo6CA7JeA3yn9rmUmEzwsFACBvst5rfp4fUrMJkCLVTxEN-rtja9tN4iSesA-5iRV_zMprC8Enzd4H134nFLtYoShzcPsCwNLO3Bx7_6T3d3MF-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-06-04T15c04c47d890793p00c00"[39m
+        [32m"-VBq-AABAACZ8USvkHvarIHTgFMXEtLI-qzyDPITmfpktSxN9hTVml2x9ftL3noXqinOYIdwB0ZnRYNE9szrnhb3hS7A5E4N-BADAABKJS0x50cZVhqdM8iiL8jkscMmye8v9V52E7Qx30pxhxO6-36_Yza-u0I0A94GZQZYyhraLL8x8mGVtVg42CQOABAiFxcOvmzjaYSMIX47FtXv1jVXHbTORw9trvdq-l7p0EQWR936L3SiMGCQxxgQISPtfgxha9fFh_2nXgx3U1EKACCck4cdWQJ4qEhU9QiJ6--PK2oeHMoYGo6bpIbPO6TZkXfqaV1E_oa-_gvgDOmf_IWf86jM-bx6e1-jVEXh7EkK-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-06-05T22c24c05d134389p00c00"[39m
       ]
     }
 
@@ -7539,12 +8531,12 @@ console.log(await issuerClient.notifications().list());
       total: [33m1[39m,
       notes: [
         {
-          i: [32m"0ADUC4NseE7OCjgsEAaOmgNG"[39m,
-          dt: [32m"2025-06-04T15:04:53.337931+00:00"[39m,
+          i: [32m"0ADxARNRS2N6NX1PO5E0HHxW"[39m,
+          dt: [32m"2025-06-05T22:24:10.586504+00:00"[39m,
           r: [33mtrue[39m,
           a: {
             r: [32m"/exn/ipex/admit"[39m,
-            d: [32m"EFmGmAvy0mnaGqm8lWgg7cg7D1RL-2-kdyLTjUZ8mzAu"[39m,
+            d: [32m"ELmtSs4LaAUF5F42Si28U3_tAyPKduD2HR_yIZtZQzTM"[39m,
             m: [32m""[39m
           }
         }
@@ -7680,25 +8672,25 @@ await resolveOOBI(verifierClient, schemaOOBI, schemaContactAlias);
 console.log("Client setup and OOBI resolutions complete.");
 ```
 
-    Using Passcode (bran): B5_FKkln-ro53KIrL2Kfd
+    Using Passcode (bran): BR4e1_QtyyMU_1kCks4x2
 
 
     Client boot process initiated with KERIA agent.
 
 
-      Client AID Prefix:  EHPERuJTkvyBun51nSbKyeWPZiuQbVjehhTn9D6svRio
+      Client AID Prefix:  EDoXhKDYMx8FgYQcfCkQ5fF2XhdEqyAT8Xf8cK-0zXRj
 
 
-      Agent AID Prefix:   EIykQoYv3Pl20c2HfJkt-wIpNL6DUri3DiDwHkphTOp0
+      Agent AID Prefix:   EJ84vgAC5Wa_KMgW-j8K3ZQSq7o7Rs6sbZAaZBBmKQQI
 
 
     Initiating AID inception for alias: issuerAid
 
 
-    Successfully created AID with prefix: EEmtrwjYNtN9MJuciijVkTxabYJYML9ibDFTPY7NCTNL
+    Successfully created AID with prefix: EKZnlxpHNfSj2TExcUEzMl7o_WclylGrlJFe0H0GgZLQ
 
 
-    Assigning 'agent' role to KERIA Agent EIykQoYv3Pl20c2HfJkt-wIpNL6DUri3DiDwHkphTOp0 for AID alias issuerAid
+    Assigning 'agent' role to KERIA Agent EJ84vgAC5Wa_KMgW-j8K3ZQSq7o7Rs6sbZAaZBBmKQQI for AID alias issuerAid
 
 
     Successfully assigned 'agent' role for AID alias issuerAid.
@@ -7707,28 +8699,28 @@ console.log("Client setup and OOBI resolutions complete.");
     Generating OOBI for AID alias issuerAid with role agent
 
 
-    Generated OOBI URL: http://keria:3902/oobi/EEmtrwjYNtN9MJuciijVkTxabYJYML9ibDFTPY7NCTNL/agent/EIykQoYv3Pl20c2HfJkt-wIpNL6DUri3DiDwHkphTOp0
+    Generated OOBI URL: http://keria:3902/oobi/EKZnlxpHNfSj2TExcUEzMl7o_WclylGrlJFe0H0GgZLQ/agent/EJ84vgAC5Wa_KMgW-j8K3ZQSq7o7Rs6sbZAaZBBmKQQI
 
 
-    Using Passcode (bran): DJeK9Hzuwf_BySFdz7oR7
+    Using Passcode (bran): DqfMfizOlKV8lZHMJLoIb
 
 
     Client boot process initiated with KERIA agent.
 
 
-      Client AID Prefix:  EGIUlipGZTlHend3ME67yXI6IS-PT6fJtmZ49BK0VeLV
+      Client AID Prefix:  EHGV4cz06eaWxgfn94ulnsgjqei7RYelkuhFqE_-9c27
 
 
-      Agent AID Prefix:   EDt0H6ufqnaZVUGGzRuWrP64_2j4Nt0GVv0jHeWbG3hq
+      Agent AID Prefix:   EH5M0lB6M3cBIoTGMUk_-XLZNDRz3RZ-qFDPtkPCOGLY
 
 
     Initiating AID inception for alias: holderAid
 
 
-    Successfully created AID with prefix: EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L
+    Successfully created AID with prefix: EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w
 
 
-    Assigning 'agent' role to KERIA Agent EDt0H6ufqnaZVUGGzRuWrP64_2j4Nt0GVv0jHeWbG3hq for AID alias holderAid
+    Assigning 'agent' role to KERIA Agent EH5M0lB6M3cBIoTGMUk_-XLZNDRz3RZ-qFDPtkPCOGLY for AID alias holderAid
 
 
     Successfully assigned 'agent' role for AID alias holderAid.
@@ -7737,28 +8729,28 @@ console.log("Client setup and OOBI resolutions complete.");
     Generating OOBI for AID alias holderAid with role agent
 
 
-    Generated OOBI URL: http://keria:3902/oobi/EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L/agent/EDt0H6ufqnaZVUGGzRuWrP64_2j4Nt0GVv0jHeWbG3hq
+    Generated OOBI URL: http://keria:3902/oobi/EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w/agent/EH5M0lB6M3cBIoTGMUk_-XLZNDRz3RZ-qFDPtkPCOGLY
 
 
-    Using Passcode (bran): CRD-tjcSzAx4bfG7lkOvq
+    Using Passcode (bran): BJiE_RsDOWqHkxo392kz4
 
 
     Client boot process initiated with KERIA agent.
 
 
-      Client AID Prefix:  ED__3u60CN8UtkE06cAJHyy3O_5g1dSOS_EDdrpkN9KY
+      Client AID Prefix:  EDfK5w-_colBVmeh2cVxdCE2gFBWxTtK5PazNU7Qu8fz
 
 
-      Agent AID Prefix:   EAXrqweFbs9dwQxBQOhi2eJLJc6Ju7nulyVHsTR22kfy
+      Agent AID Prefix:   EKaDOli79V-kfh7mEUXTBR08A4sUI0za_eLFfPPqTcnf
 
 
     Initiating AID inception for alias: verifierAid
 
 
-    Successfully created AID with prefix: ENuSi5ewqasHRtVQhpKsLcjY97JTaQVj-bV4uKg0R1mH
+    Successfully created AID with prefix: EFw1FlBWMRfymeGH_MeyXRWIdCiMwvCIra8nwOpK4i50
 
 
-    Assigning 'agent' role to KERIA Agent EAXrqweFbs9dwQxBQOhi2eJLJc6Ju7nulyVHsTR22kfy for AID alias verifierAid
+    Assigning 'agent' role to KERIA Agent EKaDOli79V-kfh7mEUXTBR08A4sUI0za_eLFfPPqTcnf for AID alias verifierAid
 
 
     Successfully assigned 'agent' role for AID alias verifierAid.
@@ -7767,10 +8759,10 @@ console.log("Client setup and OOBI resolutions complete.");
     Generating OOBI for AID alias verifierAid with role agent
 
 
-    Generated OOBI URL: http://keria:3902/oobi/ENuSi5ewqasHRtVQhpKsLcjY97JTaQVj-bV4uKg0R1mH/agent/EAXrqweFbs9dwQxBQOhi2eJLJc6Ju7nulyVHsTR22kfy
+    Generated OOBI URL: http://keria:3902/oobi/EFw1FlBWMRfymeGH_MeyXRWIdCiMwvCIra8nwOpK4i50/agent/EKaDOli79V-kfh7mEUXTBR08A4sUI0za_eLFfPPqTcnf
 
 
-    Resolving OOBI URL: http://keria:3902/oobi/EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L/agent/EDt0H6ufqnaZVUGGzRuWrP64_2j4Nt0GVv0jHeWbG3hq with alias holderContact
+    Resolving OOBI URL: http://keria:3902/oobi/EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w/agent/EH5M0lB6M3cBIoTGMUk_-XLZNDRz3RZ-qFDPtkPCOGLY with alias holderContact
 
 
     Successfully resolved OOBI URL. Response: OK
@@ -7779,7 +8771,7 @@ console.log("Client setup and OOBI resolutions complete.");
     Contact "holderContact" (ID: undefined) added/updated.
 
 
-    Resolving OOBI URL: http://keria:3902/oobi/EEmtrwjYNtN9MJuciijVkTxabYJYML9ibDFTPY7NCTNL/agent/EIykQoYv3Pl20c2HfJkt-wIpNL6DUri3DiDwHkphTOp0 with alias issuerContact
+    Resolving OOBI URL: http://keria:3902/oobi/EKZnlxpHNfSj2TExcUEzMl7o_WclylGrlJFe0H0GgZLQ/agent/EJ84vgAC5Wa_KMgW-j8K3ZQSq7o7Rs6sbZAaZBBmKQQI with alias issuerContact
 
 
     Successfully resolved OOBI URL. Response: OK
@@ -7788,7 +8780,7 @@ console.log("Client setup and OOBI resolutions complete.");
     Contact "issuerContact" (ID: undefined) added/updated.
 
 
-    Resolving OOBI URL: http://keria:3902/oobi/EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L/agent/EDt0H6ufqnaZVUGGzRuWrP64_2j4Nt0GVv0jHeWbG3hq with alias holderContact
+    Resolving OOBI URL: http://keria:3902/oobi/EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w/agent/EH5M0lB6M3cBIoTGMUk_-XLZNDRz3RZ-qFDPtkPCOGLY with alias holderContact
 
 
     Successfully resolved OOBI URL. Response: OK
@@ -7797,7 +8789,7 @@ console.log("Client setup and OOBI resolutions complete.");
     Contact "holderContact" (ID: undefined) added/updated.
 
 
-    Resolving OOBI URL: http://keria:3902/oobi/ENuSi5ewqasHRtVQhpKsLcjY97JTaQVj-bV4uKg0R1mH/agent/EAXrqweFbs9dwQxBQOhi2eJLJc6Ju7nulyVHsTR22kfy with alias verifierContact
+    Resolving OOBI URL: http://keria:3902/oobi/EFw1FlBWMRfymeGH_MeyXRWIdCiMwvCIra8nwOpK4i50/agent/EKaDOli79V-kfh7mEUXTBR08A4sUI0za_eLFfPPqTcnf with alias verifierContact
 
 
     Successfully resolved OOBI URL. Response: OK
@@ -7899,33 +8891,33 @@ await markNotificationRead(issuerClient, admitNotification.i)
     Creating credential registry "issuerRegistry" for AID alias "issuerAid"...
 
 
-    Successfully created credential registry: EH7KRA3UjKK5cDcAo4m5Et8h2fx2BKxjUrHjgq_1g2an
+    Successfully created credential registry: EFJbqLviCwkUsY47HckIOzgGlS2NyfmRvkgh7izdmJgL
 
 
-    Issuing credential from AID "issuerAid" to AID "EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L"...
+    Issuing credential from AID "issuerAid" to AID "EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w"...
 
 
     {
-      name: [32m"credential.EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
+      name: [32m"credential.ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
       metadata: {
         ced: {
           v: [32m"ACDC10JSON0001c4_"[39m,
-          d: [32m"EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
-          i: [32m"EEmtrwjYNtN9MJuciijVkTxabYJYML9ibDFTPY7NCTNL"[39m,
-          ri: [32m"EH7KRA3UjKK5cDcAo4m5Et8h2fx2BKxjUrHjgq_1g2an"[39m,
+          d: [32m"ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
+          i: [32m"EKZnlxpHNfSj2TExcUEzMl7o_WclylGrlJFe0H0GgZLQ"[39m,
+          ri: [32m"EFJbqLviCwkUsY47HckIOzgGlS2NyfmRvkgh7izdmJgL"[39m,
           s: [32m"EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK"[39m,
           a: {
-            d: [32m"EPtFml2gguf3I7S-CfI7DS0BN5zOS2QlxuljFwP2_-ma"[39m,
-            i: [32m"EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L"[39m,
+            d: [32m"ECh1d1TVl3Iq1fBuAhOqVWX0Hl5oQ0gdKm6P2d7sSLpb"[39m,
+            i: [32m"EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w"[39m,
             eventName: [32m"GLEIF Summit"[39m,
             accessLevel: [32m"staff"[39m,
             validDate: [32m"2026-10-01"[39m,
-            dt: [32m"2025-06-04T15:05:04.920000+00:00"[39m
+            dt: [32m"2025-06-05T22:24:22.037000+00:00"[39m
           }
         },
         depends: {
-          name: [32m"witness.EMKUE-5IeQuEKfqUJ_fe9M-CRJhLnAXpt05YjEjez9h6"[39m,
-          metadata: { pre: [32m"EEmtrwjYNtN9MJuciijVkTxabYJYML9ibDFTPY7NCTNL"[39m, sn: [33m2[39m },
+          name: [32m"witness.EEom_mYN-O-1GxBU7mpkzOoeTBrnRib6yUap9g_oMhpx"[39m,
+          metadata: { pre: [32m"EKZnlxpHNfSj2TExcUEzMl7o_WclylGrlJFe0H0GgZLQ"[39m, sn: [33m2[39m },
           done: [33mfalse[39m,
           error: [1mnull[22m,
           response: [1mnull[22m
@@ -7936,30 +8928,30 @@ await markNotificationRead(issuerClient, admitNotification.i)
       response: {
         ced: {
           v: [32m"ACDC10JSON0001c4_"[39m,
-          d: [32m"EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
-          i: [32m"EEmtrwjYNtN9MJuciijVkTxabYJYML9ibDFTPY7NCTNL"[39m,
-          ri: [32m"EH7KRA3UjKK5cDcAo4m5Et8h2fx2BKxjUrHjgq_1g2an"[39m,
+          d: [32m"ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
+          i: [32m"EKZnlxpHNfSj2TExcUEzMl7o_WclylGrlJFe0H0GgZLQ"[39m,
+          ri: [32m"EFJbqLviCwkUsY47HckIOzgGlS2NyfmRvkgh7izdmJgL"[39m,
           s: [32m"EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK"[39m,
           a: {
-            d: [32m"EPtFml2gguf3I7S-CfI7DS0BN5zOS2QlxuljFwP2_-ma"[39m,
-            i: [32m"EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L"[39m,
+            d: [32m"ECh1d1TVl3Iq1fBuAhOqVWX0Hl5oQ0gdKm6P2d7sSLpb"[39m,
+            i: [32m"EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w"[39m,
             eventName: [32m"GLEIF Summit"[39m,
             accessLevel: [32m"staff"[39m,
             validDate: [32m"2026-10-01"[39m,
-            dt: [32m"2025-06-04T15:05:04.920000+00:00"[39m
+            dt: [32m"2025-06-05T22:24:22.037000+00:00"[39m
           }
         }
       }
     }
 
 
-    Successfully issued credential with SAID: EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8
+    Successfully issued credential with SAID: ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG
 
 
-    AID "issuerAid" granting credential to AID "EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L" via IPEX...
+    AID "issuerAid" granting credential to AID "EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w" via IPEX...
 
 
-    Successfully submitted IPEX grant from "issuerAid" to "EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L".
+    Successfully submitted IPEX grant from "issuerAid" to "EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w".
 
 
     Waiting for notification with route "/exn/ipex/grant"...
@@ -7971,25 +8963,25 @@ await markNotificationRead(issuerClient, admitNotification.i)
     [Retry] Waiting 5000ms before next attempt...
 
 
-    AID "holderAid" admitting IPEX grant "EKPhjj0KWhkb8RchDFPK5dldc6-P9aJWBXsret6-HhQN" from AID "EEmtrwjYNtN9MJuciijVkTxabYJYML9ibDFTPY7NCTNL"...
+    AID "holderAid" admitting IPEX grant "ENrmdJqaRfBLtHwtBqFkMpRNEMYJeHp4zlD9zwjMUnXz" from AID "EKZnlxpHNfSj2TExcUEzMl7o_WclylGrlJFe0H0GgZLQ"...
 
 
-    Successfully submitted IPEX admit for grant "EKPhjj0KWhkb8RchDFPK5dldc6-P9aJWBXsret6-HhQN".
+    Successfully submitted IPEX admit for grant "ENrmdJqaRfBLtHwtBqFkMpRNEMYJeHp4zlD9zwjMUnXz".
 
 
-    Marking notification "0ADhZXWOStbuV544vB0s2VgY" as read...
+    Marking notification "0ABdVL5Nq7r40qs76dyICBUp" as read...
 
 
-    Notification "0ADhZXWOStbuV544vB0s2VgY" marked as read.
+    Notification "0ABdVL5Nq7r40qs76dyICBUp" marked as read.
 
 
     Waiting for notification with route "/exn/ipex/admit"...
 
 
-    Marking notification "0ACaLBkDztZERMyznwgOSUwr" as read...
+    Marking notification "0AANw8Y-gVIez9-JxfQTL0xA" as read...
 
 
-    Notification "0ACaLBkDztZERMyznwgOSUwr" marked as read.
+    Notification "0AANw8Y-gVIez9-JxfQTL0xA" marked as read.
 
 
 ## Credential Presentation Workflow (IPEX)
@@ -8095,12 +9087,12 @@ console.log(await holderClient.notifications().list());
 
 
     {
-      i: [32m"0ACoV0qEAfPbJMbAnEmj9xlV"[39m,
-      dt: [32m"2025-06-04T15:05:12.207529+00:00"[39m,
+      i: [32m"0ACaSasCPJjBM2kMrYHNRZt8"[39m,
+      dt: [32m"2025-06-05T22:24:29.325673+00:00"[39m,
       r: [33mfalse[39m,
       a: {
         r: [32m"/exn/ipex/apply"[39m,
-        d: [32m"EFNhZ0uO7MTPukdj4I8lji8uvFYX8_6e2j-_38wTWyap"[39m,
+        d: [32m"EI7QfrawKAnpcpEIwUlAm-mRrhmNAvPF4PByspDWIooS"[39m,
         m: [32m""[39m
       }
     }
@@ -8113,15 +9105,15 @@ console.log(await holderClient.notifications().list());
       exn: {
         v: [32m"KERI10JSON0001a0_"[39m,
         t: [32m"exn"[39m,
-        d: [32m"EFNhZ0uO7MTPukdj4I8lji8uvFYX8_6e2j-_38wTWyap"[39m,
-        i: [32m"ENuSi5ewqasHRtVQhpKsLcjY97JTaQVj-bV4uKg0R1mH"[39m,
-        rp: [32m"EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L"[39m,
+        d: [32m"EI7QfrawKAnpcpEIwUlAm-mRrhmNAvPF4PByspDWIooS"[39m,
+        i: [32m"EFw1FlBWMRfymeGH_MeyXRWIdCiMwvCIra8nwOpK4i50"[39m,
+        rp: [32m"EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w"[39m,
         p: [32m""[39m,
-        dt: [32m"2025-06-04T15:05:11.868000+00:00"[39m,
+        dt: [32m"2025-06-05T22:24:28.968000+00:00"[39m,
         r: [32m"/ipex/apply"[39m,
         q: {},
         a: {
-          i: [32m"EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L"[39m,
+          i: [32m"EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w"[39m,
           m: [32m""[39m,
           s: [32m"EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK"[39m,
           a: { eventName: [32m"GLEIF Summit"[39m }
@@ -8141,22 +9133,22 @@ console.log(await holderClient.notifications().list());
       total: [33m2[39m,
       notes: [
         {
-          i: [32m"0ADhZXWOStbuV544vB0s2VgY"[39m,
-          dt: [32m"2025-06-04T15:05:06.239313+00:00"[39m,
+          i: [32m"0ABdVL5Nq7r40qs76dyICBUp"[39m,
+          dt: [32m"2025-06-05T22:24:23.357776+00:00"[39m,
           r: [33mtrue[39m,
           a: {
             r: [32m"/exn/ipex/grant"[39m,
-            d: [32m"EKPhjj0KWhkb8RchDFPK5dldc6-P9aJWBXsret6-HhQN"[39m,
+            d: [32m"ENrmdJqaRfBLtHwtBqFkMpRNEMYJeHp4zlD9zwjMUnXz"[39m,
             m: [32m""[39m
           }
         },
         {
-          i: [32m"0ACoV0qEAfPbJMbAnEmj9xlV"[39m,
-          dt: [32m"2025-06-04T15:05:12.207529+00:00"[39m,
+          i: [32m"0ACaSasCPJjBM2kMrYHNRZt8"[39m,
+          dt: [32m"2025-06-05T22:24:29.325673+00:00"[39m,
           r: [33mtrue[39m,
           a: {
             r: [32m"/exn/ipex/apply"[39m,
-            d: [32m"EFNhZ0uO7MTPukdj4I8lji8uvFYX8_6e2j-_38wTWyap"[39m,
+            d: [32m"EI7QfrawKAnpcpEIwUlAm-mRrhmNAvPF4PByspDWIooS"[39m,
             m: [32m""[39m
           }
         }
@@ -8207,31 +9199,31 @@ console.log(matchingCredentials); // Should list the EventPass credential issued
       {
         sad: {
           v: [32m"ACDC10JSON0001c4_"[39m,
-          d: [32m"EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
-          i: [32m"EEmtrwjYNtN9MJuciijVkTxabYJYML9ibDFTPY7NCTNL"[39m,
-          ri: [32m"EH7KRA3UjKK5cDcAo4m5Et8h2fx2BKxjUrHjgq_1g2an"[39m,
+          d: [32m"ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
+          i: [32m"EKZnlxpHNfSj2TExcUEzMl7o_WclylGrlJFe0H0GgZLQ"[39m,
+          ri: [32m"EFJbqLviCwkUsY47HckIOzgGlS2NyfmRvkgh7izdmJgL"[39m,
           s: [32m"EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK"[39m,
           a: {
-            d: [32m"EPtFml2gguf3I7S-CfI7DS0BN5zOS2QlxuljFwP2_-ma"[39m,
-            i: [32m"EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L"[39m,
+            d: [32m"ECh1d1TVl3Iq1fBuAhOqVWX0Hl5oQ0gdKm6P2d7sSLpb"[39m,
+            i: [32m"EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w"[39m,
             eventName: [32m"GLEIF Summit"[39m,
             accessLevel: [32m"staff"[39m,
             validDate: [32m"2026-10-01"[39m,
-            dt: [32m"2025-06-04T15:05:04.920000+00:00"[39m
+            dt: [32m"2025-06-05T22:24:22.037000+00:00"[39m
           }
         },
-        atc: [32m"-IABEKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ80AAAAAAAAAAAAAAAAAAAAAAAEKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
+        atc: [32m"-IABECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG0AAAAAAAAAAAAAAAAAAAAAAAECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
         iss: {
           v: [32m"KERI10JSON0000ed_"[39m,
           t: [32m"iss"[39m,
-          d: [32m"EPxR_l9BvCje1sPB2WLvv4HsqvMT_zIGT4pgNhbkJNt3"[39m,
-          i: [32m"EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
+          d: [32m"EMhosAmvYQNz5YipeQdo72_2S1HSky9gZr1eYREH9RKl"[39m,
+          i: [32m"ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
           s: [32m"0"[39m,
-          ri: [32m"EH7KRA3UjKK5cDcAo4m5Et8h2fx2BKxjUrHjgq_1g2an"[39m,
-          dt: [32m"2025-06-04T15:05:04.920000+00:00"[39m
+          ri: [32m"EFJbqLviCwkUsY47HckIOzgGlS2NyfmRvkgh7izdmJgL"[39m,
+          dt: [32m"2025-06-05T22:24:22.037000+00:00"[39m
         },
-        issatc: [32m"-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACEMKUE-5IeQuEKfqUJ_fe9M-CRJhLnAXpt05YjEjez9h6"[39m,
-        pre: [32m"EEmtrwjYNtN9MJuciijVkTxabYJYML9ibDFTPY7NCTNL"[39m,
+        issatc: [32m"-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACEEom_mYN-O-1GxBU7mpkzOoeTBrnRib6yUap9g_oMhpx"[39m,
+        pre: [32m"EKZnlxpHNfSj2TExcUEzMl7o_WclylGrlJFe0H0GgZLQ"[39m,
         schema: {
           [32m"$id"[39m: [32m"EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK"[39m,
           [32m"$schema"[39m: [32m"http://json-schema.org/draft-07/schema#"[39m,
@@ -8255,37 +9247,37 @@ console.log(matchingCredentials); // Should list the EventPass credential issued
         chains: [],
         status: {
           vn: [ [33m1[39m, [33m0[39m ],
-          i: [32m"EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
+          i: [32m"ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
           s: [32m"0"[39m,
-          d: [32m"EPxR_l9BvCje1sPB2WLvv4HsqvMT_zIGT4pgNhbkJNt3"[39m,
-          ri: [32m"EH7KRA3UjKK5cDcAo4m5Et8h2fx2BKxjUrHjgq_1g2an"[39m,
+          d: [32m"EMhosAmvYQNz5YipeQdo72_2S1HSky9gZr1eYREH9RKl"[39m,
+          ri: [32m"EFJbqLviCwkUsY47HckIOzgGlS2NyfmRvkgh7izdmJgL"[39m,
           ra: {},
-          a: { s: [33m2[39m, d: [32m"EMKUE-5IeQuEKfqUJ_fe9M-CRJhLnAXpt05YjEjez9h6"[39m },
-          dt: [32m"2025-06-04T15:05:04.920000+00:00"[39m,
+          a: { s: [33m2[39m, d: [32m"EEom_mYN-O-1GxBU7mpkzOoeTBrnRib6yUap9g_oMhpx"[39m },
+          dt: [32m"2025-06-05T22:24:22.037000+00:00"[39m,
           et: [32m"iss"[39m
         },
         anchor: {
-          pre: [32m"EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
+          pre: [32m"ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
           sn: [33m0[39m,
-          d: [32m"EPxR_l9BvCje1sPB2WLvv4HsqvMT_zIGT4pgNhbkJNt3"[39m
+          d: [32m"EMhosAmvYQNz5YipeQdo72_2S1HSky9gZr1eYREH9RKl"[39m
         },
         anc: {
           v: [32m"KERI10JSON00013a_"[39m,
           t: [32m"ixn"[39m,
-          d: [32m"EMKUE-5IeQuEKfqUJ_fe9M-CRJhLnAXpt05YjEjez9h6"[39m,
-          i: [32m"EEmtrwjYNtN9MJuciijVkTxabYJYML9ibDFTPY7NCTNL"[39m,
+          d: [32m"EEom_mYN-O-1GxBU7mpkzOoeTBrnRib6yUap9g_oMhpx"[39m,
+          i: [32m"EKZnlxpHNfSj2TExcUEzMl7o_WclylGrlJFe0H0GgZLQ"[39m,
           s: [32m"2"[39m,
-          p: [32m"ELJu2sjvvIpDa19QGiXp8i3vw6PzqYPhy5miaX_Z3fGV"[39m,
+          p: [32m"EEX6S8D4WrWbsmu5QQ050StWfCWcnrs4NGJ1Hv3-_SM4"[39m,
           a: [
             {
-              i: [32m"EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
+              i: [32m"ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
               s: [32m"0"[39m,
-              d: [32m"EPxR_l9BvCje1sPB2WLvv4HsqvMT_zIGT4pgNhbkJNt3"[39m
+              d: [32m"EMhosAmvYQNz5YipeQdo72_2S1HSky9gZr1eYREH9RKl"[39m
             }
           ]
         },
         ancatc: [
-          [32m"-VBq-AABAAB_pj2UCMcnN4OrqCfEvKMBsQcSMQu89RgrNg9Tlq56BXQ1Xf7au7n2GaBnFqiX8loobcKzTv0kI-HYCHJNMsEM-BADAACBd1MfEddIa0Htr0MeHOX5z9ABdBlAszvvCDzDxrU1lwXfXU5WwT3DqcguujVp-Y4PFrnQUhb1CP_2ib_2evsIABAjPUQSWIB5J3DzahmgW9DBYoY_N1dwNhS3_YB9tv7CYpOLTqQdRQPEtP23JVWEBnp_79ytcqPnNSlG7HPhPJ4NACCCQgSJzIVvr4sOxA0ZQqjKPTeGtVSzEnitpWlz_sicQ0gkL2lngLindJgeD6KZKdRMd_WjCxC2Gj1-NeGXe6UA-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-06-04T15c05c06d391297p00c00"[39m
+          [32m"-VBq-AABAACprPzsJfLy9DnPelX5tHVJYJaGqhAfwDvtFImVHfgyQ5bDSMa8SCcs2WT609oY46DcUPJTU7BNGUfuwmh2jw4A-BADAABMPpdLw4P4jLKOueGk4hsxFGTRNSEPyE3Cs9qdTozcUVQ0mrPqLqosDlPTix0D1xXII5OMJ89s9xweEqKPrGoJABAWTYD__oaQhFY2AFVe-L6nhERgQsn-Yo7YHTc__eRJWEd12LsKqQDesYZxZNEMP_GOnIBVqheAm1pF6e21uYEHACAl1_k6TV4i4dEjZxFxOJXDtv1NNVhVUeKHM6qBKJ3uhBPMBsIuL6pjqkELWPaCkaUw0rNe1vmKu6xB1aODaZ4A-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-06-05T22c24c23d509457p00c00"[39m
         ]
       }
     ]
@@ -8392,12 +9384,12 @@ console.log(await verifierClient.notifications().list());
 
 
     {
-      i: [32m"0ACjPjYuqsetz8GWynmeDQux"[39m,
-      dt: [32m"2025-06-04T15:05:17.707984+00:00"[39m,
+      i: [32m"0AB7TmJlEBzbwjGBR0nkMcpr"[39m,
+      dt: [32m"2025-06-05T22:24:34.826610+00:00"[39m,
       r: [33mfalse[39m,
       a: {
         r: [32m"/exn/ipex/offer"[39m,
-        d: [32m"EOJSD3QuOAIzkd9Udq7XOd8QbXS_qPFDpx1-iuVCDTQx"[39m,
+        d: [32m"EOnwYa1s4Ted8bvb7joWk5dgDardpbPSAa6npGI3483l"[39m,
         m: [32m""[39m
       }
     }
@@ -8410,31 +9402,31 @@ console.log(await verifierClient.notifications().list());
       exn: {
         v: [32m"KERI10JSON000376_"[39m,
         t: [32m"exn"[39m,
-        d: [32m"EOJSD3QuOAIzkd9Udq7XOd8QbXS_qPFDpx1-iuVCDTQx"[39m,
-        i: [32m"EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L"[39m,
-        rp: [32m"ENuSi5ewqasHRtVQhpKsLcjY97JTaQVj-bV4uKg0R1mH"[39m,
-        p: [32m"EFNhZ0uO7MTPukdj4I8lji8uvFYX8_6e2j-_38wTWyap"[39m,
-        dt: [32m"2025-06-04T15:05:17.339000+00:00"[39m,
+        d: [32m"EOnwYa1s4Ted8bvb7joWk5dgDardpbPSAa6npGI3483l"[39m,
+        i: [32m"EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w"[39m,
+        rp: [32m"EFw1FlBWMRfymeGH_MeyXRWIdCiMwvCIra8nwOpK4i50"[39m,
+        p: [32m"EI7QfrawKAnpcpEIwUlAm-mRrhmNAvPF4PByspDWIooS"[39m,
+        dt: [32m"2025-06-05T22:24:34.456000+00:00"[39m,
         r: [32m"/ipex/offer"[39m,
         q: {},
-        a: { i: [32m"ENuSi5ewqasHRtVQhpKsLcjY97JTaQVj-bV4uKg0R1mH"[39m, m: [32m""[39m },
+        a: { i: [32m"EFw1FlBWMRfymeGH_MeyXRWIdCiMwvCIra8nwOpK4i50"[39m, m: [32m""[39m },
         e: {
           acdc: {
             v: [32m"ACDC10JSON0001c4_"[39m,
-            d: [32m"EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
-            i: [32m"EEmtrwjYNtN9MJuciijVkTxabYJYML9ibDFTPY7NCTNL"[39m,
-            ri: [32m"EH7KRA3UjKK5cDcAo4m5Et8h2fx2BKxjUrHjgq_1g2an"[39m,
+            d: [32m"ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
+            i: [32m"EKZnlxpHNfSj2TExcUEzMl7o_WclylGrlJFe0H0GgZLQ"[39m,
+            ri: [32m"EFJbqLviCwkUsY47HckIOzgGlS2NyfmRvkgh7izdmJgL"[39m,
             s: [32m"EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK"[39m,
             a: {
-              d: [32m"EPtFml2gguf3I7S-CfI7DS0BN5zOS2QlxuljFwP2_-ma"[39m,
-              i: [32m"EGH3ZGpgULNAJ2ITDIOeMOuHLVKSyqXo2kgSEgoFlQ4L"[39m,
+              d: [32m"ECh1d1TVl3Iq1fBuAhOqVWX0Hl5oQ0gdKm6P2d7sSLpb"[39m,
+              i: [32m"EOIHsOWni4ynixK49dVEHUWcjAT3bdgEHHfK7a7oUk0w"[39m,
               eventName: [32m"GLEIF Summit"[39m,
               accessLevel: [32m"staff"[39m,
               validDate: [32m"2026-10-01"[39m,
-              dt: [32m"2025-06-04T15:05:04.920000+00:00"[39m
+              dt: [32m"2025-06-05T22:24:22.037000+00:00"[39m
             }
           },
-          d: [32m"EHujwRN9bxVz7lhQUSZhRSaJ6x-ZMhSLkkjLIqM4R34e"[39m
+          d: [32m"ECwYXdUacBz8Oev_WNat3x_6kay60pJYJgPcTEtViNo3"[39m
         }
       },
       pathed: {}
@@ -8450,12 +9442,12 @@ console.log(await verifierClient.notifications().list());
       total: [33m1[39m,
       notes: [
         {
-          i: [32m"0ACjPjYuqsetz8GWynmeDQux"[39m,
-          dt: [32m"2025-06-04T15:05:17.707984+00:00"[39m,
+          i: [32m"0AB7TmJlEBzbwjGBR0nkMcpr"[39m,
+          dt: [32m"2025-06-05T22:24:34.826610+00:00"[39m,
           r: [33mtrue[39m,
           a: {
             r: [32m"/exn/ipex/offer"[39m,
-            d: [32m"EOJSD3QuOAIzkd9Udq7XOd8QbXS_qPFDpx1-iuVCDTQx"[39m,
+            d: [32m"EOnwYa1s4Ted8bvb7joWk5dgDardpbPSAa6npGI3483l"[39m,
             m: [32m""[39m
           }
         }
@@ -8538,26 +9530,26 @@ console.log("Credential status after revocation:", statusAfter);
 
     Credential status before revocation: {
       vn: [ [33m1[39m, [33m0[39m ],
-      i: [32m"EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
+      i: [32m"ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
       s: [32m"0"[39m,
-      d: [32m"EPxR_l9BvCje1sPB2WLvv4HsqvMT_zIGT4pgNhbkJNt3"[39m,
-      ri: [32m"EH7KRA3UjKK5cDcAo4m5Et8h2fx2BKxjUrHjgq_1g2an"[39m,
+      d: [32m"EMhosAmvYQNz5YipeQdo72_2S1HSky9gZr1eYREH9RKl"[39m,
+      ri: [32m"EFJbqLviCwkUsY47HckIOzgGlS2NyfmRvkgh7izdmJgL"[39m,
       ra: {},
-      a: { s: [33m2[39m, d: [32m"EMKUE-5IeQuEKfqUJ_fe9M-CRJhLnAXpt05YjEjez9h6"[39m },
-      dt: [32m"2025-06-04T15:05:04.920000+00:00"[39m,
+      a: { s: [33m2[39m, d: [32m"EEom_mYN-O-1GxBU7mpkzOoeTBrnRib6yUap9g_oMhpx"[39m },
+      dt: [32m"2025-06-05T22:24:22.037000+00:00"[39m,
       et: [32m"iss"[39m
     }
 
 
     Credential status after revocation: {
       vn: [ [33m1[39m, [33m0[39m ],
-      i: [32m"EKoHHvHWszegDgxEBPjpmPJFX7MJ-wmK4mWUnihClrJ8"[39m,
+      i: [32m"ECj8x588-SJoBX4ERaClMNuZ3R-5CIEdny31cvT_RhbG"[39m,
       s: [32m"1"[39m,
-      d: [32m"EF9rzk9YcyVOWGctRrEvGWwOakXsn1XaKXAD-tD592dm"[39m,
-      ri: [32m"EH7KRA3UjKK5cDcAo4m5Et8h2fx2BKxjUrHjgq_1g2an"[39m,
+      d: [32m"EPCsH_HWQqa42v37jYgAXrZqW9SLaJ3x3IqgJhbpCvpD"[39m,
+      ri: [32m"EFJbqLviCwkUsY47HckIOzgGlS2NyfmRvkgh7izdmJgL"[39m,
       ra: {},
-      a: { s: [33m3[39m, d: [32m"EMP5NQi2VZolFxlRUGbqi71goRMzQUv_1socFXq2tyVN"[39m },
-      dt: [32m"2025-06-04T15:05:23.214000+00:00"[39m,
+      a: { s: [33m3[39m, d: [32m"EFDf1wrZSXYesIbHzq3KbMpaMXi_Fmo-aUeBLm7jxfFM"[39m },
+      dt: [32m"2025-06-05T22:24:40.327000+00:00"[39m,
       et: [32m"rev"[39m
     }
 

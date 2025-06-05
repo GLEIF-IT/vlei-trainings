@@ -54,7 +54,7 @@ holder_aid = "holder_aid"
     KERI Keystore created at: /usr/local/var/keri/ks/holder_ks
     KERI Database created at: /usr/local/var/keri/db/holder_ks
     KERI Credential Store created at: /usr/local/var/keri/reg/holder_ks
-    	aeid: BB2_xl-WTEt10ozTsZgKiWQyAhFDkkv4xgR3PaXKlhjX
+    	aeid: BICUosWNZLBkmmcLnqJQ7EoebiGTGB6-n6qop_XHMdwc
     
     Loading 3 OOBIs...
 
@@ -67,8 +67,8 @@ holder_aid = "holder_aid"
     Waiting for witness receipts...
 
 
-    Prefix  EER1WBgpxjbgbk2-MXhEE8wPNMAU1Tquc9qsgZgS8nlC
-    	Public key 1:  DOtffm6WrtPebmqbh4UST2pkpPiD8vJzc2Nbcs0HJ2ko
+    Prefix  EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV
+    	Public key 1:  DOk5PB5QzMujgQsDpKtE1cuO74lw-vYDNOPHDc6Vmigy
     
 
 
@@ -99,7 +99,7 @@ issuer_aid = "issuer_aid"
     KERI Keystore created at: /usr/local/var/keri/ks/issuer_ks
     KERI Database created at: /usr/local/var/keri/db/issuer_ks
     KERI Credential Store created at: /usr/local/var/keri/reg/issuer_ks
-    	aeid: BO6SJRvzq9Va_7INypO-KD1VgeNPFaEU5tPXRveK6cRZ
+    	aeid: BAWwrOMuTGH3knQTtOIEdVA_Tg2gXXSp0vAQdyOQooc1
     
     Loading 3 OOBIs...
 
@@ -112,8 +112,8 @@ issuer_aid = "issuer_aid"
     Waiting for witness receipts...
 
 
-    Prefix  EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u
-    	Public key 1:  DAJM3XT8asq5iruo7iyLOTVokSenCxgGmJ_R4P9qt83z
+    Prefix  ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
+    	Public key 1:  DGaL9B_Q4d03QpZGnnmDiqrQiow_wKWzq-1EXAEYYBXf
     
 
 
@@ -138,10 +138,10 @@ issuer_oobi = exec(issuer_oobi_gen)
     --oobi {holder_oobi}
 ```
 
-    http://witness-demo:5642/oobi/EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u/witness resolved
+    http://witness-demo:5642/oobi/ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL/witness resolved
 
 
-    http://witness-demo:5642/oobi/EER1WBgpxjbgbk2-MXhEE8wPNMAU1Tquc9qsgZgS8nlC/witness resolved
+    http://witness-demo:5642/oobi/EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV/witness resolved
 
 
 ### Creating the Issuer's Credential Registry
@@ -166,8 +166,8 @@ issuer_registry_name="issuer_registry"
     Sending TEL events to witnesses
 
 
-    Registry:  issuer_registry(EB3L-aXTqyGcosI0FF-G3oY81vJ8yH27WDGf3AGy89vD) 
-    	created for Identifier Prefix:  EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u
+    Registry:  issuer_registry(EL8zPepRFo0SVJ16k5VhclcxH5n2rWegdKVpOI1wMsUU) 
+    	created for Identifier Prefix:  ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
 
 
 To query the status of a registry, use the command `kli vc registry status`. This shows the registry's SAID, its current sequence number (how many events have occurred in its TEL), and the controlling AID.
@@ -179,9 +179,11 @@ To query the status of a registry, use the command `kli vc registry status`. Thi
     --registry-name {issuer_registry_name} 
 ```
 
-    Registry:  EB3L-aXTqyGcosI0FF-G3oY81vJ8yH27WDGf3AGy89vD
+    Registry:  EL8zPepRFo0SVJ16k5VhclcxH5n2rWegdKVpOI1wMsUU
+
+
     Seq No.  0
-        Controlling Identifier:  EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u
+        Controlling Identifier:  ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
     
     Backers: Not supported
     Events:	Interaction Allowed
@@ -331,7 +333,7 @@ time = exec("kli time")
     Sending TEL events to witnesses
 
 
-    EGrgz5obwuqs7eDZxiGuNWIKT9Nc2RuCX5tTXpw5koWh has been created.
+    EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe has been created.
 
 
 ### Viewing the Issued Credential
@@ -346,24 +348,26 @@ The kli vc list command allows the Issuer to see the credentials they have issue
     --verbose
 ```
 
-    Current issued credentials for issuer_aid (EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u):
+    Current issued credentials for issuer_aid (ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL):
     
-    Credential #1: EGrgz5obwuqs7eDZxiGuNWIKT9Nc2RuCX5tTXpw5koWh
+
+
+    Credential #1: EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe
         Type: EventPass
         Status: Issued [92m✔[0m
-        Issued by EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u
-        Issued on 2025-05-30T22:28:37.911749+00:00
+        Issued by ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
+        Issued on 2025-06-05T22:21:23.472507+00:00
         Full Credential:
     	{
     	  "v": "ACDC10JSON0001c4_",
-    	  "d": "EGrgz5obwuqs7eDZxiGuNWIKT9Nc2RuCX5tTXpw5koWh",
-    	  "i": "EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u",
-    	  "ri": "EB3L-aXTqyGcosI0FF-G3oY81vJ8yH27WDGf3AGy89vD",
+    	  "d": "EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe",
+    	  "i": "ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL",
+    	  "ri": "EL8zPepRFo0SVJ16k5VhclcxH5n2rWegdKVpOI1wMsUU",
     	  "s": "EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK",
     	  "a": {
-    	    "d": "EGt-ziMbMUTAfywSQJXIvftRFYBm6acPuTsBSP2clfLJ",
-    	    "i": "EER1WBgpxjbgbk2-MXhEE8wPNMAU1Tquc9qsgZgS8nlC",
-    	    "dt": "2025-05-30T22:28:37.911749+00:00",
+    	    "d": "EE6q_yM1ZbXJfJW8ohy2UGj_ojXokDmJOfmKbDI5kIsg",
+    	    "i": "EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV",
+    	    "dt": "2025-06-05T22:21:23.472507+00:00",
     	    "eventName": "GLEIF Summit",
     	    "accessLevel": "staff",
     	    "validDate": "2026-10-01"
@@ -395,7 +399,7 @@ credential_said=exec(get_credential_said)
 print(credential_said)
 ```
 
-    EGrgz5obwuqs7eDZxiGuNWIKT9Nc2RuCX5tTXpw5koWh
+    EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe
 
 
 ## Transferring the Credential via IPEX
@@ -428,7 +432,7 @@ time = exec("kli time")
     --time {time}
 ```
 
-    Sending message EIOYoUwcaXuRJxCdO5JBIBWEP7_zz-ilwmRdKY_Nd0vK to EER1WBgpxjbgbk2-MXhEE8wPNMAU1Tquc9qsgZgS8nlC
+    Sending message EGgL9qjiT5fa8yzyxGkVoTgtn8fDzsmmtz4PiafwHeme to EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV
 
 
     ... grant message sent
@@ -449,12 +453,12 @@ This step isn't strictly required for the workflow but allows the Issuer to view
     
     Sent IPEX Messages:
     
-    GRANT - SAID: EIOYoUwcaXuRJxCdO5JBIBWEP7_zz-ilwmRdKY_Nd0vK
-    Credential EGrgz5obwuqs7eDZxiGuNWIKT9Nc2RuCX5tTXpw5koWh:
+    GRANT - SAID: EGgL9qjiT5fa8yzyxGkVoTgtn8fDzsmmtz4PiafwHeme
+    Credential EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe:
         Type: EventPass
         Status: Issued [92m✔[0m
-        Issued by EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u
-        Issued on 2025-05-30T22:28:37.911749+00:00
+        Issued by ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
+        Issued on 2025-06-05T22:21:23.472507+00:00
         Already responded? No [91m✘[0m
     
 
@@ -472,7 +476,7 @@ print(ipex_said)
 
 ```
 
-    EIOYoUwcaXuRJxCdO5JBIBWEP7_zz-ilwmRdKY_Nd0vK
+    EGgL9qjiT5fa8yzyxGkVoTgtn8fDzsmmtz4PiafwHeme
 
 
 **Holder Views Received Messages (Optional)**
@@ -489,12 +493,12 @@ Similar to the Issuer checking sent messages, the Holder can use `kli ipex list`
     
     Received IPEX Messages:
     
-    GRANT - SAID: EIOYoUwcaXuRJxCdO5JBIBWEP7_zz-ilwmRdKY_Nd0vK
-    Credential EGrgz5obwuqs7eDZxiGuNWIKT9Nc2RuCX5tTXpw5koWh:
+    GRANT - SAID: EGgL9qjiT5fa8yzyxGkVoTgtn8fDzsmmtz4PiafwHeme
+    Credential EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe:
         Type: EventPass
         Status: Issued [92m✔[0m
-        Issued by EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u
-        Issued on 2025-05-30T22:28:37.911749+00:00
+        Issued by ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
+        Issued on 2025-06-05T22:21:23.472507+00:00
         Already responded? No [91m✘[0m
     
 
@@ -521,7 +525,7 @@ time = exec("kli time")
     --time {time}
 ```
 
-    Sending admit message to EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u
+    Sending admit message to ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
 
 
     ... admit message sent
@@ -541,10 +545,12 @@ The Holder can optionally check their sent IPEX messages to confirm the `ADMIT` 
 
     
     Sent IPEX Messages:
+
+
     
-    ADMIT - SAID: EKTZik_4EaIGdTnM4R6Itz35I_dBv5_YIjUSBRvACkJU
-    Admitted message SAID: EIOYoUwcaXuRJxCdO5JBIBWEP7_zz-ilwmRdKY_Nd0vK
-    Credential EGrgz5obwuqs7eDZxiGuNWIKT9Nc2RuCX5tTXpw5koWh:
+    ADMIT - SAID: ECIUUwBReqnt4pjZ7URjMGb_wqIShlezRjcfO_0HO4Hd
+    Admitted message SAID: EGgL9qjiT5fa8yzyxGkVoTgtn8fDzsmmtz4PiafwHeme
+    Credential EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe:
         Type: EventPass
         Status: Accepted [92m✔[0m
     
@@ -561,24 +567,24 @@ The issuance process is complete! The Holder now possesses the verifiable creden
     --verbose
 ```
 
-    Current received credentials for holder_aid (EER1WBgpxjbgbk2-MXhEE8wPNMAU1Tquc9qsgZgS8nlC):
+    Current received credentials for holder_aid (EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV):
     
-    Credential #1: EGrgz5obwuqs7eDZxiGuNWIKT9Nc2RuCX5tTXpw5koWh
+    Credential #1: EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe
         Type: EventPass
         Status: Issued [92m✔[0m
-        Issued by EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u
-        Issued on 2025-05-30T22:28:37.911749+00:00
+        Issued by ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL
+        Issued on 2025-06-05T22:21:23.472507+00:00
         Full Credential:
     	{
     	  "v": "ACDC10JSON0001c4_",
-    	  "d": "EGrgz5obwuqs7eDZxiGuNWIKT9Nc2RuCX5tTXpw5koWh",
-    	  "i": "EGMC6FaJ-8UtTgmDNzIwwZmf2HkZzntLvfv58VzuHz2u",
-    	  "ri": "EB3L-aXTqyGcosI0FF-G3oY81vJ8yH27WDGf3AGy89vD",
+    	  "d": "EFWUOELfiPiZTeP7Gb77qVHwylo7SDtngRWLqpKBxkLe",
+    	  "i": "ED8jc_D7w0kqlTdtkdkRWLSNPWVGTFK_cGZRGhHF5FmL",
+    	  "ri": "EL8zPepRFo0SVJ16k5VhclcxH5n2rWegdKVpOI1wMsUU",
     	  "s": "EGUPiCVO73M9worPwR3PfThAtC0AJnH5ZgwsXf6TzbVK",
     	  "a": {
-    	    "d": "EGt-ziMbMUTAfywSQJXIvftRFYBm6acPuTsBSP2clfLJ",
-    	    "i": "EER1WBgpxjbgbk2-MXhEE8wPNMAU1Tquc9qsgZgS8nlC",
-    	    "dt": "2025-05-30T22:28:37.911749+00:00",
+    	    "d": "EE6q_yM1ZbXJfJW8ohy2UGj_ojXokDmJOfmKbDI5kIsg",
+    	    "i": "EDBOd_1lLiPcJzoA1ufzZG1Muq5QdHUuqsv_p3Rf1jkV",
+    	    "dt": "2025-06-05T22:21:23.472507+00:00",
     	    "eventName": "GLEIF Summit",
     	    "accessLevel": "staff",
     	    "validDate": "2026-10-01"

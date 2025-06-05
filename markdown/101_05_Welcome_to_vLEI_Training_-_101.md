@@ -1,6 +1,6 @@
 # Welcome to vLEI Training - 101
 
-This collection of Notebooks is designed to guide you through the foundational concepts of the Key Event Receipt Infrastructure (KERI) and Authentic Chained Data Containers (ACDC) protocols, followed by the workings of the verifiable Legal Entity Identifier (vLEI) ecosystem. We aim to equip you with the knowledge needed to build applications leveraging this powerful identity technology.
+This collection of Notebooks is designed to guide you through the foundational concepts of the [Key Event Receipt Infrastructure](https://trustoverip.github.io/tswg-keri-specification/) (KERI) and [Authentic Chained Data Containers](https://trustoverip.github.io/tswg-acdc-specification/) (ACDC) protocols, followed by the workings of the [verifiable Legal Entity Identifier](https://www.gleif.org/en/organizational-identity/introducing-the-verifiable-lei-vlei/introducing-the-vlei-ecosystem-governance-framework) (vLEI) ecosystem. We aim to equip you with the knowledge needed to build applications leveraging this powerful identity technology.
 
 After completing this training, you will:
 - Understand the KERI protocol
@@ -93,10 +93,10 @@ This can be useful for decluttering the view or before re-running a notebook fro
 
 This material was created and tested to work with:
 
-- **keri:1.2.6**
-- **keria:0.2.0-rc2**
-- **signify-ts:?**
-- **vlei:0.2.0**
+- **[weboftrust/keri:1.2.6](https://github.com/WebOfTrust/keripy/releases/tag/1.2.6)**
+- **[gleif/keria:0.3.0](https://github.com/GLEIF-IT/keria/releases/tag/0.3.0)**
+- **[weboftrust/signify-ts:0.3.0-rc1](https://www.npmjs.com/package/signify-ts)**
+- **[weboftrust/vlei:1.0.0](https://github.com/WebOfTrust/vLEI/releases/tag/1.0.0)**
 
 <div class="alert alert-info">
   <b>🧩 DID YOU KNOW?</b><hr>
@@ -109,7 +109,4 @@ KERI, ACDC, and the vLEI ecosystem offer a strong foundation for secure digital 
 
 
 
-
-```python
-
-```
+[<- Prev (TOC)](000_Table_of_Contents.ipynb) | [Next (Intro) ->](101_07_Introduction_to-KERI_ACDC_and_vLEI.ipynb)

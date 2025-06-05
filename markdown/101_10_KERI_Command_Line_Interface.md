@@ -17,10 +17,11 @@ Since you are working within Jupyter notebooks, the KLI commands are written wit
 
 The KLI provides a wide range of functionalities. Key capabilities include:
 - **Identifier management**: Management and creation of keystores and identifiers
-- **Utility functions**: Functions to facilitate KERI-related operations
+- **Utility functions**: Functions to facilitate KERI-related operations for debugging and troubleshooting.
 - **Credential management**: Creation of credentials
 - **Comunication operations**: Establishing connections between AIDs
 - **IPEX actions**: To issue and present credentials
+- **Run witness**: Start a witness process in order to receipt key events
 - **Others**: The KLI provides commands for most of the features available in the KERI and ACDC protocol implementations.
 
 
@@ -43,10 +44,12 @@ This isn't a complete list of every command, but it covers some essential utilit
 !kli version
 ```
 
-    Library version: 1.2.6
+    Library version: 1.2.8
 
 
-**Generate a salt**: Create a new random salt (or seed). A salt is a random value used as an input when generating cryptographic key pairs to help ensure their uniqueness and security.
+**Generate a salt**: Create a new random salt (or seed) in the fully-qualified [CESR](https://trustoverip.github.io/tswg-cesr-specification/) format. A salt is a random value used as an input when generating cryptographic key pairs to help ensure their uniqueness and security.
+
+What it means to be fully qualified is that the bytes in the cryptographic salt are ordered according to the CESR protocol. This ordering will be explained in a later training when CESR is introduced and explained. For now just think of CESR as a custom file format for KERI and ACDC data.
 
 
 ```python
@@ -54,7 +57,7 @@ This isn't a complete list of every command, but it covers some essential utilit
 !kli salt
 ```
 
-    0ACKVwq9kPVbl421sH50Iwub
+    0ADnHkHNLRtIG5xtdwFlXv68
 
 
 **Generate a passcode**: The passcode is used to encrypt your keystore, providing an additional layer of protection.
@@ -65,17 +68,17 @@ This isn't a complete list of every command, but it covers some essential utilit
 !kli passcode generate
 ```
 
-    MuKgq7Ej6m8JbuWvTCb43
+    As1NOxmtbfW3aOTJ1vihB
 
 
-**Print a timestamp**
+**Print a timestamp**: Timestamps are typically used in operations involving multiple signers with what are called multi-signature (or "multisig") groups.
 
 
 ```python
 !kli time
 ```
 
-    2025-05-30T22:26:46.188402+00:00
+    2025-06-05T22:19:24.327823+00:00
 
 
 **Display help menu**
@@ -136,3 +139,7 @@ This isn't a complete list of every command, but it covers some essential utilit
         watcher
         witness
 
+
+Additional commands will be introduced as they are used in upcoming trainings.
+
+[<- Prev (Intro)](101_07_Introduction_to-KERI_ACDC_and_vLEI.ipynb) | [Next (Controllers and Identifiers) ->](101_15_Controllers_and_Identifiers.ipynb)

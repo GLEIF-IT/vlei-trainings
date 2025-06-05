@@ -78,8 +78,8 @@ await clientB.operations().delete(BInceptionOperation.name);
 console.log(`Client A AID Pre: ${aidA.i}\nClient B AID Pre: ${aidB.i}`)
 ```
 
-    Client A AID Pre: EOj8WL3Q3Y-1KwVuDUf1IIZRwtEw0xsKnXNf2JSjCBhl
-    Client B AID Pre: ENytNgGxlCqqCR9SWOJHVgw2L9tjnuZpOUgDgRvn87-q
+    Client A AID Pre: ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn
+    Client B AID Pre: EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS
 
 
 <div class="alert alert-info">
@@ -142,10 +142,10 @@ console.log(`Client B: Assigned '${agentRole}' role to KERIA Agent ${clientB.age
 
 ```
 
-    Client A: Assigned 'agent' role to KERIA Agent EKE_3OAx9qpNn8LF06xkkxL-61ZWLuYLUSHlKuA2TvRq for AID EOj8WL3Q3Y-1KwVuDUf1IIZRwtEw0xsKnXNf2JSjCBhl
+    Client A: Assigned 'agent' role to KERIA Agent ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX for AID ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn
 
 
-    Client B: Assigned 'agent' role to KERIA Agent EKiHYbDJv1JynOorIKoCJaHs3uxcGhuCSW_zpCKqI-uv for AID ENytNgGxlCqqCR9SWOJHVgw2L9tjnuZpOUgDgRvn87-q
+    Client B: Assigned 'agent' role to KERIA Agent EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h for AID EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS
 
 
 ## Discovery via OOBIs
@@ -177,10 +177,10 @@ console.log(`Client B (Betty) generated OOBI for aidB: ${oobiB_url}`);
 
 ```
 
-    Client A (Alfred) generated OOBI for aidA: http://keria:3902/oobi/EOj8WL3Q3Y-1KwVuDUf1IIZRwtEw0xsKnXNf2JSjCBhl/agent/EKE_3OAx9qpNn8LF06xkkxL-61ZWLuYLUSHlKuA2TvRq
+    Client A (Alfred) generated OOBI for aidA: http://keria:3902/oobi/ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn/agent/ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX
 
 
-    Client B (Betty) generated OOBI for aidB: http://keria:3902/oobi/ENytNgGxlCqqCR9SWOJHVgw2L9tjnuZpOUgDgRvn87-q/agent/EKiHYbDJv1JynOorIKoCJaHs3uxcGhuCSW_zpCKqI-uv
+    Client B (Betty) generated OOBI for aidB: http://keria:3902/oobi/EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS/agent/EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h
 
 
 ### Resolving OOBI URLs
@@ -251,11 +251,11 @@ console.log(BContacts);
     [
       {
         alias: [32m"Betty_Contact_for_Alfred"[39m,
-        oobi: [32m"http://keria:3902/oobi/ENytNgGxlCqqCR9SWOJHVgw2L9tjnuZpOUgDgRvn87-q/agent/EKiHYbDJv1JynOorIKoCJaHs3uxcGhuCSW_zpCKqI-uv"[39m,
-        id: [32m"ENytNgGxlCqqCR9SWOJHVgw2L9tjnuZpOUgDgRvn87-q"[39m,
+        oobi: [32m"http://keria:3902/oobi/EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS/agent/EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h"[39m,
+        id: [32m"EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS"[39m,
         ends: {
           agent: {
-            [32m"EKiHYbDJv1JynOorIKoCJaHs3uxcGhuCSW_zpCKqI-uv"[39m: { http: [32m"http://keria:3902/"[39m }
+            [32m"EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h"[39m: { http: [32m"http://keria:3902/"[39m }
           },
           witness: {
             [32m"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"[39m: {
@@ -281,11 +281,11 @@ console.log(BContacts);
     [
       {
         alias: [32m"Alfred_Contact_for_Betty"[39m,
-        oobi: [32m"http://keria:3902/oobi/EOj8WL3Q3Y-1KwVuDUf1IIZRwtEw0xsKnXNf2JSjCBhl/agent/EKE_3OAx9qpNn8LF06xkkxL-61ZWLuYLUSHlKuA2TvRq"[39m,
-        id: [32m"EOj8WL3Q3Y-1KwVuDUf1IIZRwtEw0xsKnXNf2JSjCBhl"[39m,
+        oobi: [32m"http://keria:3902/oobi/ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn/agent/ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX"[39m,
+        id: [32m"ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn"[39m,
         ends: {
           agent: {
-            [32m"EKE_3OAx9qpNn8LF06xkkxL-61ZWLuYLUSHlKuA2TvRq"[39m: { http: [32m"http://keria:3902/"[39m }
+            ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX: { http: [32m"http://keria:3902/"[39m }
           },
           witness: {
             [32m"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"[39m: {
@@ -344,22 +344,22 @@ console.log("Client B's challenge words for Alfred:", challengeWordsB.words);
 ```
 
     Client A's challenge words for Betty: [
-      [32m"detail"[39m,   [32m"electric"[39m,
-      [32m"pair"[39m,     [32m"economy"[39m,
-      [32m"picnic"[39m,   [32m"approve"[39m,
-      [32m"photo"[39m,    [32m"index"[39m,
-      [32m"dinosaur"[39m, [32m"disagree"[39m,
-      [32m"north"[39m,    [32m"bring"[39m
+      [32m"myself"[39m,   [32m"abandon"[39m,
+      [32m"dinner"[39m,   [32m"silly"[39m,
+      [32m"luxury"[39m,   [32m"despair"[39m,
+      [32m"increase"[39m, [32m"blossom"[39m,
+      [32m"federal"[39m,  [32m"luxury"[39m,
+      [32m"rabbit"[39m,   [32m"usual"[39m
     ]
 
 
     Client B's challenge words for Alfred: [
-      [32m"nominee"[39m, [32m"mesh"[39m,
-      [32m"noodle"[39m,  [32m"decide"[39m,
-      [32m"brave"[39m,   [32m"siege"[39m,
-      [32m"law"[39m,     [32m"mesh"[39m,
-      [32m"nephew"[39m,  [32m"thing"[39m,
-      [32m"betray"[39m,  [32m"ancient"[39m
+      [32m"umbrella"[39m, [32m"favorite"[39m,
+      [32m"person"[39m,   [32m"entire"[39m,
+      [32m"two"[39m,      [32m"tooth"[39m,
+      [32m"begin"[39m,    [32m"all"[39m,
+      [32m"behave"[39m,   [32m"slim"[39m,
+      [32m"vibrant"[39m,  [32m"under"[39m
     ]
 
 
@@ -409,7 +409,7 @@ console.log(AContactsAfterAuth)
 ```
 
     
-    Betty (aidB: ENytNgGxlCqqCR9SWOJHVgw2L9tjnuZpOUgDgRvn87-q) responding to Alfred's (aidA: EOj8WL3Q3Y-1KwVuDUf1IIZRwtEw0xsKnXNf2JSjCBhl) challenge...
+    Betty (aidB: EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS) responding to Alfred's (aidA: ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn) challenge...
 
 
     Betty's response sent.
@@ -419,7 +419,7 @@ console.log(AContactsAfterAuth)
     Alfred (aidA) verifying Betty's (aidB) response...
 
 
-    Alfred: Betty's response verified. SAID of exn: EPs3O2UrdjwttqWaiyE_RXVh_AxDHwYxOdljvlfXUURV
+    Alfred: Betty's response verified. SAID of exn: EP_IBY5H9_7TvQzdkx5ekGerGXRb485SzAWm9W6Pgcya
 
 
     Alfred: Marked Betty's contact as authenticated.
@@ -428,11 +428,11 @@ console.log(AContactsAfterAuth)
     [
       {
         alias: [32m"Betty_Contact_for_Alfred"[39m,
-        oobi: [32m"http://keria:3902/oobi/ENytNgGxlCqqCR9SWOJHVgw2L9tjnuZpOUgDgRvn87-q/agent/EKiHYbDJv1JynOorIKoCJaHs3uxcGhuCSW_zpCKqI-uv"[39m,
-        id: [32m"ENytNgGxlCqqCR9SWOJHVgw2L9tjnuZpOUgDgRvn87-q"[39m,
+        oobi: [32m"http://keria:3902/oobi/EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS/agent/EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h"[39m,
+        id: [32m"EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS"[39m,
         ends: {
           agent: {
-            [32m"EKiHYbDJv1JynOorIKoCJaHs3uxcGhuCSW_zpCKqI-uv"[39m: { http: [32m"http://keria:3902/"[39m }
+            [32m"EFSmetcRwJNkqnEqmsKwyk2u6UOID-MoO33THySNlH-h"[39m: { http: [32m"http://keria:3902/"[39m }
           },
           witness: {
             [32m"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"[39m: {
@@ -451,16 +451,16 @@ console.log(AContactsAfterAuth)
         },
         challenges: [
           {
-            dt: [32m"2025-05-30T22:29:56.791000+00:00"[39m,
+            dt: [32m"2025-06-05T22:23:51.289000+00:00"[39m,
             words: [
-              [32m"detail"[39m,   [32m"electric"[39m,
-              [32m"pair"[39m,     [32m"economy"[39m,
-              [32m"picnic"[39m,   [32m"approve"[39m,
-              [32m"photo"[39m,    [32m"index"[39m,
-              [32m"dinosaur"[39m, [32m"disagree"[39m,
-              [32m"north"[39m,    [32m"bring"[39m
+              [32m"myself"[39m,   [32m"abandon"[39m,
+              [32m"dinner"[39m,   [32m"silly"[39m,
+              [32m"luxury"[39m,   [32m"despair"[39m,
+              [32m"increase"[39m, [32m"blossom"[39m,
+              [32m"federal"[39m,  [32m"luxury"[39m,
+              [32m"rabbit"[39m,   [32m"usual"[39m
             ],
-            said: [32m"EPs3O2UrdjwttqWaiyE_RXVh_AxDHwYxOdljvlfXUURV"[39m,
+            said: [32m"EP_IBY5H9_7TvQzdkx5ekGerGXRb485SzAWm9W6Pgcya"[39m,
             authenticated: [33mtrue[39m
           }
         ],
@@ -511,7 +511,7 @@ console.log(BContactsAfterAuth);
 ```
 
     
-    Alfred (aidA: EOj8WL3Q3Y-1KwVuDUf1IIZRwtEw0xsKnXNf2JSjCBhl) responding to Betty's (aidB: ENytNgGxlCqqCR9SWOJHVgw2L9tjnuZpOUgDgRvn87-q) challenge...
+    Alfred (aidA: ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn) responding to Betty's (aidB: EPPADnlm6F7ubYe-qNz77aOnkYKjUhioJ8jHlvcxUSTS) challenge...
 
 
     Alfred's response sent.
@@ -521,7 +521,7 @@ console.log(BContactsAfterAuth);
     Betty (aidB) verifying Alfred's (aidA) response...
 
 
-    Betty: Alfred's response verified. SAID of exn: EBPw4p70smbNbxN3KGd0TwHx6KVWfSPM-D8wtfOq3HpJ
+    Betty: Alfred's response verified. SAID of exn: EFfTZfIUwyOyNp-tMHtQJ3OSLqyiB_oiR-fmAxYeOpir
 
 
     Betty: Marked Alfred's contact as authenticated.
@@ -530,11 +530,11 @@ console.log(BContactsAfterAuth);
     [
       {
         alias: [32m"Alfred_Contact_for_Betty"[39m,
-        oobi: [32m"http://keria:3902/oobi/EOj8WL3Q3Y-1KwVuDUf1IIZRwtEw0xsKnXNf2JSjCBhl/agent/EKE_3OAx9qpNn8LF06xkkxL-61ZWLuYLUSHlKuA2TvRq"[39m,
-        id: [32m"EOj8WL3Q3Y-1KwVuDUf1IIZRwtEw0xsKnXNf2JSjCBhl"[39m,
+        oobi: [32m"http://keria:3902/oobi/ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn/agent/ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX"[39m,
+        id: [32m"ENd3SE9KcIu8YFpDBSvbykuuO2cbrvcc4A97u8oQ14nn"[39m,
         ends: {
           agent: {
-            [32m"EKE_3OAx9qpNn8LF06xkkxL-61ZWLuYLUSHlKuA2TvRq"[39m: { http: [32m"http://keria:3902/"[39m }
+            ECVxfxygpqNAbaLv_NGYnulI_rpjsiY8jg2wLq3W6dVX: { http: [32m"http://keria:3902/"[39m }
           },
           witness: {
             [32m"BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha"[39m: {
@@ -553,16 +553,16 @@ console.log(BContactsAfterAuth);
         },
         challenges: [
           {
-            dt: [32m"2025-05-30T22:29:57.290000+00:00"[39m,
+            dt: [32m"2025-06-05T22:23:51.755000+00:00"[39m,
             words: [
-              [32m"nominee"[39m, [32m"mesh"[39m,
-              [32m"noodle"[39m,  [32m"decide"[39m,
-              [32m"brave"[39m,   [32m"siege"[39m,
-              [32m"law"[39m,     [32m"mesh"[39m,
-              [32m"nephew"[39m,  [32m"thing"[39m,
-              [32m"betray"[39m,  [32m"ancient"[39m
+              [32m"umbrella"[39m, [32m"favorite"[39m,
+              [32m"person"[39m,   [32m"entire"[39m,
+              [32m"two"[39m,      [32m"tooth"[39m,
+              [32m"begin"[39m,    [32m"all"[39m,
+              [32m"behave"[39m,   [32m"slim"[39m,
+              [32m"vibrant"[39m,  [32m"under"[39m
             ],
-            said: [32m"EBPw4p70smbNbxN3KGd0TwHx6KVWfSPM-D8wtfOq3HpJ"[39m,
+            said: [32m"EFfTZfIUwyOyNp-tMHtQJ3OSLqyiB_oiR-fmAxYeOpir"[39m,
             authenticated: [33mtrue[39m
           }
         ],

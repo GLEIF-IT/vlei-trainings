@@ -32,8 +32,8 @@ I2I signifies: "My authority to issue this current ACDC comes from the fact that
 ### I2I Scenario Examples
 
 1.  **Endorsement for Building Access:**
-    * **Scenario:** A company (ACME) issues a "Manager" ACDC to an Employee. The Employee (now acting as an issuer by virtue of their managerial role) then issues an "Access Granted" ACDC for a specific building to a sub-contractor they hired. The "Access Granted" ACDC would have an I2I edge pointing back to the employee's "Manager" ACDC.
-    * **Chain:** ACME (Issuer) -> "Manager" ACDC (Issuee: Employee) -> Employee (Issuer, leveraging their "Manager" status) -> "Access Granted" ACDC (Issuee: Sub-contractor).
+    * **Scenario:** A company (ACME) issues a "Manager role" ACDC to an Employee. The Employee (now acting as an issuer by virtue of their managerial role) then issues an "Access" ACDC for a specific building to a sub-contractor they hired. The "Access" ACDC would have an I2I edge pointing back to the employee's "Manager role" ACDC.
+    * **Chain:** ACME (Issuer) -> "Manager role" ACDC (Issuee: Employee) -> Employee (Issuer, leveraging their "Manager" status) -> "Access" ACDC (Issuee: Sub-contractor).
     * **Significance:** The I2I edge ensures the Manager issuing access is verifiably the same individual to whom ACME conferred managerial status.
 
 2.  **Membership Level Endorsement for Event Access:**

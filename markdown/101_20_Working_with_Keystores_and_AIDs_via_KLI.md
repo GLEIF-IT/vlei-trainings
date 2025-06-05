@@ -52,6 +52,8 @@ keystore_salt="0ABeuT2dErMrqFE5Dmrnc2Bq"
 
 The command sets up the necessary file structures for your keystore, so once executed, it's ready for you to create and manage Identifiers within it.
 
+![](images/empty-keystore.png)
+
 <div class="alert alert-info">
   <b>ℹ️ NOTE</b><hr>
 <ul>
@@ -94,6 +96,8 @@ aid_alias = "my-first-aid"
     
 
 
+![](images/incepted-keystore.png)
+
 ## Understanding Prefixes
 
 The `kli incept` command generated an AID, which is represented by a unique string, e.g., `BHt9Kw8oUgfB2kiyoj65B2VE5fZLr87S5MJP3l4JeRwC`, known as the Prefix. While closely related, they represent different aspects of the identifier:
@@ -104,7 +108,19 @@ The `kli incept` command generated an AID, which is represented by a unique stri
     - The Encoded Public Key: The public portion of the initially generated key pair associated with the AID.
 
 **Prefix Self-Certification:**  
-KERI AIDs are self-certifying. This works because the identifier's prefix embeds the necessary public key information directly within it. Because of this, anyone who has the prefix can cryptographically check signatures made with the matching private key. This proves actions related to the AID are authentic without needing to check with outside authorities or registries. **Keep in mind, this direct checking applies to the key that is currently authorized for the AID; key rotation changes the authorized key, requiring reference to the AID's KEL for verification.**
+KERI AIDs are [self-certifying](https://trustoverip.github.io/tswg-keri-specification/#self-certifying-identifier-scid) in the sense that an AID does not rely on a trusted entity and instead relies only on the keys its identifier is derived from to provide verifiability for statements made (signed) by the controller of an AID. 
+
+This works because:
+1. The identifier's prefix is derived from the set of public keys that are included in the inception event. The prefix is the self addressing identifier (SAID), a kind of digest, of the inception event. This provides a strong cryptographic binding between the AID prefix and the keys used to generate the inception event.
+2. The inception event and initial keypairs, together with the key event log and any successive keypairs resulting from rotations, are sufficient to verify any signed statement made by the AID controller.
+
+Because of this relationship between keypairs, the inception event, and the key event log, anyone who has the prefix and the KEL can cryptographically verify signatures made by a given AID with the matching private key from any given point in the history of a KEL. This verifiability establishes authenticity for all actions taken by an AID without needing to check with outside authorities or registries, meaning they are self-certifying. 
+
+### Security precaution for live transactions
+
+**Keep in mind, as a security precaution**, signature verification with a prefix and a KEL is most securely done with the most recent key that is currently authorized for the AID, as in the latest set of keys given the inception and all rotations. Key rotation changes the authorized key, requiring reference to the AID's KEL for up-to-date verification. Historical signatures may still be verified, yet to ensure proper security during a live transaction the latest controlling keypairs should always be used for signature verification. 
+
+This means signatures from old keypairs, during a live transaction, should always be rejected when verifying signatures of an in-progress transaction. Such an approach is appropriate because there is no way to know if an attacker has compromised old keypairs and is using old keys to sign the new transaction events. To adopt the highest security posture then usage of the latest keypair according to the KEL should **always** be required.
 
 <div class="alert alert-prymary">
   <b>📝 SUMMARY</b><hr>
@@ -169,6 +185,8 @@ You can use `kli status` with the `--verbose` parameter to show the key event lo
     
     
     Witnesses:	
+
+
     
     {
      "v": "KERI10JSON0000fd_",
@@ -190,12 +208,19 @@ You can use `kli status` with the `--verbose` parameter to show the key event lo
     
 
 
-Here are some descriptions of the KEL fields:
+Here are some descriptions of the KEL fields (see the [spec](https://trustoverip.github.io/tswg-keri-specification/#keri-data-structures-and-labels)):
 - `v`: Version String
 - `t`: Message type (`icp` means inception)
-- `i`: AID Prefix
+- `i`: AID Prefix that created the event ("issuer" of the event)
+- `s`: sequence number of the event, always zero for the inception event since it is the first event
 - `kt`: Keys Signing Threshold (the `isith` value used in `kli inception`)
-- `k`: List of Signing Keys (You get as many keys as defined by the `icount` value used in `kli inception`)
+- `k`: List of public keys that are Signing Keys (You get as many keys as defined by the `icount` value used in `kli inception`)
+- `nt`: Next Signing Threshold (rotation signing threshold), zero in this case. This will be explored in an upcoming lesson.
+- `n`: List of public key **digests** that are rotation keys authorized to perform rotations. Since there are no rotation keys specified here then this identifier may never rotate and may be considered to have rotated to "null" on its first event, meaning it can only ever be used for signing.
+- `bt`: Backer (witness) Threshold - the number of backer (witness) receipts the event must have in order to be considered accepted by the controller and valid.
+- `b`: Backer (witness) list - the AID prefixes of the backers (witnesses) that are authorized by the controller to generate witness receipts for this event and any after it, until changed by a rotation event.
+- `c`: configuration traits - not used here
+- `a`: anchors (seals) - list of field maps used to anchor data in a key event
 
 <div class="alert alert-info">
   <b>📚 REFERENCE</b><hr>
@@ -235,6 +260,8 @@ Now use `kli list` to list all the identifiers managed by the keystore
     my-first-aid (BHt9Kw8oUgfB2kiyoj65B2VE5fZLr87S5MJP3l4JeRwC)
 
 
+![](images/two-aids.png)
+
 <div class="alert alert-primary">
   <b>📝 SUMMARY</b><hr>
 <p>The basics of managing KERI identifiers using the KLI:</p>
@@ -247,7 +274,4 @@ Now use `kli list` to list all the identifiers managed by the keystore
 </ul>
 </div>
 
-
-```python
-
-```
+[<- Prev (Controllers and Identifiers)](101_15_Controllers_and_Identifiers.ipynb) | [Next (Signatures) ->](101_25_Signatures.ipynb)
