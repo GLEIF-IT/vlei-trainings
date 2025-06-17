@@ -7,6 +7,9 @@ x-witness-demo-image: &witness-demo-image
   image: gleif/keri:1.2.8-rc5
 x-keria-image: &keria-image
   image: gleif/keria:0.3.0
+x-sally-image: &sally-image
+  image: gleif/sally:1.0.0-rc1
+
 x-healthcheck: &healthcheck
   interval: 15s
   timeout: 5s
@@ -18,6 +21,9 @@ networks:
   default:
     external: false
     name: keri_network
+
+volumes:
+  direct-sally-vol:
 
 services:
   # JupyterLab Service
@@ -102,4 +108,50 @@ services:
       vlei-server:
         condition: service_healthy
       witness-demo:
+        condition: service_healthy
+
+
+  # Sample Webhook that will receive IPEX credential presentation bodies as JSON from Sally
+  hook:
+    stop_grace_period: 1s
+    <<: *sally-image
+    environment:
+      - PYTHONUNBUFFERED=1 # Ensure output is logged in real-time
+      - PYTHONIOENCODING=UTF-8 # Ensure consistent logging encoding
+      - PYTHONWARNINGS=ignore::SyntaxWarning
+    # volumes:
+    healthcheck:
+      test: [ "CMD", "wget", "--spider", "--tries=1", "--no-verbose", "http://127.0.0.1:9923/health" ]
+      <<: *healthcheck
+    ports:
+      - "9923:9923"
+    entrypoint: [ 'sally', 'hook', 'demo' ]
+
+  direct-sally:
+    stop_grace_period: 1s
+    <<: *sally-image
+    # Var values defined in deploy.sh file
+    environment: 
+      - PYTHONUNBUFFERED=1 # Ensure output is logged in real-time
+      - PYTHONIOENCODING=UTF-8 # Ensure consistent logging encoding
+      - DIRECT_SALLY=${DIRECT_SALLY}
+      - DIRECT_SALLY_SALT=${DIRECT_SALLY_SALT}
+      - DIRECT_SALLY_PASSCODE=${DIRECT_SALLY_PASSCODE}
+      - WEBHOOK_HOST=${WEBHOOK_HOST}
+      - GEDA_PRE=${GEDA_PRE}
+      - PYTHONWARNINGS=ignore::SyntaxWarning
+      - DIRECT_PORT=9823
+    volumes:
+      - ./direct-sally/keri/cf/direct-sally.json:/sally/conf/keri/cf/direct-sally.json
+      - ./direct-sally/sally-incept-no-wits.json:/sally/conf/sally-incept-no-wits.json
+      - ./direct-sally/entry-point.sh:/sally/entry-point.sh
+      - direct-sally-vol:/usr/local/var/keri
+    healthcheck:
+      test: [ "CMD", "wget", "--spider", "--tries=1", "--no-verbose", "http://127.0.0.1:9823/health" ]
+      <<: *healthcheck
+    ports:
+      - 9823:9823
+    entrypoint: "/sally/entry-point.sh"
+    depends_on:
+      vlei-server:
         condition: service_healthy
