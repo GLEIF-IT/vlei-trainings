@@ -18,12 +18,12 @@ Schemas serve several purposes:
 
 <div class="alert alert-info">
     <b>🔒 Security Note</b><hr>
-    Security is a major reason why ACDC schemas are necessary and also why ACDC schemas must be immutable. Using immutable schemas to describe all ACDC prevents any type of malleability attack and ensures that recipients always know precisely the kind of data to expect from an ACDC.
+    Security is a major reason why ACDC schemas are necessary and also why ACDC schemas must be immutable. Using immutable schemas to describe all ACDCs prevents any type of malleability attack and ensures that recipients always know precisely the kind of data to expect from an ACDC.
 </div>
 
 ### Ordering of attributes
 
-It is essential to understand that ACDCs are **ordered field maps**, which means that the order in which fields appear in the JSON of an ACDC must be specific and deterministic. This is different from much of the Javascript world and many other credential formats and is also part of what makes ACDC secure. A deterministic ordering of fields must be used in order to allow cryptographic verifiability. A non-deterministic field order would mean digest (hashing) verification would fail because attribute order would be unpredictable. So, while initially seeming inconvenient the ordered field maps provide predictability and cryptographic verifiability. \
+It is essential to understand that ACDCs are **ordered field maps**, which means that the order in which fields appear in the JSON of an ACDC must be specific and deterministic. This design constraint is non-existent in much of the Javascript world and many other credential formats, and its an essential part of what makes ACDC secure. A deterministic ordering of fields must be used in order to enable cryptographic verifiability. A non-deterministic field order would mean digest (hashing) verification would fail because attribute order would be unpredictable. So, while initially seeming inconvenient, the ordered field maps provide predictability and cryptographic verifiability. 
 
 <div class="alert alert-info">
     <b>🔒 Security Note</b><hr>
@@ -32,11 +32,11 @@ It is essential to understand that ACDCs are **ordered field maps**, which means
 
 #### Canonical ordering of ACDC attributes
 
-This order is set by the JSON schema document, as in the **canonical ordering** of data attributes in an ACDC is defined by the JSON schema document, **not lexicographical order**. Admittedly ordering of attributes in JSON is not yet standard practice in the JSON and Javascript worlds, yet is essential from a security perspective. 
+This order is set by the JSON schema document, as in the **canonical ordering** of data attributes in an ACDC is defined by the JSON schema document, **not lexicographical order**. Admittedly, ordering of attributes in JSON is not yet standard practice in the JSON and Javascript worlds, yet is essential from a security perspective. 
 
 ##### Python and ordered dicts
 
-Also, as of Python 3.7 the [`json`](https://docs.python.org/3/library/json.html) built in package preserves input (insertion) and output order of `dict` structs used for JSON serialization and deserialization, meaning insertion order is preserved.
+Also, as of Python 3.7 the [`json`](https://docs.python.org/3/library/json.html) built-in package preserves input (insertion) and output order of `dict` structs used for JSON serialization and deserialization, meaning insertion order is preserved.
 
 ##### Javascript and ordered Maps
 
@@ -48,7 +48,7 @@ If you use a different language implementation of KERI, ACDC, or CESR then you m
 
 <div class="alert alert-warning">
     <b>⚠️ Validation Warning</b><hr>
-    ACDCs must have ordered field maps in order to be reliably verifiable. Any change to the order of fields that is not also reflected in the schema will result in a validation failure.
+    ACDCs must have ordered field maps in order to be reliably verifiable. Any change to the order of fields that is not also consistent with the schema will result in a validation failure.
 </div>
 
 ## Writing ACDC Schemas
@@ -94,7 +94,7 @@ These attributes describes the schema document itself.
 * `credentialType`: A specific name for this type of credential
 * `version`: A semantic version for this specific credential type (e.g., `"1.0.0"`) to manage schema evolution (Distinct from the ACDC instance's `v` field).
 * `additionalProperties`: Controls whether the ACDC may have extra properties in addition to what is defined in the JSON Schema. The default is true. If false then adding any properties beyond those defined in the schema will cause a validation error.
-* `required`: declares the attributes of the "properties" section that must have data values defined in the ACDC. If any of the required properties are missing in the resulting ACDC JSON then validation will fail. 
+* `required`: declares the attributes of the "properties" section that must have data values defined in the ACDC. If any of the required properties are missing in the resulting ACDC JSON, then validation will fail. 
 
 #### `properties` section (Top Level)
 
@@ -126,7 +126,7 @@ Each are explained below.
 
 ##### ACDC Metadata Fields
 
-The ADCDC metadata fields describe data that shows up at the top level of an ACDC and describe the ACDC itself such as who issued the credential, what schema it has, and any privacy preserving attributes.
+The ACDC metadata fields describe data that shows up at the top level of an ACDC and describe the ACDC itself, such as who issued the credential, what schema it has, and any privacy-preserving attributes.
 
 * `v`: ACDC version/serialization - a CESR version string describing the version of the CESR and ACDC protocols used to encode this ACDC.
 * `d`: ACDC SAID - The self-addressing identifier (digest) of the issued ACDC.
@@ -245,14 +245,14 @@ Each of the attributes are defined as follows:
     * **`i`**: The AID of the **Issuee** or subject of the credential – the entity the claims are *about*.
     * **`dt`**: An ISO 8601 date-time string indicating when the credential was issued.
     * **`claim`** (and other custom fields): These are the specific data fields defined by your schema. In this example, `"claim"` is a string representing the custom information this credential conveys. You would define all your specific credential attributes here.
-* **`additionalProperties`, `required`:** Standard JSON Schema fields controlling whether extra properties are allowed and which defined properties must be present. (see the complete schema [here](config/schemas/sample_schema.json.bak))
+* **`additionalProperties`, `required`:** Standard JSON Schema fields controlling whether extra properties are allowed and which defined properties must be present. (See the complete schema [here](config/schemas/sample_schema.bak.json).)
 
 <div class="alert alert-info">
   <b>ℹ️ NOTE</b><hr>
     The ACDC schema definition allows for optional payload blocks called <code>e</code> (edges) and <code>r</code> (rules).
     <ul>
-        <li>The <code>e</code> section defines links (edges) to other ACDCs, creating verifiable chains of related credentials. For more details see <a href="https://trustoverip.github.io/tswg-acdc-specification/#edge-section"><b>edges</b></a></li>
-        <li>The <code>r</code> section allows embedding machine-readable rules or legal prose, such as Ricardian Contracts, directly into the credential. For more details see <a href="https://trustoverip.github.io/tswg-acdc-specification/#rules-section"><b>rules</b></a></li>
+        <li>The <code>e</code> section defines links (edges) to other ACDCs, creating verifiable chains of related credentials. For more details see <a href="https://trustoverip.github.io/tswg-acdc-specification/#edge-section"><b>edges</b></a>.</li>
+        <li>The <code>r</code> section allows embedding machine-readable rules or legal prose, such as Ricardian Contracts, directly into the credential. For more details see <a href="https://trustoverip.github.io/tswg-acdc-specification/#rules-section"><b>rules</b></a>.</li>
 </div>
 
 ### Writing your ACDC Schema
@@ -302,7 +302,7 @@ The below sample schema illustrates a complete, sample credential that only has 
 }
 ```
 
-If you want to see a production-grade credential schema that has both edges and rules you may review the [GLEIF vLEI Official Organizational Role (OOR)](https://github.com/WebOfTrust/schema/blob/main/vLEI/legal-entity-official-organizational-role-vLEI-credential.schema.json) credential schema.
+If you want to see a production-grade credential schema that has both edges and rules, you may review the [GLEIF vLEI Official Organizational Role (OOR)](https://github.com/WebOfTrust/schema/blob/main/vLEI/legal-entity-official-organizational-role-vLEI-credential.schema.json) credential schema.
 
 
 <div class="alert alert-primary">
@@ -312,7 +312,7 @@ An ACDC Schema acts as an ordered, verifiable blueprint defining the structure, 
 Key components include: 
     <li>top-level metadata (like the schema's SAID in <code>$id</code>, <code>title</code>, <code>credentialType</code>, <code>version</code>)</li> 
     <li>a properties section defining the ACDC envelope fields (<code>v</code>, <code>d</code>, <code>i</code>, <code>s</code>, etc.)</li> 
-    <li>A payload section. The main payload section is attributes (<code>a</code>), containing issuer/issuee info and custom claims, with optional sections for edges (<code>e</code>) linking other ACDCs and rules (<code>r</code>).</li>
+    <li>a payload section. The main payload section is attributes (<code>a</code>), containing issuer/issuee info and custom claims, with optional sections for edges (<code>e</code>) linking other ACDCs, and rules (<code>r</code>).</li>
 
 **Remember**, all fields contained within an ACDC must be ordered according to **insertion order**, not lexicographic (alphabetical) order. This is essential for both cryptographic verifiability and security.  
 </div>

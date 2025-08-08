@@ -123,7 +123,7 @@ issuer_aid = "issuer_aid"
 
 For the Issuer to send a credential to the Holder, they first need to discover each other's key state (KEL - Key Event Log). This is done using Out-of-Band Introductions (OOBIs) using witness URLs. This works because a controller's witness maintains a copy of the controller's KEL that may be retrieved by other controllers. Each controller generates an OOBI URL pointing to one of its witnesses. They then exchange these OOBIs (typically through a separate channel, hence "out-of-band") and resolve them. Resolving an OOBI allows a controller to securely fetch and verify the KEL of the other controller via the specified witness.   
 
-For brevity we skip the challenge/response step which may be used to further authenticate controllers possession of the private keys associated with their AIDs.
+For brevity we skip the challenge/response step which may be used to further authenticate each controller's possession of the private keys associated with their AIDs.
 
 
 ```python
@@ -194,7 +194,7 @@ To query the status of a registry, use the command `kli vc registry status`. Thi
 
 As seen before, you need a schema to issue credentials. A schema defines the structure and data types for a specific kind of credential, ensuring consistency and enabling automated validation. 
 
-For this example, we have prepared a schema to simulate an access pass for an event. It defines the expected attributes for such a pass
+For this example, we have prepared a schema to simulate an access pass for a GLEIF Summit event. It defines the expected attributes for such a pass
 
 ```json
 "eventName": {
@@ -220,7 +220,7 @@ To see the full schema, click **[here](config/schemas/event_pass_schema.bak.json
 
 ### SAIDifying the Credential Schema
 
-You might notice the  **[schema file](config/schemas/event_pass_schema.bak.json)** doesn't have SAIDs+ embedded within it yet. As done before, use the helper script to perform this process, taking the `event_pass_schema.bak.json` file as input and outputting the SAIDified version to `event_pass_schema.json`. 
+You might notice the  **[schema file](config/schemas/event_pass_schema.bak.json)** doesn't yet have SAIDs embedded within it. As done before, use the helper script to perform this process, taking the `event_pass_schema.bak.json` file as input and outputting the SAIDified version to `event_pass_schema.json`. 
 
 Additionally, capture the top-level SAID of the schema using the function `get_schema_said`
 
@@ -261,7 +261,7 @@ This has already been prepared, so you can query the schema directly from the vL
 
 ### Resolving the Schema OOBI
 
-Both the Issuer and the Holder need to know the schema definition to understand the structure of the credential being issued/received. They achieve this by resolving the schema's OOBI URL provided by the `vLEI-server`
+Both the Issuer and the Holder need to know the schema definition to understand the structure of the credential being issued/received. They achieve this by resolving the schema's OOBI URL provided by the `vLEI-server`.
 
 
 ```python

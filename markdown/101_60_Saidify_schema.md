@@ -7,7 +7,7 @@
 
 ## Role of Schema SAIDs
 
-A key feature of KERI and ACDCs is the use of SAIDs (Self-Addressing Identifiers) for schemas. The SAID in a schema's `$id` field is a hash of the canonical form of that schema block.
+A key feature of KERI and ACDCs is the use of SAIDs (Self-Addressing Identifiers) for schemas. The SAID in a schema's `$id` field is a digest of the canonical form of that schema block.
 
 Why it matters:
 - **Lookup:** SAIDs provide a universal, unique identifier to retrieve a specific, verified version of a schema.
@@ -22,7 +22,7 @@ We have provided a sample schema and a utility function to help you SAIDfy the s
 
 ### Step 1: Write Schema JSON
 
-First, you will create a JSON file with the basic structure as seen in the previous notebook. Since we provide the schema, you don't need to worry about it. But check the file **[sample_credential_schema.json](config/schemas/sample_schema.bak.json)**, is the schema you will use. Notice the `$id` fields are initially empty strings `""` 
+First, you will create a JSON file with the basic structure as seen in the previous notebook. Since we provide the schema, you don't need to worry about it. But review the file **[sample_credential_schema.json](config/schemas/sample_schema.bak.json)**, since it is the schema you will use, initially unprocessed. Notice the `$id` fields are initially empty strings `""`. 
 
 ### Step 2: Process and Embed SAIDs
 
@@ -65,7 +65,7 @@ For an issuer to issue an ACDC using this schema, and for a recipient/verifier t
 How do they get it? The SAID acts as a universal lookup key. Common ways to make schemas available include:
 
 - Simple Web Server: Host the SAIDified JSON file on a basic web server. Controllers can be configured (often via OOBIs, covered later) to fetch the schema from that URL using its SAID.   
-- Content-Addressable Network: Store the schema on a network like IPFS, where the SAID naturally aligns with the content hash used for retrieval.
+- Content-Addressable Network: Store the schema on a network like IPFS, where the SAID naturally aligns with the content digest used for retrieval.
 - Direct Exchange: For specific interactions, the schema could potentially be exchanged directly between parties (though less common for widely used schemas).
 The key point is that the schema, identified by its SAID, must be retrievable by parties needing to issue or verify credentials based on it.
 

@@ -360,7 +360,7 @@ The Verifier also needs to resolve the OOBI for the ACDC's schema (`event_pass_s
 
 ### Step 1: Holder Presents Credential (Grant)
 
-Now, the Holder initiates the IPEX exchange to present the credential to the Verifier. The Holder acts as the "Discloser" in this context. The command used is `kli ipex grant`, just like in issuance, but the IPEX roles are reversed so the Holder is the discloser and the Verifier is the disclosee.
+Now, the Holder initiates the IPEX exchange to present the credential to the Verifier. The Holder acts as the "Discloser" in this context. The command used is `kli ipex grant`, just like in issuance, but the IPEX roles here are different so the Holder is the discloser and the Verifier is the disclosee.
 
 - `--name`, `--passcode`, `--alias`: Identify the Holder's keystore and AID.
 - `--said`: The SAID of the credential being presented.
@@ -542,7 +542,7 @@ Finally, the Verifier can check the status of the received IPEX message again. T
 
 ## Credential Revocation by Issuer
 
-Credentials may need to be invalidated before their natural expiry (if any). This process is called revocation. In KERI/ACDC, revocation is performed by the original Issuer of the credential. The Issuer records a revocation event in the credential registry's Transaction Event Log (TEL), which is anchored to the Issuer's main KEL.
+Credentials may need to be invalidated before their natural expiry (if any). This process is called revocation. In KERI/ACDC, revocation is performed by the original Issuer of the credential. The Issuer records a revocation event in the credential registry's Transaction Event Log (TEL), and that event is anchored to the Issuer's main KEL.
 
 The `kli vc revoke` command is used by the Issuer:
 
@@ -643,7 +643,7 @@ Now the holder admits the IPEX Grant from the issuer of the recently revoked cre
 
 ```python
 # Holder polls and admits the revoked credential
-# The pipe to "tail -n 1" makes sure to get the last IPEX Grant which will be the grant sharing the re
+# The pipe to "tail -n 1" makes sure to get the last IPEX Grant which will be the grant sharing the revoked credential
 get_ipex_said=f"kli ipex list --name {holder_keystore_name} --passcode {holder_keystore_passcode}\
   --alias {holder_aid} --poll --said | tail -n 1 | tr -d '' "
 ipex_said=exec(get_ipex_said)

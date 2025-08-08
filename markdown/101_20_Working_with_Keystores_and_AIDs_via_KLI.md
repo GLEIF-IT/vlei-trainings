@@ -57,8 +57,10 @@ The command sets up the necessary file structures for your keystore, so once exe
 <div class="alert alert-info">
   <b>ℹ️ NOTE</b><hr>
 <ul>
-    <li>In the example, predefined <code>--passcode</code> and <code>--salt</code> are used for convenience, but randomly generated values can be obtained using the <code>kli passcode generate</code> and <code>kli salt</code>
-    <li>You can initialize multiple keystores as long as they have different names 
+    <li>In the example, predefined <code>--passcode</code> and <code>--salt</code> values are used for convenience, but randomly generated values can be obtained using the <code>kli passcode generate</code> and <code>kli salt</code>
+    <li>As mentioned earlier, the passcode is used for encryption of the keystore
+    <li>The salt value is used as input (along with other context including the keystore's aeid) to deterministically generate all key-pairs belonging to an identifier. In these examples, you'll see many public keys and derivations of those (such as an AID's prefix), that are dependent on the salt value.
+    <li>You can initialize multiple keystores as long as they have different names. 
 </ul>
 </div>
 

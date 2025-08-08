@@ -29,7 +29,7 @@ The setup involves:
 
 - Individual Participant AIDs: Each entity that will be part of the multisig group first has its own individual AID.
 - Group Configuration: A configuration is defined specifying which AIDs are members of the group and the signing threshold (e.g., 2 out of 3 participants must sign).
-- Group Inception: The multisig group AID is incepted. This is a cooperative process where participating AIDs signal their agreement to form the group. The resulting group AID prefix is self-addressing identifier derived from its inception event data, which includes the participating AIDs and the threshold policies for signing and rotation.
+- Group Inception: The multisig group AID is incepted. This is a cooperative process where participating AIDs signal their agreement to form the group. The resulting group AID prefix is a self-addressing identifier derived from its inception event data, which includes a list of member AID prefixes and the threshold policies for signing and rotation.
 - Group Operations: Subsequent operations like interaction events or key rotations for the group AID also require the specified threshold of signatures from the participating AIDs.
 
 For this notebook, we will create two AIDs, `party1_alias` and `party2_alias`, each in its own keystore. These will act as the initial members of our multisig group.
