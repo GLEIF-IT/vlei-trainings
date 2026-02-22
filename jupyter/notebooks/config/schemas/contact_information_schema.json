@@ -1,0 +1,112 @@
+{
+  "$id": "EOHfvEtkTdILA7KI_FzNDMNDpzS-qqWH_7J3dwTFL6KL",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Contact Information",
+  "description": "A verifiable credential containing contact information",
+  "type": "object",
+  "credentialType": "ContactInformation",
+  "version": "1.0.0",
+  "properties": {
+    "v": {
+      "description": "Credential Version String",
+      "type": "string"
+    },
+    "d": {
+      "description": "Credential SAID",
+      "type": "string"
+    },
+    "i": {
+      "description": "Issuer AID",
+      "type": "string"
+    },
+    "ri": {
+      "description": "Registry SAID",
+      "type": "string"
+    },
+    "s": {
+      "description": "Schema SAID",
+      "type": "string"
+    },
+    "a": {
+      "oneOf": [
+        {
+          "description": "Attributes block SAID",
+          "type": "string"
+        },
+        {
+          "$id": "ECHmxH5DhJrFW3SQ8X12rlh4YI1Zz_R_QhDswMFkpx9N",
+          "description": "Attributes block",
+          "type": "object",
+          "properties": {
+            "d": {
+              "description": "Attributes data SAID",
+              "type": "string"
+            },
+            "i": {
+              "description": "Issuee AID",
+              "type": "string"
+            },
+            "dt": {
+              "description": "Issuance date time",
+              "type": "string",
+              "format": "date-time"
+            },
+            "contactName": {
+              "description": "Preferred or display name for the contact person",
+              "type": "string"
+            },
+            "phone": {
+              "description": "Primary contact phone number including country code",
+              "type": "string"
+            },
+            "alternatePhone": {
+              "description": "Other phone number including country code",
+              "type": "string"
+            },
+            "email": {
+              "description": "Primary official email address for the contact",
+              "type": "string",
+              "format": "email"
+            },
+            "alternateEmail": {
+              "description": "Secondary or backup email address for the contact",
+              "type": "string",
+              "format": "email"
+            },
+            "website": {
+              "description": "Official website URL associated with the contact",
+              "type": "string",
+              "format": "uri"
+            },
+            "socialMedia": {
+              "description": "Social media account",
+              "type": "string"
+            },
+            "alternateSocialMedia": {
+              "description": "Other Social media account",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "d",
+            "i",
+            "dt",
+            "contactName",
+            "phone",
+            "email"
+          ]
+        }
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "v",
+    "d",
+    "i",
+    "ri",
+    "s",
+    "a"
+  ]
+}
