@@ -1,7 +1,7 @@
 <!-- Source: 101_05_Welcome_to_vLEI_Training_-_101.md -->
 # Welcome to vLEI Training - 101
 
-This collection of Notebooks is designed to guide you through the foundational concepts of the [Key Event Receipt Infrastructure](https://trustoverip.github.io/tswg-keri-specification/) (KERI) and [Authentic Chained Data Containers](https://trustoverip.github.io/tswg-acdc-specification/) (ACDC) protocols, followed by the workings of the [verifiable Legal Entity Identifier](https://www.gleif.org/en/organizational-identity/introducing-the-verifiable-lei-vlei/introducing-the-vlei-ecosystem-governance-framework) (vLEI) ecosystem. We aim to equip you with the knowledge needed to build applications leveraging this powerful identity technology.
+This collection of Notebooks is designed to guide you through the foundational concepts of the [Key Event Receipt Infrastructure](https://trustoverip.github.io/tswg-keri-specification/) (KERI) and [Authentic Chained Data Containers](https://trustoverip.github.io/kswg-acdc-specification/) (ACDC) protocols, followed by the workings of the [verifiable Legal Entity Identifier](https://www.gleif.org/en/organizational-identity/introducing-the-verifiable-lei-vlei/introducing-the-vlei-ecosystem-governance-framework) (vLEI) ecosystem. We aim to equip you with the knowledge needed to build applications leveraging this powerful identity technology.
 
 After completing this training, you will:
 - Understand the KERI protocol
@@ -149,7 +149,7 @@ Core Ideas:
 * **Schemas & SAIDs:** Each ACDC conforms to a specific Schema, which defines its structure and data types. Both the schema and the ACDC instance itself are identified using SAIDs (Self-Addressing Identifiers), making them tamper-evident.
 * **Chaining (Edges):** ACDCs can be cryptographically linked together using "edges," forming verifiable chains or graphs of evidence (e.g., an approval credential linking back to the request credential).
 * **Rules:** ACDCs can optionally include embedded machine-readable rules or legal prose (like Ricardian Contracts).
-* **IPEX (Issuance and Presentation Exchange):** a [credential exchange protocol](https://trustoverip.github.io/tswg-acdc-specification/#issuance-and-presentation-exchange-ipex) defining a mechanism and workflow for how ACDCs are issued between parties and how they are presented for verification in a securely attributable way. This protocol also defines a workflow for [graduated disclosure](https://trustoverip.github.io/tswg-acdc-specification/#graduated-disclosure), a variant of selective disclosure that allows for progressive, selective unblinding of claims or attributes after an agreement has been negotiated between the discloser (holder) and the receiver (disclosee) of an ACDC.
+* **IPEX (Issuance and Presentation Exchange):** a [credential exchange protocol](https://trustoverip.github.io/kswg-acdc-specification/#issuance-and-presentation-exchange-ipex) defining a mechanism and workflow for how ACDCs are issued between parties and how they are presented for verification in a securely attributable way. This protocol also defines a workflow for [graduated disclosure](https://trustoverip.github.io/kswg-acdc-specification/#graduated-disclosure), a variant of selective disclosure that allows for progressive, selective unblinding of claims or attributes after an agreement has been negotiated between the discloser (holder) and the receiver (disclosee) of an ACDC.
 
 ## The GLEIF vLEI Ecosystem
 
@@ -4032,7 +4032,7 @@ This registry will have a SAID identifier like `ELh3eYC2W_Su1izlvm0xxw01n3XK8bdV
 
 ### ACDC Issuance and its Anchor
 
-An issuance in a TEL includes the digest of the ACDC that was issued in the "i" field and also points to the registry the ACDC was issued from in the "ri" field, what [will become](https://trustoverip.github.io/tswg-acdc-specification/#top-level-fields) the "rd" field.
+An issuance in a TEL includes the digest of the ACDC that was issued in the "i" field and also points to the registry the ACDC was issued from in the "ri" field, what [will become](https://trustoverip.github.io/kswg-acdc-specification/#top-level-fields) the "rd" field.
 
 ```json
 { 
@@ -4328,8 +4328,8 @@ Each of the attributes are defined as follows:
   <b>ℹ️ NOTE</b><hr>
     The ACDC schema definition allows for optional payload blocks called <code>e</code> (edges) and <code>r</code> (rules).
     <ul>
-        <li>The <code>e</code> section defines links (edges) to other ACDCs, creating verifiable chains of related credentials. For more details see <a href="https://trustoverip.github.io/tswg-acdc-specification/#edge-section"><b>edges</b></a></li>
-        <li>The <code>r</code> section allows embedding machine-readable rules or legal prose, such as Ricardian Contracts, directly into the credential. For more details see <a href="https://trustoverip.github.io/tswg-acdc-specification/#rules-section"><b>rules</b></a></li>
+        <li>The <code>e</code> section defines links (edges) to other ACDCs, creating verifiable chains of related credentials. For more details see <a href="https://trustoverip.github.io/kswg-acdc-specification/#edge-section"><b>edges</b></a></li>
+        <li>The <code>r</code> section allows embedding machine-readable rules or legal prose, such as Ricardian Contracts, directly into the credential. For more details see <a href="https://trustoverip.github.io/kswg-acdc-specification/#rules-section"><b>rules</b></a></li>
 </div>
 
 ### Writing your ACDC Schema
@@ -9700,7 +9700,7 @@ Now the Issuer creates the actual ACDC. This involves:
 1. Defining the `credentialClaims` – the specific attribute values for this instance of the `EventPass` credential.
 2. Calling `issuerClient.credentials().issue()`. This method takes the Issuer's AID alias and an object specifying:
     - `ri`: The SAID of the Credential Registry (`issuerRegistry.regk`) where this credential's issuance will be recorded.
-      - This field [will change](https://trustoverip.github.io/tswg-acdc-specification/#top-level-fields) from `ri` to `rd` in the upcoming 2.0 version of KERI and the 1.0 version of the ACDC Spec.
+      - This field [will change](https://trustoverip.github.io/kswg-acdc-specification/#top-level-fields) from `ri` to `rd` in the upcoming 2.0 version of KERI and the 1.0 version of the ACDC Spec.
         - `ri`: meant "registry identifier"
         - `rd`: means "registry digest"
     - `s`: The SAID of the schema (`schemaSaid`) this credential adheres to.
@@ -14102,7 +14102,7 @@ For more technical details and to track the status of this issue, please refer t
 <!-- Source: 101_05_Welcome_to_vLEI_Training_-_101.md -->
 # Welcome to vLEI Training - 101
 
-This collection of Notebooks is designed to guide you through the foundational concepts of the [Key Event Receipt Infrastructure](https://trustoverip.github.io/tswg-keri-specification/) (KERI) and [Authentic Chained Data Containers](https://trustoverip.github.io/tswg-acdc-specification/) (ACDC) protocols, followed by the workings of the [verifiable Legal Entity Identifier](https://www.gleif.org/en/organizational-identity/introducing-the-verifiable-lei-vlei/introducing-the-vlei-ecosystem-governance-framework) (vLEI) ecosystem. We aim to equip you with the knowledge needed to build applications leveraging this powerful identity technology.
+This collection of Notebooks is designed to guide you through the foundational concepts of the [Key Event Receipt Infrastructure](https://trustoverip.github.io/tswg-keri-specification/) (KERI) and [Authentic Chained Data Containers](https://trustoverip.github.io/kswg-acdc-specification/) (ACDC) protocols, followed by the workings of the [verifiable Legal Entity Identifier](https://www.gleif.org/en/organizational-identity/introducing-the-verifiable-lei-vlei/introducing-the-vlei-ecosystem-governance-framework) (vLEI) ecosystem. We aim to equip you with the knowledge needed to build applications leveraging this powerful identity technology.
 
 After completing this training, you will:
 - Understand the KERI protocol
@@ -14250,7 +14250,7 @@ Core Ideas:
 * **Schemas & SAIDs:** Each ACDC conforms to a specific Schema, which defines its structure and data types. Both the schema and the ACDC instance itself are identified using SAIDs (Self-Addressing Identifiers), making them tamper-evident.
 * **Chaining (Edges):** ACDCs can be cryptographically linked together using "edges," forming verifiable chains or graphs of evidence (e.g., an approval credential linking back to the request credential).
 * **Rules:** ACDCs can optionally include embedded machine-readable rules or legal prose (like Ricardian Contracts).
-* **IPEX (Issuance and Presentation Exchange):** a [credential exchange protocol](https://trustoverip.github.io/tswg-acdc-specification/#issuance-and-presentation-exchange-ipex) defining a mechanism and workflow for how ACDCs are issued between parties and how they are presented for verification in a securely attributable way. This protocol also defines a workflow for [graduated disclosure](https://trustoverip.github.io/tswg-acdc-specification/#graduated-disclosure), a variant of selective disclosure that allows for progressive, selective unblinding of claims or attributes after an agreement has been negotiated between the discloser (holder) and the receiver (disclosee) of an ACDC.
+* **IPEX (Issuance and Presentation Exchange):** a [credential exchange protocol](https://trustoverip.github.io/kswg-acdc-specification/#issuance-and-presentation-exchange-ipex) defining a mechanism and workflow for how ACDCs are issued between parties and how they are presented for verification in a securely attributable way. This protocol also defines a workflow for [graduated disclosure](https://trustoverip.github.io/kswg-acdc-specification/#graduated-disclosure), a variant of selective disclosure that allows for progressive, selective unblinding of claims or attributes after an agreement has been negotiated between the discloser (holder) and the receiver (disclosee) of an ACDC.
 
 ## The GLEIF vLEI Ecosystem
 
@@ -18220,7 +18220,7 @@ This registry will have a SAID identifier like `ELh3eYC2W_Su1izlvm0xxw01n3XK8bdV
 
 ### ACDC Issuance and its Anchor
 
-An issuance in a TEL includes the digest of the ACDC that was issued in the "i" field and also points to the registry the ACDC was issued from in the "ri" field, what [will become](https://trustoverip.github.io/tswg-acdc-specification/#top-level-fields) the "rd" field.
+An issuance in a TEL includes the digest of the ACDC that was issued in the "i" field and also points to the registry the ACDC was issued from in the "ri" field, what [will become](https://trustoverip.github.io/kswg-acdc-specification/#top-level-fields) the "rd" field.
 
 ```json
 { 
@@ -18518,8 +18518,8 @@ Each of the attributes are defined as follows:
   <b>ℹ️ NOTE</b><hr>
     The ACDC schema definition allows for optional payload blocks called <code>e</code> (edges) and <code>r</code> (rules).
     <ul>
-        <li>The <code>e</code> section defines links (edges) to other ACDCs, creating verifiable chains of related credentials. For more details see <a href="https://trustoverip.github.io/tswg-acdc-specification/#edge-section"><b>edges</b></a>.</li>
-        <li>The <code>r</code> section allows embedding machine-readable rules or legal prose, such as Ricardian Contracts, directly into the credential. For more details see <a href="https://trustoverip.github.io/tswg-acdc-specification/#rules-section"><b>rules</b></a>.</li>
+        <li>The <code>e</code> section defines links (edges) to other ACDCs, creating verifiable chains of related credentials. For more details see <a href="https://trustoverip.github.io/kswg-acdc-specification/#edge-section"><b>edges</b></a>.</li>
+        <li>The <code>r</code> section allows embedding machine-readable rules or legal prose, such as Ricardian Contracts, directly into the credential. For more details see <a href="https://trustoverip.github.io/kswg-acdc-specification/#rules-section"><b>rules</b></a>.</li>
 </div>
 
 ### Writing your ACDC Schema
@@ -24044,7 +24044,7 @@ Now the Issuer creates the actual ACDC. This involves:
 1. Defining the `credentialClaims` – the specific attribute values for this instance of the `EventPass` credential.
 2. Calling `issuerClient.credentials().issue()`. This method takes the Issuer's AID alias and an object specifying:
     - `ri`: The SAID of the Credential Registry (`issuerRegistry.regk`) where this credential's issuance will be recorded.
-      - This field [will change](https://trustoverip.github.io/tswg-acdc-specification/#top-level-fields) from `ri` to `rd` in the upcoming 2.0 version of KERI and the 1.0 version of the ACDC Spec.
+      - This field [will change](https://trustoverip.github.io/kswg-acdc-specification/#top-level-fields) from `ri` to `rd` in the upcoming 2.0 version of KERI and the 1.0 version of the ACDC Spec.
         - `ri`: meant "registry identifier"
         - `rd`: means "registry digest"
     - `s`: The SAID of the schema (`schemaSaid`) this credential adheres to.
