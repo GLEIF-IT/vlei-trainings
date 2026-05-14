@@ -109,7 +109,7 @@ The `kli incept` command generated an AID, which is represented by a unique stri
     - The Encoded Public Key: A string derived from the public portions of the initially generated key pairs associated with the AID.
 
 **Prefix Self-Certification:**  
-KERI AIDs are [self-certifying](https://trustoverip.github.io/tswg-keri-specification/#self-certifying-identifier-scid) in the sense that an AID does not rely on a trusted entity and instead relies only on its public keys to provide verifiability for signed statements made by the controller of an AID. This self-certifying quality holds throughout the AID's lifecycle, from inception to all future events, such as rotations.
+KERI AIDs are [self-certifying](https://trustoverip.github.io/kswg-keri-specification/#self-certifying-identifier-scid) in the sense that an AID does not rely on a trusted entity and instead relies only on its public keys to provide verifiability for signed statements made by the controller of an AID. This self-certifying quality holds throughout the AID's lifecycle, from inception to all future events, such as rotations.
 
 This works because:
 1. The identifier's prefix is derived from the set of public keys that are included in the inception event. The prefix is the self addressing identifier (SAID), a kind of digest, of the inception event. This provides a strong cryptographic binding between the AID prefix and the keys used to generate the inception event.
@@ -208,7 +208,7 @@ You can use `kli status` with the `--verbose` parameter to show the key event lo
     
 
 
-Here are some descriptions of the KEL fields (see the [spec](https://trustoverip.github.io/tswg-keri-specification/#keri-data-structures-and-labels)):
+Here are some descriptions of the KEL fields (see the [spec](https://trustoverip.github.io/kswg-keri-specification/#keri-data-structures-and-labels)):
 - `v`: Version String
 - `t`: Message type (`icp` means inception)
 - `i`: AID Prefix that created the event ("issuer" of the event)
@@ -224,7 +224,7 @@ Here are some descriptions of the KEL fields (see the [spec](https://trustoverip
 
 <div class="alert alert-info">
   <b>📚 REFERENCE</b><hr>
-    To see the full details of the key event fields, refer to <a href="https://trustoverip.github.io/tswg-keri-specification/#keri-data-structures-and-labels" target="_blank">KERI Data Structures and Labels</a> 
+    To see the full details of the key event fields, refer to <a href="https://trustoverip.github.io/kswg-keri-specification/#keri-data-structures-and-labels" target="_blank">KERI Data Structures and Labels</a> 
 </div>
 
 ## Listing Identifiers in a Keystore
