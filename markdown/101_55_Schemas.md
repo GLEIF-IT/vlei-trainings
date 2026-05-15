@@ -251,8 +251,8 @@ Each of the attributes are defined as follows:
   <b>ℹ️ NOTE</b><hr>
     The ACDC schema definition allows for optional payload blocks called <code>e</code> (edges) and <code>r</code> (rules).
     <ul>
-        <li>The <code>e</code> section defines links (edges) to other ACDCs, creating verifiable chains of related credentials. For more details see <a href="https://trustoverip.github.io/tswg-acdc-specification/#edge-section"><b>edges</b></a>.</li>
-        <li>The <code>r</code> section allows embedding machine-readable rules or legal prose, such as Ricardian Contracts, directly into the credential. For more details see <a href="https://trustoverip.github.io/tswg-acdc-specification/#rules-section"><b>rules</b></a>.</li>
+        <li>The <code>e</code> section defines links (edges) to other ACDCs, creating verifiable chains of related credentials. For more details see <a href="https://trustoverip.github.io/kswg-acdc-specification/#edge-section"><b>edges</b></a>.</li>
+        <li>The <code>r</code> section allows embedding machine-readable rules or legal prose, such as Ricardian Contracts, directly into the credential. For more details see <a href="https://trustoverip.github.io/kswg-acdc-specification/#rules-section"><b>rules</b></a>.</li>
 </div>
 
 ### Writing your ACDC Schema

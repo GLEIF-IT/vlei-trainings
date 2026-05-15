@@ -22,7 +22,7 @@ The process involves two stages:
         * A note on terminology: While the term "hash" is often used to refer to both the function and its output, in this text we will use “hash function” to refer to the algorithm and “digest” to refer to its output.
     * Next, the signer uses their unique private signing key to apply a digital signature algorithm to the digest. This process produces a digital signature — a cryptographic proof that the signer authorized the original data.
     * Only someone with access to the private key can generate a valid signature for a given digest. 
-    * The generated signature is typically attached to the original information. In the case of KERI this signature is encoded in the [Composable Event Streaming Representation](https://trustoverip.github.io/tswg-cesr-specification/) (CESR) encoding format.
+    * The generated signature is typically attached to the original information. In the case of KERI this signature is encoded in the [Composable Event Streaming Representation](https://trustoverip.github.io/kswg-cesr-specification/) (CESR) encoding format.
 
 ```mermaid
 graph TD
