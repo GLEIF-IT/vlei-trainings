@@ -46,7 +46,7 @@ RUN deno jupyter --install && \
 
 
 # Install the published GLEIF KERIpy package.
-RUN pip install --no-cache-dir gleif_keri==1.2.18 && pip check
+RUN pip install --no-cache-dir gleif_keri==1.2.19 && pip check
 
 # Set up a working directory for notebooks
 WORKDIR /app/notebooks
